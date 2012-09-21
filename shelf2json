@@ -1,0 +1,14 @@
+#!/usr/bin/python
+""" opens up a dbm-ish file that was used by python module 'shelve'
+    and spews out the JSON encoding version of its contents
+"""
+import sys, json, shelve
+
+if (len(sys.argv) != 2):
+  print "Usage: shelf2json fileA.db"
+  print "  fileA.db is expected to be a Berkeley DBM -ish file"
+  print "  with strings as keys and python pickle objects as values"
+  sys.exit(1)
+
+MACGUFFIN = shelve.open(sys.argv[1],flag='r')
+print json.dumps(dict(MACGUFFIN),indent=2,sort_keys=True)

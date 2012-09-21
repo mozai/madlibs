@@ -1,0 +1,18 @@
+#!/usr/bin/python
+""" turns a dict() written as a JSON object in file A
+    into something a db file for use with shelve.open() file B
+"""
+import sys, json, shelve
+
+if (len(sys.argv) != 3):
+  print "Usage: json2shelf fileA.json fileB.db"
+  print "  fileA.json must contain only one dict() object"
+  print "  fileB.db is for use with shelve.open()"
+  print "  any non-string keys in fileA.json will be converted" 
+  sys.exit(1)
+
+MALTESE = shelve.open(sys.argv[2],flag='n')
+FALCON  = json.load(open(sys.argv[1],'r'))
+for i in FALCON :
+  MALTESE[str(i)] = FALCON[i]
+MALTESE.close()
