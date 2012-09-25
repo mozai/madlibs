@@ -1,8 +1,7 @@
 {
-  "@": [
-    "yiff"
-  ], 
-  "adj.goodpenis": [
+  "@": [ "yiff" ], 
+  "#": "list of furry-culture erotic emote strings for use by an IRC bot.  Initial data set started from mIRC yiff.txt list with multiple sources each claiming sole credit for the same data... so I'll have to assume none of them are the original author.  The data has been heavily edited for madlibs use, with more descriptive terms, and more yiff emotes donated by the bastards at irc://irc.rizon.net/#farts .  '$2-' is meant to be the target of yiffing, '$nick' is meant to be the name of the person asking the bot to yiff someone",
+  "penis_good": [
     "cute little", 
     "engorged", 
     "enormus", 
@@ -19,13 +18,13 @@
     "ridiculous-sized", 
     "throbbing"
   ], 
-  "adj.some": [
+  "handful": [
     "two", 
     "three", 
     "four", 
     "over 9000"
   ], 
-  "n.animal": [
+  "animal": [
     "bunny", 
     "canine", 
     "cat", 
@@ -54,7 +53,7 @@
     "vulpine", 
     "wolf"
   ], 
-  "n.anus": [
+  "anus": [
     "arse", 
     "backdoor", 
     "brown starfish", 
@@ -63,7 +62,7 @@
     "servant's entrance", 
     "tailhole"
   ], 
-  "n.bodypart": [
+  "bodypart": [
     "collar", 
     "collarbone", 
     "crotch", 
@@ -73,13 +72,13 @@
     "shoulder", 
     "throat"
   ], 
-  "n.digit": [
+  "body_digit": [
     "finger", 
-    "|n.penis|", 
+    "%penis", 
     "pinky", 
     "thumb"
   ], 
-  "n.mylittlepony": [
+  "ponyname": [
     "Applejack", 
     "Fluttershy", 
     "Pinkie Pie", 
@@ -87,7 +86,7 @@
     "Rainbow Dash", 
     "Twilight Sparkle"
   ], 
-  "n.penis": [
+  "penis": [
     "cock", 
     "dick", 
     "hard rod", 
@@ -108,7 +107,7 @@
     "shaft", 
     "tool"
   ], 
-  "n.semen": [
+  "semen": [
     "baby batter", 
     "choade", 
     "cockpearls", 
@@ -127,13 +126,13 @@
     "spermshake", 
     "thick white fluid"
   ], 
-  "n.testes": [
+  "testes": [
     "ballsack", 
     "dicebag", 
     "family jewels", 
     "testes"
   ], 
-  "n.vagina": [
+  "vagina": [
     "baby-chute", 
     "cunt", 
     "delta of venus", 
@@ -147,149 +146,91 @@
     "wondertunnel", 
     "yoni"
   ], 
-  "v.insert": [
-    "insert", 
-    [
-      "plunge", 
-      "plunged", 
-      "plunging"
-    ], 
-    [
-      "probe", 
-      "probed", 
-      "probing"
-    ], 
-    [
-      "shove", 
-      "shoved", 
-      "shoving"
-    ], 
-    [
-      "slide", 
-      "slid", 
-      "sliding"
-    ]
-  ], 
-  "v.sense": [
-    [
-      "feel", 
-      "felt", 
-      "feeling"
-    ], 
-    [
-      "hear", 
-      "heard", 
-      "hearing"
-    ], 
-    [
-      "see", 
-      "saw", 
-      "seeing"
-    ], 
-    "smell", 
-    "touch"
-  ], 
-  "v.sex": [
-    "fuck", 
-    "hammer", 
-    "plow", 
-    "pound", 
-    [
-      "slam", 
-      "slammed", 
-      "slamming"
-    ], 
-    "thrust"
-  ], 
-  "v.squirt": [
-    "splash", 
-    "squirt"
-  ], 
   "yiff": [
-    "aims and shoots, but misses $1-'s mouth, leaving a mess of |n.semen| dripping down $1-'s chin", 
-    "bites off $1-'s tongue with hir sheath because it has sheathteeth", 
-    "|blasts,pumps,spews| |gallons,litres| of hot |n.animal| |n.semen| all over |$2-,$1-|", 
-    "|busts,blasts,shoots,jets| a huge creamy yiffload all over $1-", 
-    "can't help but fuck the everliving shit out of $1- with a |adj.goodpenis| |n.animal|dick", 
-    "can't take anymore; sie gasps for hir breath as sie unloads potent |n.animal| seed all over $1-'s |n.animal| nipples", 
-    "caresses $1-'s furry |n.testes|, inhaling $1-'s sweet musk through hir nostrils, hir |n.penis| starting to grow from all the sensations", 
-    "clenches hir firm, supple buttocks around the |adj.goodpenis| head of $1-'s |n.animal||n.penis|", 
-    "critches the inside of $1-'s rosebud with hir entire hand while lapping up the fountain of |n.semen| escaping from $1-'s engorged member", 
-    "cuddles close to $1-, hir excitement poking $1- from behind", 
-    "does something disgusting to $1-", 
-    "does the unthinkable to $1-", 
-    "drags a |foxy,dragon,kitty| claw across the ridges of $1-'s circumcision scar|yiffchain|", 
-    "emerges from hir sheath, hir hard |n.penis| glistening in the moist air|yiffchain|", 
-    "engulfs $1-'s |n.animal|cock, relishing the salty taste of the precum", 
-    "exposes hir sheath to $1-, while slowly raising hir tail with an inviting look", 
-    "eyes that drop of |n.semen| with interest, using hir tail to push hir |n.penis| firmly up against $1-'s |n.anus|, nudging the head against the open ring of flesh", 
-    "farts all over $1-'s |n.penis|", 
-    "feels $1-'s |n.goodpenis| |n.animal|hood enter hir time and time again, making hir |n.anus| twitch and love juice flow", 
-    "feels $1-'s |n.penis| throbbing inside hir, each pulse unleashing a firey hot load deep in hir bowels, sating lust momentarily", 
-    "felt $1-'s lukewarm |n.animal|hood enter hir time and time again, making hir |n.vagina| twitch and love juice flow", 
-    "gently slides hir paw over $1-'s right |n.bodypart| while gliding a |n.digit| over hir |n.anus| in anticipation", 
-    "gets a firm grip on $1-'s hip as sie thrusts hir |n.animal|hood deep within hir tight and inexperienced |n.anus|, unexpectedly ramming the knot causing an orgasm of pain and pleasure for $1-", 
-    "gets arrested for taking advantage of $1-", 
-    "gets down on all fours and humps $1-", 
-    "gets down with $1- doggie style", 
-    "gives $1- a nice and solid kick, making hir collapse onto the floor, cupping $1-'s |n.animal| |n.testes|", 
-    "glares at $2- and silently judges.",
-    "goes apeshit and jumps on $1- with a |adj.goodpenis| |n.animal|cock", 
-    "grabs $1-, twirls hir around like a dancer and places a kiss on hir lips, fondling hir |n.anus| for a second so sie can taste it later", 
-    "howls with pleasure as $2- pulls the knot out of hir hole, stretching it to an obscene size before a loud \"POP\" is heard and $1-'s |n.animal|juice cascades down hir already drenched thighs", 
-    "initiates the cuddle pile of Cthulu! Fuzzy tentacles lash out and drag $1- into the maw of Murrrrr", 
-    "inserts a giner into $1-'s |n.animal| sheef, pumping in and out to create sheefsounds of varying pitches and phonetic properties.", 
-    "is plundging deep into $1-'s anal cavity getting fur all over the place", 
-    "is puzzled by $1-'s merely single cock as it presses against hir |chest,stomach|", 
-    "licks along $1-'s silky lips, taking $1-'s exposed |n.animal|cock and plays with the tip, rubbing the underside with hir |n.bodypart| slowly towards the tip", 
-    "licks hir lips while watching $1- fellatiate a |toy poodle,chihuahua|",
-    "looks up at $1- with a cute wide-eyed look. Hir sweet ice-cream tasting pom-pom is nibbled on, moaning even louder before clinging to hirself tightly at feeling of the licks at hir sensitive pompom. \"ahh ahh! oh! ku-KUPO!\" ", 
-    "milks hir cock and drizzles |n.semen| into the coffee pot to see if $1- can taste the difference", 
-    "mounts $1- and pumps in and out hard", 
-    "mounts $1- and thrusts hir |adj.goodpenis| |n.animal|cock deeply in hir tight ass, ramming the bulging knot deeper with each pump, balls smacking against the |n.anus| while hir already engorged |n.penis| squirts |n.semen| all inside", 
-    "murrs as sie slides hir paw over $1-'s |adj.goodpenis| |n.animal| |n.penis|", 
-    "murrs, humping softly against $1-'s hand, twisting the tip of hir finger in $1-'s |n.anus|", 
-    "nibbles softly on the carrot protruding from $1-'s juicy hole as $1-'s fluffy bunnytail tickles hir face", 
-    "parts $1-'s buttcheeks and slides hir |n.animal|cock into their anus", 
-    "pays $1- to have sex with |n.mylittlepony|, the biggest whorse in town", 
-    "pokes a finger into $1-'s |adj.wet| sheath, tasting the tip of hir finger in anticipation", 
-    "props $1-'s dead furry body over hir chair and furiously humps, climaxing into hir cold cadaver", 
-    "pushes down on $1-'s rock hard |n.animal| |n.penis| with hir palm, sliding around with hir |n.semen|", 
-    "pushes down onto $1-'s lap with hir weight, thrusting $1-'s knot deep within hir |n.anus|", 
-    "puts hir fingers on $1-'s mouth to shush hir as sie starts working hir |adj.goodpenis| |n.animal| |n.penis|", 
-    "puts hir muzzle between $1-'s smooth thighs and starts lapping at hir |slippery,sensitive,erect| |n.animal|clit", 
-    "puts on hir robe and wizard hat and turns $1- into a real boy with all the succulent boy parts sie so enjoys =^_~=",
-    "rubs $1-'s hard |n.penis| while reaching back for some extra tailhole fun", 
-    "rubs $1-'s |member,footpaws,knot| while groping at hir crotch with hir feet", 
-    "rubs $1-'s |n.bodypart| while groping at hir crotch with hir feet", 
-    "rubs hir paws through $1-'s |bum,butt,ass|fuzz, sticking hir muzzle under the |n.animal|'s tail giving hir |n.anus| a nice warm lick", 
-    "rubs hir petite bottom on $1-'s well-endowed |n.animal||cock,rod,member|", 
-    "runs hir |fingers,paws| through $1-'s silky fur, rubbing hir |n.bodypart| to get them excited", 
-    "runs hir paws along $1-'s soft and slender thighs, running up to hir |adj.goodpenis| |n.animal|cock", 
-    "slides |adj.some| fingers into $1-'s |juicy,tight,erect,wet| |n.vagina| while fondling hir sheath", 
-    "slides hir throbbing |n.animal||n.penis| along $1-'s luscious |n.animal| breasts, leaving a trail of |n.semen| along hir sweat-glistened chest", 
-    "slides two fingers into $1-'s tight and firm |n.vagina| while fondling hir sheathe", 
-    "slips hir tongue into $1-'s moist sheath, taking in all the flavors of hir |n.animal| musk", 
-    "sniffs $1-'s smooth cloaca before swiping hir forked tongue up and down on it, tasting hir spicy juices", 
-    "snuggletackles $1- and starts romping on top of hir", 
-    "|sprays,blasts,jets,squirts| |hot,sticky,slick,warm,delicious,yummy,bitter,tasty,illegal| |n.semen| all over $1-", 
-    "squeezes $1-'s meaty dragon vent, while giving hir a reach-around.", 
-    "strokes $1-'s flank, nuzzling up to hir soft furry neck as they spoon", 
-    "tailwavies~ at $1-, showing an engorged, dripping |n.animal||n.penis|", 
-    "takes $1- and ravages them from behind with a huge |n.animal| boner", 
-    "takes $1-'s |adj.goodpenis| |n.penis| into hir maw and begins suckling like one would their mother's breast", 
-    "takes $1-'s entire length into hir mouth, gagging as sie swallows the knot", 
-    "takes $1-'s entire |n.animal| length into hir mouth, leaking |n.semen| in excitement", 
-    "takes a painfully hard grip on $1-'s |n.animal||n.penis| from behind and |jams,forces,shoves,pushes,slams| the knot right up hir |virgin,tight| |n.anus|", 
-    "ties $1- down and recites lines from the Qur'an before beheading $1- with a dull knife.", 
-    "touches snoot to nose, licks, then sets $1- down. ( ._.)", 
-    "tries to go down on $1-'s sweet |n.animal|-gina, but is pushed back by hir throbbing |n.penis|", 
-    "twirls around $1-'s long |n.animal|-neck, planting a kiss on hir big |n.semen| drippipng mouth", 
-    "wraps hir hands around $1-'s back, moving downward while kissing along hir soft yet sturdy chest and abs", 
-    "yiffs all over $1-"
+    "aims and shoots, but misses $2-'s mouth, leaving a mess of %semen dripping down $2-'s chin", 
+    "bites off $2-'s tongue with hir sheath because it has sheathteeth", 
+    "%(blasts|pumps|spews) %(gallons|litres) of hot %animal %semen all over %($nick|$2-)", 
+    "%(busts|blasts|shoots|jets) a huge creamy yiffload all over $2-", 
+    "can't help but fuck the everliving shit out of $2- with a %penis_good  %{animal}dick", 
+    "can't take anymore; sie gasps for hir breath as sie unloads potent %animal seed all over $2-'s %animal nipples", 
+    "caresses $2-'s furry %testes, inhaling $2-'s sweet musk through hir nostrils, hir %penis starting to grow from all the sensations", 
+    "clenches hir firm, supple buttocks around the %penis_good head of $2-'s %animal%penis", 
+    "critches the inside of $2-'s rosebud with hir entire hand while lapping up the fountain of %semen escaping from $2-'s engorged member", 
+    "cuddles close to $2-, hir excitement poking $2- from behind", 
+    "does something disgusting to $2-", 
+    "does the unthinkable to $2-", 
+    "drags a %(foxy|dragon|kitty) claw across the ridges of $2-'s circumcision scar|yiffchain|", 
+    "emerges from hir sheath, hir hard %penis glistening in the moist air|yiffchain|", 
+    "engulfs $2-'s %{animal}cock, relishing the salty taste of the precum", 
+    "exposes hir sheath to $2-, while slowly raising hir tail with an inviting look", 
+    "eyes that drop of %semen with interest, using hir tail to push hir %penis firmly up against $2-'s %anus, nudging the head against the open ring of flesh", 
+    "farts all over $2-'s %penis", 
+    "feels $2-'s %penis_good %{animal}hood enter hir time and time again, making hir %anus twitch and love juice flow", 
+    "feels $2-'s %penis throbbing inside hir, each pulse unleashing a firey hot load deep in hir bowels, sating lust momentarily", 
+    "felt $2-'s lukewarm %{animal}hood enter hir time and time again, making hir %vagina twitch and love juice flow", 
+    "gently slides hir paw over $2-'s right %bodypart while gliding a %body_digit over hir %anus in anticipation", 
+    "gets a firm grip on $2-'s hip as sie thrusts hir %{animal}hood deep within hir tight and inexperienced %anus, unexpectedly ramming the knot causing an orgasm of pain and pleasure for $2-", 
+    "gets arrested for taking advantage of $2-", 
+    "gets down on all fours and humps $2-", 
+    "gets down with $2- doggie style", 
+    "gives $2- a nice and solid kick, making hir collapse onto the floor, cupping $2-'s %animal %testes", 
+    "glares at $nick and silently judges.",
+    "goes apeshit and jumps on $2- with a %penis_good %{animal}cock", 
+    "grabs $2-, twirls hir around like a dancer and places a kiss on hir lips, fondling hir %anus for a second so sie can taste it later", 
+    "howls with pleasure as $nick pulls the knot out of hir hole, stretching it to an obscene size before a loud \"POP\" is heard and $2-'s %{animal}juice cascades down hir already drenched thighs", 
+    "initiates the cuddle pile of Cthulu! Fuzzy tentacles lash out and drag $2- into the maw of Murrrrr", 
+    "inserts a giner into $2-'s %animal sheef, pumping in and out to create sheefsounds of varying pitches and phonetic properties.", 
+    "is plundging deep into $2-'s anal cavity getting fur all over the place", 
+    "is puzzled by $2-'s merely single cock as it presses against hir %(chest|stomach)", 
+    "licks along $2-'s silky lips, taking $2-'s exposed %{animal}cock and plays with the tip, rubbing the underside with hir %bodypart slowly towards the tip", 
+    "licks hir lips while watching $2- fellatiate a %(toy poodle|chihuahua)",
+    "looks up at $2- with a cute wide-eyed look. Hir sweet ice-cream tasting pom-pom is nibbled on, moaning even louder before clinging to hirself tightly at feeling of the licks at hir sensitive pompom. \"ahh ahh! oh! ku-KUPO!\" ", 
+    "milks hir cock and drizzles %semen into the coffee pot to see if $2- can taste the difference", 
+    "mounts $2- and pumps in and out hard", 
+    "mounts $2- and thrusts hir %penis_good %{animal]cock deeply in hir tight ass, ramming the bulging knot deeper with each pump, balls smacking against the %anus while hir already engorged %penis squirts %semen all inside", 
+    "murrs as sie slides hir paw over $2-'s %penis_good %animal %penis", 
+    "murrs, humping softly against $2-'s hand, twisting the tip of hir finger in $2-'s %anus", 
+    "nibbles softly on the carrot protruding from $2-'s juicy hole as $2-'s fluffy bunnytail tickles hir face", 
+    "parts $2-'s buttcheeks and slides hir %{animal}cock into their anus", 
+    "pays $2- to have sex with %ponyname, the biggest whorse in town", 
+    "pokes a finger into $2-'s %(glistening|damp|dewy|moist|stick) sheath, tasting the tip of hir finger in anticipation", 
+    "props $2-'s dead furry body over hir chair and furiously humps, climaxing into hir cold cadaver", 
+    "pushes down on $2-'s rock hard %animal %penis with hir palm, sliding around with hir %semen", 
+    "pushes down onto $2-'s lap with hir weight, thrusting $2-'s knot deep within hir %anus", 
+    "puts hir fingers on $2-'s mouth to shush hir as sie starts working hir %penis_good %animal %penis", 
+    "puts hir muzzle between $2-'s smooth thighs and starts lapping at hir %(slippery|sensitive|erect) %{animal}clit", 
+    "puts on hir robe and wizard hat and turns $2- into a real boy with all the succulent boy parts sie so enjoys =^_~=",
+    "rubs $2-'s hard %penis while reaching back for some extra tailhole fun", 
+    "rubs $2-'s %(member|footpaws|knot) while groping at hir crotch with hir feet", 
+    "rubs $2-'s %bodypart while groping at hir crotch with hir feet", 
+    "rubs hir paws through $2-'s %(bum|butt|ass)fuzz, sticking hir muzzle under the %{animal}'s tail giving hir %anus a nice warm lick", 
+    "rubs hir petite bottom on $2-'s well-endowed %animal%(cock|rod|member)", 
+    "runs hir %(fingers|paws) through $2-'s silky fur, rubbing hir %bodypart to get them excited", 
+    "runs hir paws along $2-'s soft and slender thighs, running up to hir %penis_good %{animal}cock", 
+    "slides %handful fingers into $2-'s %(juicy|tight|erect|wet) %vagina while fondling hir sheath", 
+    "slides hir throbbing %animal%n.penis along $2-'s luscious %animal breasts, leaving a trail of %semen along hir sweat-glistened chest", 
+    "slides two fingers into $2-'s tight and firm %vagina while fondling hir sheathe", 
+    "slips hir tongue into $2-'s moist sheath, taking in all the flavors of hir %animal musk", 
+    "sniffs $2-'s smooth cloaca before swiping hir forked tongue up and down on it, tasting hir spicy juices", 
+    "snuggletackles $2- and starts romping on top of hir", 
+    "%(sprays|blasts|jets|squirts) %(hot|sticky|slick|warm|delicious|yummy|bitter|tasty|illegal) %semen all over $2-", 
+    "squeezes $2-'s meaty dragon vent, while giving hir a reach-around.", 
+    "strokes $2-'s flank, nuzzling up to hir soft furry neck as they spoon", 
+    "tailwavies~ at $2-, showing an engorged, dripping %animal%penis", 
+    "takes $2- and ravages them from behind with a huge %animal boner", 
+    "takes $2-'s %penis_good %penis into hir maw and begins suckling like one would their mother's breast", 
+    "takes $2-'s entire length into hir mouth, gagging as sie swallows the knot", 
+    "takes $2-'s entire %animal length into hir mouth, leaking %semen in excitement", 
+    "takes a painfully hard grip on $2-'s %animal%penis from behind and %(jams|forces|shoves|pushes|slams) the knot right up hir %(virgin|tight) %anus", 
+    "ties $2- down and recites lines from the Qur'an before beheading $2- with a dull knife.", 
+    "touches snoot to nose, licks, then sets $2- down. ( ._.)", 
+    "tries to go down on $2-'s sweet %animal-gina, but is pushed back by hir throbbing %penis", 
+    "twirls around $2-'s long %animal-neck, planting a kiss on hir big %semen drippipng mouth", 
+    "wraps hir hands around $2-'s back, moving downward while kissing along hir soft yet sturdy chest and abs", 
+    "yiffs all over $2-"
   ], 
   "yiffchain": [
     ".", 
-    ", and then |yiff|"
+    ", and then %yiff"
   ]
 }
