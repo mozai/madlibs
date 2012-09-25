@@ -7,40 +7,45 @@ from its vocabulary, substituting marked spots with appropriate
 random words from elsewhere in its vocabulary.
 
 Example:
-    "It sure is |sunny,wet,hot,cold,awful| here in |n.city|."
+    "It sure is %(sunny|wet|hot|cold|awful) here in %city."
 
-The first marked area `|sunny,wet,hot,cold,awful|` will choose one
-of the items seperated by ',' marks.  The second marked area `|n.city|`
-will use a 'n.city' list defined elsewhere in the vocabulary.
+The first marked area `%(sunny|wet|hot|cold|awful)` will choose one
+of the items seperated by '|' marks.  The second marked area `%city`
+will use a 'city' list defined elsewhere in the vocabulary.
 
 Here is an example vocabulary dict():
 
     {
       "@": ["weather"], # a list of story types in this vocabulary
-      "n.city": [ "Cincinati", "Montreal", "London" ]
+      "city": [ "Cincinati", "Montreal", "London" ]
       "weather": [
-        "It sure is |sunny,wet,hot,cold,awful| here in |n.city|.",
-        "It rains |often,not at all| in |n.city|.",
-        "Having a wonderful time in |n.city|, wish you were here."
+        "It sure is %(sunny|wet|hot|cold|awful) here in %city.",
+        "It rains %(often|not at all) in %city.",
+        "Having a wonderful time in %city, wish you were here."
       ]
     }
 
-Vocabulary items must be more than one character; single-character
-items are reserved for internal use.  The item '@' is used for
-identifying items used for stories, so that the madlibs instance
-can be asked for a random story among all types it has.
+The names of the lists the vocabulary are called *terms*.  In
+the example above, `%city` marks an area that will be replaced
+with a random item from the 'city' list.
 
-Vocabulary items may contain "|marks|" but the vocabulary builder
-must be careful not to allow loops.  If the madlibs instance
-loops too often, it will throw an exception.
+**Terms** in the vocabulary must start with an alpha char (A-Za-z) 
+and have only characters in the set (A-Za-z0-9.\_)  *('.' will have a
+special meaning later, but it will be backwards compatible)*  Terms
+that are a single character from the set (!@#$%^&\*) are reserved for
+internal use.  The '@' term is used for identifying term used for 
+stories, so that a vocabulary can have many stories and can be asked
+for a random one, instead of being provided a story string to 
+mix up.  The '#' term is used for comments about the vocabulary itself,
+such as author, citing sources, intended use, and so on.
 
-Some vocabulary items can be populated with lists; this is used
-for (third-person) verb tenses as follows: present, past and
-present-imperfect.  (this method is incomplete, and may change 
-in the future; for now, using |verb,verb,verb| in your story
-items is safest)
-
-    "v.jump": [ ["leaps","leaped","leaping"], ["launches ]
+**Values** are the items in a term's list.  Values are strings or unicode
+strings *(for now)*.  When a term is requested from a madlibs object
+exactly one value will be returned, and it (hopefully) will not be the 
+same value as the previous request for that term.  Values may also
+contain %(a|b|c) or %abc marked areas, which will be replaced with
+appropriate values before being returned to the requester.  Loops
+are possible, but if a loop goes on too often an exception will be raised.
 
 A vocabulary is usually loaded from a text file at creation time,
 or with the madlibs.load() method.  You can provide a filename
@@ -55,4 +60,14 @@ or a file-like object:
 The current version expects the file to be a JSON dictionary/ hash/
 mapping object.  You can also provide a dict() object, which permits
 use of the Python module 'shelve' for persistence.
+
+---
+TODO: verb congutates.   
+  %move.2 -> "move":[["run","ran","running"],] -> "running"  
+TODO: demo/test data that isn't NSFW.   
+TODO: more dict()-like methods to make it python paradigm friendly.  
+TODO: escape \| in %() : i.e.: %(alpha\|a|beta\|b|gamma\|c)   
+TODO: obj method for diagnosing a vocabulary for validity   
+TODO: recommended limits for terms; see if keeping lists under 255 values
+matters, or value strings under 4096 bytes (python voodo?)
 
