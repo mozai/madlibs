@@ -64,10 +64,9 @@ use of the Python module 'shelve' for persistence.
 ---
 TODO: verb congutates.   
   %move.2 -> "move":[["run","ran","running"],] -> "running"  
-TODO: demo/test data that isn't NSFW.   
 TODO: more dict()-like methods to make it python paradigm friendly.  
 TODO: escape \| in %() : i.e.: %(alpha\|a|beta\|b|gamma\|c)   
-TODO: obj method for diagnosing a vocabulary for validity   
 TODO: recommended limits for terms; see if keeping lists under 255 values
-matters, or value strings under 4096 bytes (python voodo?)
-
+  if it matters, or value strings under 4096 bytes (python voodo?)
+TODO: is the '%%' escaping efficient enough? would \% be better?
+TODO: problems with unicode chars in \*.json file: "UnicodeEncodeError: 'ascii' codec can't encode character u'\u32e1' in position 0: ordinal not in range(128)"
