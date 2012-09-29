@@ -1,0 +1,27 @@
+{
+  "@": [ "test_set_1", "test_set_2" ], 
+  "#": "Test vocabulary for the madlibs python module" ,
+  "greek" : [ "alpha", "beta", "gamma", "delta", "epsilon" ],
+  "number" : [ "one", "two", "three", "four", "five" ],
+  "unicode" : [ "㋡", "(◡‿◡✿)", "(⌐■_■)", "ᐁᐃᐅᐊ", "ᑫᑭᑯᑲ" ],
+  "greek_or_number" : [ "%greek", "%number", "%(greek)", "%(number)" ],
+  "greek_and_number" : [ "%greek %number", "%(greek) %(number)" ],
+  "incorrect_term_int": 0,
+  "incorrect_term_dict": { },
+  "empty_list" : [ ],
+  "test_set_1": [
+    "no terms in this line: null",
+    "greek: %greek",
+    "number: %number",
+    "brace types: %(greek) %[greek] %<greek> %{greek} %|greek|",
+    "unicode values in a term: %unicode"
+  ],
+  "test_set_2": [
+    "choice of (red|blue|green): %(red|blue|green)",
+    "inline choice to chain (number|greek): %(%number|%greek)",
+    "escaping percent: %%greek %%number",
+    "bad marker: %1percent , empty marker: % sign",
+    "chaining terms simple: %greek_or_number",
+    "chaining terms multiple: %greek_and_number"
+  ]
+}

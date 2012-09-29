@@ -33,8 +33,10 @@ def _next_term_ij(data, start=0):
       break
     for bracepair in BRACEPAIRS:
       if data[i+1] == bracepair[0]:
-        j = data.find(bracepair[1], i+1) + 1
+        j = data.find(bracepair[1], i+2) + 1
     if j < i :
+      if i+2 < len(data) and data[i:i+2] == '%%':
+        return (i, i+2)
       j = i+1
       while j < len(data) and (data[j].isalpha() or data[j] in '_.') :
         j += 1
@@ -145,7 +147,7 @@ class Madlibs(object):
         continue
       values = self.vocabulary[term]
       if not isinstance(values, list):
-        report += 'term "'+term+'" has unexpected value type "'+type(values)+'"\n'
+        report += 'term "'+term+'" has unexpected value type "'+str(type(values))+'"\n'
         continue
       if len(values) == 0:
         report += 'term "'+term+'" has zero values\n'
@@ -256,12 +258,12 @@ class Madlibs(object):
     # pylint complains 'too many branches(20/12)'  whatever, pylint
     if not isinstance(term, (str, unicode)):
       raise TypeError('bad term type; expected str, got '+type(term))
-    if term == '%' or term == '%%':
-      # in case we forgot to escape '%%'
-      return '%'
     if term[0] == '%':
       # in case we passed %fruit instead of 'fruit'
       term = term[1:]
+    if term == '':
+      # why does this happen? shouldn't.
+      return ''
     if self.vocabulary == None :
       raise VocabularyError('vocabulary not initialized')
     if (term[:1], term[-1:]) in BRACEPAIRS:
@@ -379,16 +381,20 @@ class Madlibs(object):
       template = self.get_template()
     story = str(template)
     bad_loop = list()
-    (i, j) = _next_term_ij(story)
+    (i, j) = _next_term_ij(story,0)
     old_j = -1
     while (i >= 0 and j > 0):
+      if story[i:j] == '%%' :
+        story = story[:i] + '%' + story[i+2:]
+        (i, j) = _next_term_ij(story,i+3)
+        continue
       vocabword = story[i+1:j] # doesn't pick up the %
       try:
         vocabword = self.get(vocabword)
       except KeyError as err:
         raise VocabularyError('bad template "%s"; (%s)', (template, str(err)) )
       story = story[:i] + vocabword + story[j:]
-      (i, j) = _next_term_ij(story)
+      (i, j) = _next_term_ij(story,i)
       if j > 0 and j <= old_j :
         bad_loop.append(vocabword)
         if len(bad_loop) > 5:
@@ -407,7 +413,7 @@ class VocabularyError(Exception):
 
 if __name__ == '__main__':
   # test suite goes here
-  VFILE = 'yiffy.json'
+  VFILE = 'test.json'
   print "testing madlibs.py with", VFILE
   ML = Madlibs(VFILE)
   if ML.load(VFILE):
@@ -417,8 +423,9 @@ if __name__ == '__main__':
     print "validating vocabulary..."
     REPORT = ML.validate()
     if REPORT == '':
-      print "no problems"
+      print "no problems; forgot to put a bad term in there, boss?"
     else:
+      print "found your bait boss; make sure it's the correct bad stuff"
       print REPORT
     print ''
 
