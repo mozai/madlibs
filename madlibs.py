@@ -1,7 +1,7 @@
 # madlibs.py
 # encoding: utf8
 # author: Mozai <moc.iazom@sesom>
-# version: 20120917
+# version: 20120929
 """ Madlibs takes a dict as vocabulary of story-strings with marked spots
     for substituting random words or phrases from collections.   It is
     intended to be used iteratively, and uses a randomizing method
@@ -15,9 +15,8 @@
 import random, shelve
 try:
   import json
-  HAS_JSON = True
 except ImportError:
-  HAS_JSON = False
+  pass
 
 # used for on-the-fly terms in stories. ie: %{red,cerulian,rust,cherry}
 BRACEPAIRS = (('(', ')'), ('[', ']'), ('{', '}'), ('<', '>'), ('|', '|'))
@@ -85,10 +84,11 @@ class Madlibs(object):
         self.vocabulary = shelve.open(filenameordict, flag='w')
       except:
         infile = open(filenameordict,'r')
-        if HAS_JSON:
-          self.vocabulary = json.load(infile)
-        else:
+        try: json
+        except NameError:
           self.vocabulary = eval(infile.read())
+        else:
+          self.vocabulary = json.load(infile)
         infile.close()
     if not isinstance(self.vocabulary, (dict, shelve.Shelf)):
       raise VocabularyError('bad vocabulary: loaded vocabulary seems empty')
@@ -120,10 +120,11 @@ class Madlibs(object):
     if isinstance(filething, (str, unicode)):
       filething = open(filething, 'w')
     if isinstance(filething, file):
-      if HAS_JSON:
-        json.dump(self.vocabulary, filething, sort_keys=True, indent=2)
-      else:
+      try: json
+      except NameError:
         filething.write(str(self.vocabulary))
+      else:
+        json.dump(self.vocabulary, filething, sort_keys=True, indent=2)
       filething.close()
     else:
       raise TypeError("expected str or file object; received "+ type(filething))
@@ -140,13 +141,13 @@ class Madlibs(object):
       comment = self.vocabulary['#']
       if not isinstance(comment, (str, unicode)):
         report += 'vocabulary term "#" is not string (type '+type(comment)+')\n'
-    terms = self.vocabulary.keys()
+    terms = list(self.vocabulary.keys())
     terms.sort()
     for term in terms:
       if term in '!@#$%^&*':
         continue
       values = self.vocabulary[term]
-      if not isinstance(values, list):
+      if not isinstance(values, (list, str, unicode)):
         report += 'term "'+term+'" has unexpected value type "'+str(type(values))+'"\n'
         continue
       if len(values) == 0:
@@ -249,7 +250,7 @@ class Madlibs(object):
   def __getitem__(self, term):
     return self.get(term)
 
-  def get(self, term):
+  def get(self, term, default=''):
     """ returns a random item from that term in the vocabulary
         for convenience, given '(alpha|beta|gamma)' it will return
         a random choice from 'alpha' or 'beta' or 'gamma'
@@ -263,7 +264,7 @@ class Madlibs(object):
       term = term[1:]
     if term == '':
       # why does this happen? shouldn't.
-      return ''
+      return default
     if self.vocabulary == None :
       raise VocabularyError('vocabulary not initialized')
     if (term[:1], term[-1:]) in BRACEPAIRS:
@@ -273,13 +274,11 @@ class Madlibs(object):
       # TODO: way to escape \| for %(alpha\|a|beta\|b|gamma\|c)
       values = term.split('|')
       if ((not term in self.shuffles) or len(self.shuffles[term]) == 0):
-        self.shuffles[term] = range(len(values))
+        self.shuffles[term] = list(range(len(values)))
         random.shuffle(self.shuffles[term])
       value = values[self.shuffles[term].pop()]
       return value
     # else it's %fruitcolour type
-    if (not term[0].isalpha()):
-      raise KeyError('invalid term; must start with an alpha char; "'+term+'"')
     key = term
     value = None
     while (len(key) > 0 and value == None):
@@ -299,7 +298,7 @@ class Madlibs(object):
         # what is proper if a term has an empty list?
         value = ''
       if (not key in self.shuffles) or (len(self.shuffles[term]) == 0) :
-        self.shuffles[term] = range(len(value))
+        self.shuffles[term] = list(range(len(value)))
         random.shuffle(self.shuffles[term])
       value = value[self.shuffles[term].pop()]
     else:
@@ -377,24 +376,26 @@ class Madlibs(object):
         and replaces |keyname| with a random item from the vocab mapping
         if template not provided, gets a new one from get_template()
     """
-    if (template==None):
+    if template == None:
       template = self.get_template()
-    story = str(template)
+    if template == None:
+      return None
+    text = template
     bad_loop = list()
-    (i, j) = _next_term_ij(story,0)
+    (i, j) = _next_term_ij(text, 0)
     old_j = -1
     while (i >= 0 and j > 0):
-      if story[i:j] == '%%' :
-        story = story[:i] + '%' + story[i+2:]
-        (i, j) = _next_term_ij(story,i+3)
+      if text[i:j] == '%%' :
+        text = text[:i] + '%' + text[i+2:]
+        (i, j) = _next_term_ij(text, i+3)
         continue
-      vocabword = story[i+1:j] # doesn't pick up the %
+      vocabword = text[i+1:j] # doesn't pick up the %
       try:
         vocabword = self.get(vocabword)
       except KeyError as err:
         raise VocabularyError('bad template "%s"; (%s)', (template, str(err)) )
-      story = story[:i] + vocabword + story[j:]
-      (i, j) = _next_term_ij(story,i)
+      text = text[:i] + vocabword + text[j:]
+      (i, j) = _next_term_ij(text, i)
       if j > 0 and j <= old_j :
         bad_loop.append(vocabword)
         if len(bad_loop) > 5:
@@ -402,7 +403,7 @@ class Madlibs(object):
       else:
         bad_loop = list()
       old_j = j
-    return story
+    return text
 
 class VocabularyError(Exception):
   """ For errors caused by misunderstanding the internal structure
@@ -414,11 +415,11 @@ class VocabularyError(Exception):
 if __name__ == '__main__':
   # test suite goes here
   VFILE = 'test.json'
-  print "testing madlibs.py with", VFILE
+  print("testing madlibs.py with", VFILE)
   ML = Madlibs(VFILE)
   if ML.load(VFILE):
-    print VFILE, "loaded;", len(ML), "stories."
-    print ''
+    print VFILE , " loaded; " , len(ML) , "stories."
+    print '' 
 
     print "validating vocabulary..."
     REPORT = ML.validate()
@@ -429,11 +430,11 @@ if __name__ == '__main__':
       print REPORT
     print ''
 
-    print "test run of 3x the stories in", VFILE
+    print "test run of 3x the stories in" , VFILE
     for I in range(3*len(ML)):
-      print "...", ML.story()
+      print "..." , ML.story()
     print ''
 
   else:
-    print VFILE, "did not load."
+    print VFILE , "did not load."
 

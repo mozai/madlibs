@@ -8,13 +8,15 @@
   "greek_and_number" : [ "%greek %number", "%(greek) %(number)" ],
   "incorrect_term_int": 0,
   "incorrect_term_dict": { },
-  "empty_list" : [ ],
+  "correct_term_str": "this should pass validate()",
+  "incorrect_term_empty" : [ ],
   "test_set_1": [
     "no terms in this line: null",
     "greek: %greek",
     "number: %number",
     "brace types: %(greek) %[greek] %<greek> %{greek} %|greek|",
-    "unicode values in a term: %unicode"
+    "unicode values in a term: %unicode",
+    "correct term str: %correct_term_str"
   ],
   "test_set_2": [
     "choice of (red|blue|green): %(red|blue|green)",
