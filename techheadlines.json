@@ -35,6 +35,7 @@
     "Wins the Fields Prize"
   ], 
   "authority": [
+    "%newspaper", 
     "Academic Panel", 
     "Anonymous Source", 
     "CNN", 
@@ -47,20 +48,13 @@
     "Leading scientist", 
     "NSA Spokesman", 
     "Nature Report", 
-    "%newspaper",
     "Official", 
     "President Obama", 
     "Professor", 
     "Researcher", 
     "Spokesman", 
-    "United Nations Committee", 
+    "United Nations Committee"
   ], 
-  "newspaper": [
-    "Los Angeles Times", 
-    "Wall Street Journal", 
-    "Washington Post"
-    "NYT", 
-  ],
   "badtech": [
     "Customer Complaints", 
     "Defects", 
@@ -95,6 +89,29 @@
     "Yahoo", 
     "YouTube", 
     "Zynga"
+  ], 
+  "company_task": [
+    "Advertising", 
+    "App", 
+    "Business Development", 
+    "Contract", 
+    "Customer Development", 
+    "Debugging", 
+    "Demo", 
+    "Deployment", 
+    "Design", 
+    "Development", 
+    "Funding", 
+    "IP", 
+    "Integration", 
+    "Interviewing", 
+    "Market Segmentation", 
+    "Marketing", 
+    "Sales", 
+    "Startup", 
+    "Testing ", 
+    "User Interface", 
+    "Web Application"
   ], 
   "count": [
     "11", 
@@ -212,6 +229,12 @@
     "Variable Naming", 
     "XP"
   ], 
+  "newspaper": [
+    "Los Angeles Times", 
+    "NYT", 
+    "Wall Street Journal", 
+    "Washington Post"
+  ], 
   "person": [
     "Bill Gates", 
     "DHH", 
@@ -326,11 +349,11 @@
     "Drop Out Of College and Make Your First Million", 
     "Find Out What Customers Really Wanted", 
     "Flip Your Company", 
+    "Get A Check for Six Million Dollars", 
+    "Get A Million Signups", 
     "Get Accepted At YC", 
     "Get On The Front Page Of %tech_forum", 
     "Get Published in TechCrunch", 
-    "Get A Check for Six Million Dollars", 
-    "Get A Million Signups", 
     "Increase Conversion Rate 76%", 
     "Land 500K in Funding", 
     "Make Ten Million Dollars", 
@@ -351,10 +374,10 @@
     "Dropped Out Of College And Made My First Million", 
     "Flipped My Company", 
     "Found Out What Customers Really Wanted", 
-    "Got Accepted At YC", 
-    "Got Published In TechCrunch", 
     "Got A Check For Six Million Dollars", 
     "Got A Million Signups", 
+    "Got Accepted At YC", 
+    "Got Published In TechCrunch", 
     "Increased Conversion Rate 76%", 
     "Landed 500K In Funding", 
     "Made Ten Million Dollars", 
@@ -388,10 +411,10 @@
     "Won't Work"
   ], 
   "tech_forum": [
+    "Digg", 
     "HN", 
     "Reddit", 
-    "Slashdot",
-    "Digg"
+    "Slashdot"
   ], 
   "techexotic": [
     "3 iPhone Apps", 
@@ -481,29 +504,6 @@
     "Seek And Destroy Intruders", 
     "Tell Whether A Person is Lying"
   ], 
-  "company_task": [
-    "Advertising", 
-    "App", 
-    "Business Development", 
-    "Contract", 
-    "Customer Development", 
-    "Debugging", 
-    "Demo", 
-    "Deployment", 
-    "Design", 
-    "Development", 
-    "Funding", 
-    "IP", 
-    "Integration", 
-    "Interviewing", 
-    "Market Segmentation", 
-    "Marketing", 
-    "Sales", 
-    "Startup", 
-    "Testing ", 
-    "User Interface", 
-    "Web Application"
-  ], 
   "verbed_with": [
     "Angry With", 
     "Attacked By", 
@@ -527,7 +527,7 @@
     "%count Books You Must Own", 
     "%count Common %company_task Mistakes", 
     "%count Ways To %succeed", 
-    "%count-Year-Old Makes %count0K %timeframe With Clever %company Hack", 
+    "%count-Year-Old Makes %{count}0K %timeframe With Clever %company Hack", 
     "%language Dies", 
     "%language Innards", 
     "%method Team at %company reduces %badtech by %count%", 
