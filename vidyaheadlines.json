@@ -1,0 +1,56 @@
+{
+  "#": "inspired by IGeNerator by jocchan", 
+  "@": [
+    "z_IGN"
+  ], 
+  "best": [
+    "Best", "Most Overrated", "Most Uncomfortable", "Most Underrated",
+    "Saddest", "Sexiest", "Worst"
+  ], 
+  "company": [
+    "Apple", "Blizzard", "Bungie", "EA", "GameLoft", "Kickstarter",
+    "Microsoft", "Mojang", "Nintendo", "Rockstar", "Sega", "Sony", "Ubisoft",
+    "Zynga"
+  ], 
+  "feefee": [
+    "A Chilling Sensation", "A Headache", "A Sad Feeling", "An Awkward Boner",
+    "An Eargasm", "Shivers Down My Spine", "The Sads", "Thrills"
+  ], 
+  "game": [
+    "Alan Wake", "Angry Birds", "Borderlands", "Dance Dance Revolution",
+    "Dark Souls", "Duke Nukem Forever", "Epic Mickey", "FIFA", "Final Fantasy",
+    "Guild Wars", "Harvest Moon", "Heavy Rain", "Killer 7", "Megami Tensen",
+    "Metroid", "Minecraft", "No More Heroes", "Planescape: Torment",
+    "Professor Layton", "Psychonauts", "Ratchet & Clank", "Saint's Row",
+    "Scribblenauts", "SimCity", "Skullgirls", "Smash Bros", "Super Mario",
+    "Team Fortress 2", "Touhou Project", "World Of Warcraft", "Zelda"
+  ], 
+  "game_pieces": [
+    "Collectables", "Day-Night Cycles", "Female Protagonists", "Fetch Quests",
+    "Minigames", "Physics-Defying Breasts", "PvP", "Quick-Time Events",
+    "Side Quests", "Soundtrack Chiptunes", "Voice Actors", "Hats"
+  ], 
+  "genre": [
+    "4X", "Breeding Sim", "Civ-Building", "Dating Sim", "First-Person Shooter",
+    "MMO", "Puzzle Platformer", "Real-Time Strategy", "Rhythm Game",
+    "SHMUP", "Tile-Matching", "Visual Novel"
+  ], 
+  "list_amount": [
+    "Five", "Ten", "Top Five", "Top Ten"
+  ], 
+  "tradeshow": [
+    "CES", "E3", "PAX", "TGS"
+  ], 
+  "z_IGN": [
+    "%game Meets %game In The New %game sequel",
+    "%list_amount %best %game_pieces In Videogames",
+    "%tradeshow Belongs To %company, And Here's Why",
+    "%tradeshow: The %game_pieces In %game Gave Me %feefee",
+    "How %game_pieces Could Increase %game's Popularity",
+    "Is %game Just %game For Adults?",
+    "Should %game Be A %genre Game?",
+    "What %game Could Learn From %game",
+    "Why %game Will Make You Forget About %game",
+    "Why %genre Games Must Succeed"
+  ]
+}
