@@ -1,0 +1,81 @@
+{
+  "#": "Web 2.0 Business Generator, from work by Jacqueline \"Kira\" Hamilton, emptybottle.org, and Andrew Wooldridge", 
+  "@": [
+    "z_web20"
+  ], 
+  "kira_ab": [
+    "Babble", "Blog", "Blue", "Brain", "Bright", "Browse", "Bubble", "Buzz",
+    "Chat", "Chatter", "Dab", "Dazzle", "Dev", "Digi", "Edge", "Feed", "Five",
+    "Flash", "Flip", "Gab", "Giga", "Inno", "Jabber", "Jax", "Jet", "Jump",
+    "Link", "Live", "My", "N", "Photo", "Pod", "Real", "Riff", "Shuffle",
+    "Skip", "Snap", "Tag", "Tek", "Thought", "Top", "Topic", "Twitter", "Word",
+    "You", "Zoom"
+  ], 
+  "kira_cd": [
+    "XS", "Z", "bean", "beat", "bird", "blab", "box", "bridge", "bug", "buzz",
+    "cast", "cat", "chat", "club", "cube", "dog", "drive", "feed", "fire",
+    "fish", "fly", "ify", "jam", "links", "list", "lounge", "mix", "nation",
+    "opia", "pad", "path", "pedia", "point", "pulse", "set", "share", "shots",
+    "space", "span", "sphere", "spot", "ster", "storm", "tag", "tags", "tube",
+    "tune", "type", "verse", "vine", "ware", "wire", "works", "zone", "zoom"
+  ], 
+  "kira_ef": [
+    "Aba", "Agi", "Ai", "Ava", "Cami", "Centi", "Cogi", "Demi", "Diva", "Dyna",
+    "Ea", "Ei", "Fa", "Ge", "I", "Ja", "Ka", "Kay", "Ki", "Kwi", "La", "Lee",
+    "Mee", "Mi", "Mu", "My", "O", "Oo", "Oyo", "Pixo", "Pla", "Qua", "Qui",
+    "Rhy", "Roo", "Ska", "Ski", "Sky", "Ta", "Tri", "Tru", "Twi", "Vi", "Voo",
+    "Wiki", "Ya", "Yaki", "Yo", "Za", "Zoo"
+  ], 
+  "kira_gh": [
+    "ba", "ble", "boo", "box", "cero", "del", "deo", "do", "doo", "gen", "jo",
+    "lane", "lia", "lith", "lium", "loo", "mba", "mbee", "mbo", "mbu", "mia",
+    "mm", "nder", "ndo", "ndu", "nix", "noodle", "nte", "nti", "nu", "nyx",
+    "pe", "re", "ta", "tri", "tz", "va", "vee", "veo", "vu", "xo", "yo", "zio",
+    "zu", "zz", "zzy"
+  ], 
+  "kira_bizname": [
+    "%{kira_ab}%{kira_cd}", "%{kira_ef}%{kira_gh}"
+  ],
+  "wooldridge_name_a": [
+    "Squi","G","Meeb","zV","Yah","Inf","Ri","Blin","Sec","Trip","Del","Zim","Tiv"],
+  "wooldridge_name_b": [
+    "oo","ee","odi","eli","oli","ti","ko","onomo","ono","echno",""],
+  "wooldridge_name_c": [
+    "doo","le","rati","bo","ki","ya","gami","hub","roll","blog", "orb" ,"mojo", "ious", "ent","no","wy","share","ink","jax","tix"],
+  "wooldridge_bizname": [ 
+    "%{wooldridge_name_a}%{wooldridge_name_b}%{wooldridge_name_c}" 
+  ],
+  "wooldridge_mission_1": [
+    "geotag-based","cellphone-based","tag-based", "social", "web-based" ,"rss-based", "opml-based", "greasemonkey extension for", "community" , "streaming" , "ad-supported" ],
+  "wooldridge_mission_2": [
+    "web services","classifieds","collaborative document editing","search engine","dating","news","widgets","instant messaging", "email", "bookmarks", "apps" ,"podcasts", "movies", "reviews", "maps","invites" ,"photos", "television", "micropayments", "auctions" ,"shopping", "textbooks" ,"wiki", "blogs" , "databases" ],
+  "wooldridge_mission_3": [
+    "email invite *only*","XML","the desktop","ajax", "bittorrent", "flash", "shockwave" ,"maps api","Ruby on Rails", "instant messaging", "microformats", "api mashups" , "browser toolbar"
+  ],
+  "wooldridge_mission": [ "%{wooldridge_mission_1} %{wooldridge_mission_2} via %{wooldridge_mission_3}" ],
+  "empty_mission_1": [
+    "aggregate", "beta-test", "integrate", "capture", "create", "design", "disintermediate", "enable", "integrate", "post", "remix", "reinvent", "share", "syndicate", "tag", "incentivize", "engage", "reinvent", "harness", "integrate"
+  ],
+  "empty_mission_2": [
+    "AJAX-enabled","A-list","authentic","citizen-media","Cluetrain","data-driven","dynamic","embedded","long-tail","peer-to-peer","podcasting","rss-capable","semantic","social","standards-compliant","user-centred","user-contributed","viral","blogging","rich-client"
+  ],
+  "empty_mission_3": [
+    "APIs","blogospheres","communities","ecologies","feeds","folksonomies","life-hacks","mashups","network effects","networking","platforms","podcasts","value","web services","weblogs","widgets","wikis","synergies","ad delivery","tagclouds"
+  ],
+  "empty_mission": [
+    "%empty_mission_1 %empty_mission_2 %empty_mission_3"
+  ],
+  "brownpau_phrase": [ "It's all changing.", "Faster. Faster!", "The words aren't what they were.", "The new is old.", "Cry out, blogosphere!", "We're about what Web 2.0 is about.", "An AJAX-driven GUI.", "Folksonomy.", "Clustering.", "News clouds.", "Podcasts.", "On-demand streams.", "Tag me.", "\"ASL\" is geezer speak.", "Float this.", "Clear that.", "Hack it.", "Roll your own roll-your-own.", "Splog is an aggregate noun.", "Always be launching.", "This will change everything.", "We shall transcend borders.", "We are on the brink of a new age.", "The buzz is loud and clear.", "Label what defies categorization.", "This is newer media.", "You need someone who gets it.", "MSM just doesn't get it.", "It's all about community.", "Social is the new push.", "2.0 is the new New.", "Single. Word. Sentences!"
+  ],
+  "z_web20": [
+    "%kira_bizname: %empty_mission",
+    "%kira_bizname: %empty_mission -- %brownpau_phrase",
+    "%kira_bizname: %wooldridge_mission",
+    "%kira_bizname: %wooldridge_mission -- %brownpau_phrase",
+    "%wooldridge_bizname: %empty_mission",
+    "%wooldridge_bizname: %empty_mission -- %brownpau_phrase",
+    "%wooldridge_bizname: %wooldridge_mission",
+    "%wooldridge_bizname: %wooldridge_mission -- %brownpau_phrase"
+  ]
+}
+
