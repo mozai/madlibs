@@ -1,0 +1,106 @@
+{
+  "#": "d20 Space Opera Plot Hook Generator by AaFen@reddit", 
+  "@": [
+    "ze_plot"
+  ], 
+  "aa_start": [
+    "The crew has %{macguffin}", "The crew is supposed to have %{macguffin}"
+  ], 
+  "badguy": [
+    "a fanatic cult", "a former lover of one(?) of the crew",
+    "a large crime syndicate",
+    "a militaristic faction with ambitions of galactic domination",
+    "a new alien race that recently discovered space-travel",
+    "a pirate captain", "a powerful interstellar corporation",
+    "a remorseless military leader",
+    "a rogue government official and underlings",
+    "a team of expert bounty hunters",
+    "an important cleric of the imperial diocese", "its rightful owner",
+    "nightmarish creatures from beyond known space",
+    "someone that was left for dead during the war", "the crew's employer",
+    "the crew's long-time rivals", "the emperor of the galaxy",
+    "their old boss(!)", "whoever it was stolen from"
+  ], 
+  "bb_destination": [
+    "They must take it to %{where}"
+  ], 
+  "boon": [
+    "%(one|two|three|four) of the emperor's advisors",
+    "a crewmember's ex-spouse",
+    "a disgraced politician infamous for scandalous habits",
+    "a familiy member with a commission in the Imperial Navy",
+    "a friend with a pirate crew",
+    "a grizzled war veteran with nothing left to lose",
+    "a legendary ghost ship crewed by androids",
+    "a mysterious stranger who made contact out of the blue",
+    "a team of thrill-seeking smugglers", "a tenacious street-kid",
+    "an eccentric & reclusive scientist", "an old sage",
+    "an untrustworthy acquaintance", "nobody else",
+    "someone who owes a favour for being rescued during the war",
+    "the captain's mentor", "the leader of the local insurgency",
+    "the planetary governor's younger sibling", "the space-bishop",
+    "their real employer"
+  ], 
+  "cc_antagonist": [
+    "They are being chased by %{badguy}",
+    "They don't know it is also desired by %{badguy}",
+    "They must keep it out of the hands of %{badguy}"
+  ], 
+  "dd_needed": [
+    "This would be easy if they had %{prerequisite}",
+    "Unfortunately, they need %{prerequisite}"
+  ], 
+  "ee_assistance": [
+    "Luckily, they have %{boon}", "They can get help from %{boon}"
+  ], 
+  "macguffin": [
+    "a critical resupply", "a genetically engineered clone",
+    "a hibernating serial killer", "a little girl with a dark secret",
+    "a planet-destroying bomb", "a powerful new energy supply",
+    "a very important person frozen in stasis", "a virulent disease",
+    "an artifact of a legendary ancient culture",
+    "an experimental starfighter", "an illegal weapon",
+    "one metric tonne of a powerful narcotic",
+    "the blood-soaked body of the most powerful diplomat",
+    "the last specimens of an endangered species",
+    "the only valid copy of the peace treaty", "the only working FTL drive",
+    "the sacred royal treasure of a prominent alien culture",
+    "the survivors of a genocide"
+  ], 
+  "prerequisite": [
+    "a fix for the dangerous leak",
+    "a guarantee of safety for one of the crew's dependents",
+    "a means to safely contain the cargo",
+    "a new AI without personality 'issues'",
+    "a new crewmember who doesn't know what happened to the last one",
+    "a new engine", "a new technician with flexible ethics",
+    "a new, more powerful reactor core",
+    "a way to evade the galactic quarantine",
+    "a way to get past the military embargo", "advice from a sage",
+    "an advance payment", "an extension of their contract",
+    "back-pay for the last job done for this employer",
+    "better weapons and shields", "blueprints for their vessel",
+    "heaps of provision for the trip", "permission from a governing body",
+    "something to distract the opposition"
+  ], 
+  "where": [
+    "Earth",
+    "a badly outmatched fleet about to engage the enemy in a last-ditch battle",
+    "a familiar uninhabited world",
+    "a maximum-security prison on an uninhabitable world",
+    "a neglected mining colony far out on the frontier",
+    "a secret temple on a remote planet",
+    "a specific parent of one of the crew",
+    "a top-secret research lab in deep space", "agents of the imperial army",
+    "an underworld contact who is pretty sure to give a good price", "home",
+    "one of the last known pockets of the resistance",
+    "someone that can keep it safe", "the alien despot king",
+    "the chief historian of the Imperial Archives",
+    "the edge of known space at coordinates x:y:z", "the heart of the galaxy",
+    "the hideout", "the professional association of one of the crew",
+    "their old boss"
+  ], 
+  "ze_plot": [
+    "%{aa_start}. %{bb_destination}. %{cc_antagonist}. %{dd_needed}. %{ee_assistance}."
+  ]
+}
