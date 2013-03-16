@@ -1,0 +1,316 @@
+{
+  "#": "initial data set from Tim Ballew's Cliche Generator (Apr 2010) at his Risusmonkey journal", 
+  "@": [
+    "ancient_cliche", "atomic_cliche", "cyber_cliche", "magic_cliche",
+    "medieval_cliche", "modern_cliche", "mutant_cliche", "omni_cliche",
+    "pulp_cliche", "space_cliche", "steam_cliche", "super_cliche",
+    "swashbuckler_cliche", "universal_cliche"
+  ], 
+  "ancient_career": [
+    "Archer", "Barbarian", "Bard", "Berserker", "Blacksmith", "Centurion",
+    "Executioner", "Gladiator", "Minstrel", "Prophet", "Scout", "Slave",
+    "Sword Fighter", "Villager", "Warrior", "Wise Sage"
+  ], 
+  "ancient_cliche": [
+    "%(%ancient_career|%ancient_person) %ancient_suffix",
+    "%ancient_prefix %(%ancient_person|%ancient_career)",
+    "%ancient_prefix %ancient_career %ancient_suffix"
+  ], 
+  "ancient_person": [
+    "Foreign Astrologer", "Northern Barbarian", "Priest(ess) Of The Hairy God",
+    "Soul-Stirring Minstrel"
+  ], 
+  "ancient_prefix": [
+    "Naked"
+  ], 
+  "ancient_suffix": [
+    "Eager to Taste the Blood of The Enemy",
+    "Who Is Traveling Beyond The Homelands For The First Time"
+  ], 
+  "crypts_castles_cliche": [
+    "%ancient_cliche", "%dungeon_cliche", "%magic_cliche", "%medieval_cliche"
+  ], 
+  "cyber_career": [
+    "Corporate Drone", "Fixer", "Former Coroproate Manager", "Netrunner",
+    "Punk Rock Musician"
+  ], 
+  "cyber_race": [
+    "Cyborg Killing Machine"
+  ], 
+  "darkage_culture": [
+    "Druid", "Viking"
+  ], 
+  "dungeon_career": [
+    "Adventurer", "Dark Overlord"
+  ], 
+  "dungeon_culture": [
+    "Dwarven", "Elven", "Gnome", "Goblin", "Halfling", "Minotaur"
+  ], 
+  "magic_career": [
+    "Acolyte", "Alchemist", "Archmage", "Cult Leader", "Cultist",
+    "Dabbler in the Dark Arts", "Mystic", "Necromancer", "Sorcerer(ess)",
+    "Spirit", "Vampire Hunter", "Warlock/Witch", "Wizard"
+  ], 
+  "magic_person": [
+    "Avatar of Sin", "Chosen One of the Ancient Prophecy",
+    "Friend to the Animals", "Misunderstood Monster", "Vampire", "Werewolf",
+    "Wizard's Familiar"
+  ], 
+  "magic_prefix": [
+    "Cursed", "Demonic", "Devil-Possessed", "Ghostly", "Holy", "Magical",
+    "Mutant", "Undying", "Vampire", "Werewolf", "Zombie"
+  ], 
+  "magic_suffix": [
+    "Summoned From The Primordial Chaos"
+  ], 
+  "medieval_career": [
+    "Baker", "Barkeep", "Butcher", "Candlestick Maker", "Cheesemonger",
+    "Court Droll", "Deacon", "Dervish", "Jongleur", "Knight", "Mercenary",
+    "Monk/Nun", "Prince(ss)", "Ranger", "Sage", "Soldier"
+  ], 
+  "medieval_person": [
+    "Captain of the Royal Guard", "Gregarious Barman/maid",
+    "War-Mongering Marquis(se)"
+  ], 
+  "medieval_prefix": [
+    "One Step Ahead Of The Law"
+  ], 
+  "modern_career": [
+    "Action Hero(ine)", "Astronaut", "Bargain-Shopper", "Biker",
+    "Black-Market Contraband Broker", "Blues Guitarist", "Bodybuilder",
+    "Brain Surgeon", "Building Mechanic", "Cajun Chef", "Career Counselor",
+    "Cheerleader", "Computer Nerd", "Computer Wiz", "Con Artist", "Cop",
+    "Corner Saxophonist", "Corporate Powerhouse", "Couch Potato", "Counselor",
+    "Disk Jockey", "Drug Dealer", "Dungeon Master", "Electronics Wizard",
+    "Famous Sports Athelete", "Fighter Pilot", "Fix-It Mechanic",
+    "Food Service Lifer", "Football Fan", "Genetic Engineer", "Groupie",
+    "Gymnast", "Hairdresser", "Jogger", "Looter", "Mall Security Guard",
+    "NASCAR Fan", "Opinionated Fan", "Parakeet Trainer", "Particle Physicist",
+    "Professional Escort", "Prowler", "Rent-a-Cop", "Risus GM", "Rock Star",
+    "Science-Fiction Fan", "Security Expert", "Security Guard", "Special Ops",
+    "Standup Comic", "Stock-Car Driver", "Stunt Double", "Supermodel",
+    "Superspy", "Teen Age Pop Star", "Trivia Master", "Unemployed Actor",
+    "Unemployed Actor(ess)", "Volunteer Social Worker", "Wal-Mart Greeter",
+    "Worker Bee", "Writer-Comedian"
+  ], 
+  "modern_culture": [
+    "New-Age"
+  ], 
+  "modern_person": [
+    "Child Star", "Concerned Parent", "Countercultural Icon", "Crazy Cat Lady",
+    "God's Gift to (gender)", "Meddling Kid",
+    "New Age Symbol of Everything New-Agers Enjoy Seeing Symbolized",
+    "Obsessive Flake", "Old Man Jenkins", "Perky Gymnast", "Shameless Flirt",
+    "Weekend Warrior"
+  ], 
+  "modern_prefix": [
+    "Pervy", "Sexy", "Spaced-Out", "Spare-Time", "Starry-Eyed", "Stuck-Up",
+    "Suave-and-Sexy", "Uzi-Packing"
+  ], 
+  "modern_suffix": [
+    "Who Has Indulged In A Lot Of Chemical Entertainment",
+    "Who Is Barry Manilow's Absolute Biggest Fan",
+    "Who Is Just Filling In For Someone Else", "Who Is Kind Of A Jerk",
+    "Who Looks Like Somebody Famous", "With Post-Traumatic Stress Disorder"
+  ], 
+  "omni_career": [
+    "%ancient_career", "%cyber_career", "%dungeon_career", "%magic_career",
+    "%medieval_career", "%modern_career", "%pulp_career", "%space_career",
+    "%steam_career", "%super_career", "%swashbuckler_career",
+    "%universal_career"
+  ], 
+  "omni_cliche": [
+    "%(%omni_career|%omni_person) %omni_suffix",
+    "%(%omni_prefix|%omni_culture) %(%omni_person|%omni_career)",
+    "%(%omni_prefix|%omni_culture) %omni_career %omni_suffix"
+  ], 
+  "omni_culture": [
+    "%darkage_culture", "%modern_culture", "%pulp_culture", "%steam_culture",
+    "%swashbuckler_culture", "%universal_culture"
+  ], 
+  "omni_person": [
+    "%ancient_person", "%magic_person", "%medieval_person", "%modern_person",
+    "%pulp_person", "%steam_person", "%swashbuckling_person",
+    "%universal_person"
+  ], 
+  "omni_prefix": [
+    "%ancient_prefix", "%magic_prefix", "%medieval_prefix", "%modern_prefix",
+    "%pulp_prefix", "%steam_prefix", "%swashbuckler_prefix",
+    "%universal_prefix"
+  ], 
+  "omni_suffix": [
+    "%ancient_suffix", "%magic_suffix", "%modern_suffix", "%pulp_suffix",
+    "%steam_suffix", "%swashbuckler_suffix", "%universal_suffix"
+  ], 
+  "pirates_genre": [
+    "%magic_person", "%swashbuckling_person"
+  ], 
+  "pulp_career": [
+    "Archaeologist", "Athlete", "Attorney", "Bartender", "Bighearted Palooka",
+    "Bodyguard", "Cab Driver", "Combat Medic", "Comedian",
+    "Construction Worker", "Contract Killer", "Cub Reporter", "Debutante",
+    "Defense Attorney", "Deposed Dictator", "Driver", "Financier",
+    "Flying Ace", "Fortean Investigator", "Gumshoe", "Guru", "Hayseed",
+    "Heroic Mercenary", "Historian", "Hobo", "Homemaker", "Lifeguard",
+    "Loan Shark", "Martial Artist", "Medic", "Megalomaniac", "Mugger",
+    "News Reporter", "Nightclub Owner", "No-Good Hoodlum", "Novelist", "Nurse",
+    "Oddball", "Oilman", "Olympic Athlete", "Pilot", "Police Officer",
+    "Private Eye", "Psychic", "Psychic Detective", "Psychoanalyst",
+    "Pulp Archaeologist", "Reporter", "Resistance Leader",
+    "Scout Troop Leader", "Secretary", "Soap Queen", "Socialite",
+    "Soldier of Fortune", "Sports Icon", "Undercover Agent", "Veterinarian",
+    "Vigilante", "Visitor From the Future"
+  ], 
+  "pulp_culture": [
+    "American", "English", "German", "Oriental", "Panamanian", "Redneck"
+  ], 
+  "pulp_genre": [
+    "%magic_person", "%pulp_person", "%steam_person"
+  ], 
+  "pulp_person": [
+    "Beverly Hillbilly", "Bighearted Palooka", "Bug-Eyed Monster",
+    "Criminal Informant Building a New Life", "Ex-Con", "Football Hero",
+    "Goose-Stepping Bullyboy", "Grim Vigilante", "Helpless Victim",
+    "Hollywood Heartthrob", "Hooker With A Heart Of Gold", "Horny Teenager",
+    "Jaded Heiress", "Law School Dropout", "Millionaire Playboy",
+    "Poor Schmuck", "Scientist Determined to Cure Cancer",
+    "Silver-screen Queen", "Snooping Crime Reporter", "Spoiled Debutante"
+  ], 
+  "pulp_prefix": [
+    "Bright-eyed and Bushy-tailed", "Globe-Hopping", "Hometown", "Millionaire",
+    "Neurotic", "Pipsqueak", "Shifty", "Smartaleck", "Twitchy", "Wisecraacking"
+  ], 
+  "pulp_suffix": [
+    "From New Jersey", "From Queens", "On The Skids",
+    "Who Is Not Of This Earth", "Who Never Skippped Breakfast",
+    "With the Innsmouth Look", "Your Mother Warned You About"
+  ], 
+  "space_career": [
+    "Cyborg Killing Machine", "Space Marine", "Star Merchant"
+  ], 
+  "steam_career": [
+    "'Escort'", "Academic", "Barkeep", "Barman/maid", "Burglar", "Businessman",
+    "Busybody", "Butcher", "Cat Burglar", "Chef", "Circus Acrobat",
+    "Circus Strongman", "Civil Engineer", "Confectioner",
+    "Confidence Trickster", "Contortionist", "Cowboy", "Cult Leader",
+    "Cultist", "Deacon", "Dentist", "Detective", "Dockworker", "Doctor",
+    "Engineer", "Explorer", "Gadgeteer", "Gambler", "Gangster", "General",
+    "Hedonist", "Inventor", "Investigator", "Kid", "Lab Assistant",
+    "Locksmith", "Lumberjack", "Master Chef", "Master Sleuth", "Mechanic",
+    "Mentalist", "Mercenary", "Mime", "Monk/Nun", "Musician", "Ninja", "Nurse",
+    "Occult Investigator", "Outdoorsman", "Patron of the Arts", "Peeping Tom",
+    "Petty Criminal", "Phrenologist", "Political Activist", "Prince",
+    "Prince(ss)", "Professor", "Rabble-Rouser", "Rail Baron(ess)",
+    "Ranch Hand", "Rebel", "Safecracker", "Sailor", "Scholar", "Scientist",
+    "Secret Agent", "Serial Killer", "Shoplifter", "Soldier", "Spy",
+    "Stage Magician", "Teacher", "Thug", "Toy Maker", "Undertaker", "Yes-Man"
+  ], 
+  "steam_culture": [
+    "British", "Chinese", "Christian", "English", "Greek", "Pagan", "Welsh"
+  ], 
+  "steam_genre": [
+    "%magic_person", "%steam_person"
+  ], 
+  "steam_person": [
+    "Armchair General", "Cheerful Alchoholic", "Child Prodigy", "Exotic Lover",
+    "Jungle Prince(ss)", "Mad Scientist", "Neat Freak",
+    "Roguish Romantic Hero", "Scrooge", "Sensitive Artist",
+    "Small-Breed Dog Enthusiast", "Spare-Time Detective",
+    "Sparkling Socialite", "Upper-Class twit"
+  ], 
+  "steam_prefix": [
+    "Bohemian", "Crowd-Pleasing", "Dashing", "Devilishly Charismatic",
+    "Lantern-Jawed", "Mechanically Inclined", "Nosey",
+    "One-Step-Ahead-Of-The-Law", "Romantic", "Spoiled", "Upper-Class"
+  ], 
+  "steam_suffix": [
+    "From New York", "Known For Defending The Underdog",
+    "That Others Seek Out For Romance Advice", "Who Has Achieved Some Fame",
+    "Who Is Also a Member Of A Secret Club",
+    "Who Suffers from a Social Disease", "Who Was Picked On By Bullies"
+  ], 
+  "super_career": [
+    "On-Fire Person", "Speedster", "Stretching Person"
+  ], 
+  "super_quality": [
+    "Genetically Engineered", "Mutated"
+  ], 
+  "super_species": [
+    "Alien", "Mutant", "Robot"
+  ], 
+  "swashbuckler_career": [
+    "Baker", "Barbarian", "Barkeep", "Butcher", "Cheesemonger", "Deacon",
+    "Explorer", "Inventor", "Locksmith", "Mercenary", "Monk/Nun", "Pirate",
+    "Prince(ss)", "Sailor", "Scout", "Soldier"
+  ], 
+  "swashbuckler_culture": [
+    "Christian", "English", "French", "Pagan", "Spanish"
+  ], 
+  "swashbuckler_person": [
+    "Banker", "Cross-dressing Spy", "Exotic Lover", "Musician", "Musketeer",
+    "Roguish Romantic Hero(ine)"
+  ], 
+  "swashbuckler_prefix": [
+    "Dashing", "Devilishly Charismatic", "One Step Ahead Of The Law",
+    "Romantic"
+  ], 
+  "swashbuckler_suffix": [
+    "Known For Defending The Underdog",
+    "That Others Seek Out For Romance Advice"
+  ], 
+  "universal_career": [
+    "Artist", "Assassin", "Astrologer", "Bimbo", "Bodyguard", "Cannibal",
+    "Carpenter", "Dancer", "Farm Boy", "Farm Girl", "Fighter", "Guard",
+    "Harpist", "Holy Man", "Jack-of-all-Trades", "King", "Lad", "Ladies' Man",
+    "Lass", "Maniac", "Merchant", "Miser", "Nature Boy", "Nature Girl",
+    "Pirate", "Poet", "Priest", "Prophet", "Rapist", "Rogue", "Servant",
+    "Shaman", "Sneak", "Swashbuckler", "Thief", "Wanderer", "Warrior",
+    "Watchman", "Womanizer"
+  ], 
+  "universal_culture": [
+    "Eastern", "Foreign", "Northern", "Southern", "Western"
+  ], 
+  "universal_person": [
+    "Battle-Scarred Veteran", "Devoted Priest(ess)", "Disgusting Glutton",
+    "Geezer", "Gentle Giant", "Grandparent-to-Everyone", "Inveterate Coward",
+    "Leader of Men", "Legend In Own Mind", "Outrageous Storyteller",
+    "Recovering Addict"
+  ], 
+  "universal_prefix": [
+    "Affable", "Affectionate", "Aged", "Angry", "Annoying", "Avaricious",
+    "Balding", "Bigass", "Bloated", "Blond", "Bored", "Charming", "Cheerful",
+    "Childlike", "Cold-Hearted", "Confused", "Cool and Suave", "Corrupt",
+    "Cruel", "Cynical", "Disinterested", "Drunk", "Eccentric", "Emotionless",
+    "Exhausted", "Family Oriented", "Fat", "Filthy", "Freckled", "Friendly",
+    "Frustrated", "Fun-Loving", "Gentle", "Gluttonous", "Greedy", "Grim",
+    "Grinning", "Gruff", "Haughty", "Humble", "Jolly", "Kindhearted", "Lazy",
+    "Lecherous", "Lusty", "Miserable", "Misunderstood", "Naive", "Naughty",
+    "Nervous", "Opinionated", "Ornery", "Outrageous", "Oversexed",
+    "Overzealous", "Pale", "Passionate", "Perpetually Annoyed", "Power-Mad",
+    "Really Grouchy", "Red-Headed", "Ruthless", "Sadistic", "Self-Interested",
+    "Self-Righteous", "Simpering", "Smug", "Soulful", "Stinky", "Stubborn",
+    "Surly", "Sweaty", "Tired", "Tireless", "Truculent", "Unruly", "Vain",
+    "Very Tall", "Vicious", "Villainous", "Well-Intentioned", "Wicked"
+  ], 
+  "universal_species": [
+    "Dwarf"
+  ], 
+  "universal_suffix": [
+    "Bent On World Domination", "Blessed by Good Fortune",
+    "Convinced Of Being A Monster Unfit to Love", "Eager For Self-Improvement",
+    "Endowed Like A Giant", "Secretly In Love With A Rival",
+    "Who Has Witnessed A Lot of Suffering", "Who Is The Savior Of The People",
+    "Who Nobody Understands", "Who Was Raised By Foster Parents",
+    "Whose Parents Were Famous and Admired",
+    "Whose Parents Were Infamous and Despised",
+    "With An Unmentionable Problem In The Bedroom", "With Lots of Kids",
+    "With Lots of Siblings", "With Uncommon Wisdom", "With Unusual Dreams",
+    "With a Mind Like a Steel Trap"
+  ], 
+  "unused": [
+    "Celtic", "Chinese", "Christian", "From the Land of Purple Lightning",
+    "Irradiated", "Klingon", "Of Jerusalem", "Pagan", "Persian", "Redshirt",
+    "Roman", "Samurai", "Science Officer", "Shogun", "Space Captain",
+    "Space Ranger", "Space Rogue", "Spawn of Satan", "Starpilot"
+  ]
+}
