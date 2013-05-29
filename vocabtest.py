@@ -19,7 +19,10 @@ print "validating vocabulary..."
 if not ML.validate():
   print "\n".join(ML.errors)
   sys.exit(1)
-  
+
+if ML.warnings:
+  print "\n".join(ML.warnings)
+
 for i in range(3*len(ML)):
   ML.story()
 

@@ -28,7 +28,7 @@ for i in THINGKEYS :
 
 #for more than one item on each line, with word-wrap that doesn't
 #insert '\n' in the middle of strings
-LINELENGTH = 80
+LINELENGTH = 78
 LINE = ''
 for NEXTLINE in json.dumps(THING, check_circular=False, indent=2, sort_keys=True).split("\n"):
   NEXTLINESTRIPPED = NEXTLINE.strip()

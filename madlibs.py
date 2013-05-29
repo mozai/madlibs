@@ -1,21 +1,25 @@
 # madlibs.py
 # encoding: utf8
 # author: Mozai <moc.iazom@sesom>
-# version: 20120930
+# version: 20121213
 """ Madlibs takes a dict as vocabulary of story-strings with marked spots
 for substituting random words or phrases from collections.   It is
 intended to be used iteratively, and uses a randomizing method
 intended for high novelty in the output.
-Looks like a dict() but each time you ask for the value of a key,
-you get something different from a list associate with that key.
-Has some helper methods, like knowing which keys are stories/ seeds.
-God this description is poor; look for a readme.txt with this.
+God this description is poor; look for a readme.txt with this.  Especially
+for how to make the vocabulary data-sets used to initialize this.
 """
+
+# wanted: backref "An %bodyPart for an %2 makes the whole world blind."
+# test: 'alpha.bet' is a valid term, decays to 'alpha' if 'alpha.bet' empty.
+# TODO: if '%{ab}' -> '%cd', that can cause '%{ab}s' -> invalid '%cds' 
+# thinking: Would it be better to subclass UserDict ?
+
 
 import random, shelve, json
 import anydbm # only so I can catch anydbm.error
 
-# used for on-the-fly terms in stories. ie: %{red,cerulian,rust,cherry}
+# used for on-the-fly terms in stories. ie: %{red|cerulian|rust|cherry}
 BRACEPAIRS = (('(', ')'), ('[', ']'), ('{', '}'), ('<', '>'), ('|', '|'))
 TERMCHARS = '.0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz'
 
@@ -45,8 +49,7 @@ def _next_term_ij(data, start=0):
   return (i, j)
 
 def _extract_terms(data):
-  # "%alpha is a %beta with a huge %gamma" 
-  # -> [ 'alpha', 'beta', 'gamma' ]
+  # "%alpha is a %beta with a huge %gamma" -> ['alpha', 'beta', 'gamma']
   terms = []
   (i, j) = (0, 0)
   (i, j) = _next_term_ij(data)
@@ -60,7 +63,7 @@ def _extract_terms(data):
 
 def _good_term(termname):
   # validate a term name
-  # I'm trying really hard not to import re until needed
+  # I'm trying to avoid importing re
   if not isinstance(termname, basestring):
     return False
   if not termname[0].isalpha():
@@ -83,15 +86,12 @@ class Madlibs(object):
     self.vocabulary = { '#':'', '@':[] }
     self.shuffles = {}
     self.errors = []
-    self.__delitem__ = self.vocabulary.__delitem__
+    self.warnings = []
+    self.__cmp__ = self.vocabulary.__cmp__
     self.__iter__ = self.vocabulary.__iter__
     self.__contains__ = self.vocabulary.__contains__
     if vocabulary :
       self.load(vocabulary)
-    
-  def delterm(self, term):
-    " for removing a term from the vocabulary "
-    del(self.vocabulary[term])
 
   def __del__(self):
     # if isinstance(self.vocabulary, shelve.Shelf):
@@ -127,6 +127,15 @@ class Madlibs(object):
         raise VocabularyError('term "%s" is illegal' % term)
     return True
 
+  def delterm(self, term):
+    " for removing a term from the vocabulary "
+    del(self.vocabulary[term])
+    
+  def __delitem__(self, term):
+    " see delterm(t) "
+    # shut UP pylint; I define it in __init__()
+    return self.vocabulary.__delitem__(term)
+
   def load(self, filenameordict):
     """ reads a vocabulary data set from filename or a dict object
     could raise exceptions from file.open() or json.load()
@@ -143,11 +152,10 @@ class Madlibs(object):
         self.vocabulary = json.load(infile)
         infile.close()
     if self.vocabulary :
-      self.__delitem__ = self.vocabulary.__delitem__
       self.__iter__ = self.vocabulary.__iter__
       self.__contains__ = self.vocabulary.__contains__
     return self._is_valid()
-    
+
   def sync(self):
     " for when you used Madlibs.load(shelve.open()) "
     if isinstance(self.vocabulary, shelve.Shelf):
@@ -165,7 +173,7 @@ class Madlibs(object):
     if isinstance(filething, basestring):
       filething = open(filething, 'w')
     if isinstance(filething, file):
-      try: 
+      try:
         json
       except NameError:
         filething.write(str(self.vocabulary))
@@ -178,10 +186,11 @@ class Madlibs(object):
   def validate(self):
     """ checks the vocabulary for problems
     returns False if problems are found ("valid == False")
-    and populates self.errors as a list
+    and populates self.errors and self.warnings as a list
     """
-    # "too many branches (16/12)"  shut up, pylint
-    self.errors = []  # side effects! hisssss!
+    # "too many branches (20/12)"  shut up, pylint
+    self.errors = []   # side effects! hisssss!
+    self.warnings = [] # side effects! hisssss!
     try:
       self._is_valid()
     except VocabularyError as err:
@@ -190,15 +199,18 @@ class Madlibs(object):
     terms.sort()
     termsseen = set()
     for term in terms:
-      try: 
+      try:
         if term in '!$%^&*':
           # reserved, presently unused
           continue
         elif term == '@':
           for story in self.vocabulary['@']:
             termsseen.add(story)
-            if not (_good_term(story) and story in self.vocabulary) :
+            if not (_good_term(story) and (story in self.vocabulary)) :
               self.errors.append('bad story Term \"s\" in \'@\'' % story)
+            for storyterm in self.vocabulary[story]:
+              if not _extract_terms(storyterm) :
+                self.warnings.append("no substitutions in \"%s\"" % storyterm)
         elif term == '#':
           # already checked with self._is_valid()
           pass
@@ -213,12 +225,12 @@ class Madlibs(object):
           else:
             for value in values:
               # someday, values will themselves be lists,
-              # for terms like 'run.2'
+              # for terms like ['run', 'running', 'ran']
               termsseen.update(_extract_terms(value))
               try:
                 blurb = self.story(value)
                 (i, j) = _next_term_ij(blurb)
-                if (i, j) != (-1, -1): 
+                if (i, j) != (-1, -1):
                   self.errors.append('term "%s" has unknown term "%s" in value "%s"' % (term, blurb[i:j], value))
               except (VocabularyError, StandardError) as err:
                 self.errors.append('term "%s" has troublesome value "%s"; (%s)' % (term, str(value), str(err)))
@@ -283,7 +295,7 @@ class Madlibs(object):
     This is not the same as how many terms are in the vocabulary.
     """
     leng = 0
-    if len(self.vocabulary) == 0 : 
+    if len(self.vocabulary) == 0 :
       return None
     if not '@' in self.vocabulary :
       return leng
@@ -320,9 +332,9 @@ class Madlibs(object):
 
     if '|' in term:
       # it's %(alpha|beta|gamma) type
-      if '\|' in term:
+      if '|' in term:
         term = term.replace('\x7f','') # sanity check
-        values = term.replace('\|','\x7f').split('|')
+        values = term.replace('|','\x7f').split('|')
         values = [i.replace('\x7f','|') for i in values]
       else:
         values = term.split('|')
@@ -400,9 +412,9 @@ class Madlibs(object):
       return self.get(random.choice(template_types))
 
   def story(self, template=None):
-    """ in template, replaces all the |word1,word2,word3| with a random item
-    and replaces |keyname| with a random item from the vocab mapping
-    if template not provided, gets a new one from get_template()
+    """ in template, replaces all the %(word1|word2|word3) with a
+    random item and replaces %keyname with a random item from the
+    vocab if template not provided, gets a new one from get_template()
     """
     if template == None or template == '@':
       template = self.get_template()
