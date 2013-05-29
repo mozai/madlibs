@@ -20,7 +20,7 @@ if not ML.validate():
   print "\n".join(ML.errors)
   sys.exit(1)
 
-if ML.warnings:
+if ML.warnings and '-w' in sys.argv:
   print "\n".join(ML.warnings)
 
 for i in range(3*len(ML)):
@@ -28,5 +28,5 @@ for i in range(3*len(ML)):
 
 print "(seems okay; here's five samples)"
 for i in range(5):
-  print ML.story()
+  print "- " + ML.story()
 
