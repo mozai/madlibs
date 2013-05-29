@@ -1,0 +1,76 @@
+{
+  "#": "'The electro-plasmic hydrocephalic genre-fiction generator' by David Malki", 
+  "@": [
+    "sentence"
+  ], 
+  "climax": [
+    "a cliffhanger for the sake of prompting a series",
+    "a daring rescue preceeding a giant explosion", "a duel atop a tower",
+    "a false victory with the promise of future danger",
+    "a heroic sacrifice that no one will ever remember",
+    "a philosophical argument punctuated by violence",
+    "authorial preaching through the mouths of the characters",
+    "convoluted nonsense that squanders the reader's goodwill",
+    "eternal love professed without irony",
+    "the invocation of a spell at the last possible moment",
+    "the land restored to health",
+    "wish-fulfillment solutions to real-world problems"
+  ], 
+  "hero": [
+    "author self-insert", "brooding loner", "collector of oddities",
+    "farm kid with dreams", "flying message courier",
+    "idealistic revolutionary", "journeyman inventor",
+    "milquetoast office drone", "schlub with mild OCD",
+    "student of metaphysics", "techno-obsessed geek", "wisecracking mercenary"
+  ], 
+  "macguffin": [
+    "alien artifact", "arcane prophecy", "crazy old man",
+    "dream-inducing drug", "dusty tome", "enchanted sword",
+    "encrypted data feed", "exiled angel", "magic diadem",
+    "otherworldly portal", "talking fish", "time-travelling soldier"
+  ], 
+  "sentence": [
+    "In a(n) %setting1 %setting2, a young %hero stumbles across a(n) %macguffin which incites a conflict with %villain with the help of a %sidekick with %sidekick_quirk, culminating in %{climax}. The story's title is \"%{title1}%{title2}s.\""
+  ], 
+  "setting1": [
+    "VR-simulated", "alternate-history", "anachronistic", "ancient",
+    "coal-powered", "dragon-filled", "dystopian", "leather-clad",
+    "metaphorical", "neo-noir", "post-apocalyptic", "shrill"
+  ], 
+  "setting2": [
+    "America", "Antarctica", "Atlantis", "Aztec empire", "Japan",
+    "Outer-Rim world", "Soviet Russia", "Victorian Britain", "medieval Europe",
+    "one-way spaceflight", "set from 'Road Warrior'", "terraformed Mars"
+  ], 
+  "sidekick": [
+    "bookish and mousy scholar", "cherubic child with spunk",
+    "childhood friend with unrequited crush", "effeminate male engineer",
+    "leather-clad tough in shades", "sarcastic techno-geek",
+    "shape-shifting assassin",
+    "sidekick who inexplicably becomes attracted to the damaged hero for unstated reasons",
+    "tomboyish female mechanic"
+  ], 
+  "sidekick_quirk": [
+    "closet full of assault rifles", "condescending tone",
+    "discomfort in formal wear", "facility with magic",
+    "propensity for being captured", "reference book", "sex appeal",
+    "wacky pet", "welding gear"
+  ], 
+  "title1": [
+    "Aero", "Astro", "Black", "Chrono", "Cosmo", "Cyber", "Meta", "Necro",
+    "Neuro", "Psycho", "Reve", "Steam"
+  ], 
+  "title2": [
+    "(o)poli", "War", "blade", "bot", "droid", "mancer", "mech", "naut",
+    "noiac", "phage", "punk", "tron"
+  ], 
+  "villain": [
+    "a charismatic politician on the rise", "a government conspiracy",
+    "a megalomaniacal dictator", "a profit-obsessed corporation",
+    "a sneering wizard", "an army lead by a sadist",
+    "computer viruses made real", "forces that encourage conformity",
+    "humanity's own selfish nature", "muderous robots",
+    "supernatural monsters",
+    "the hero's own insecurity regarding the opposite sex"
+  ]
+}
