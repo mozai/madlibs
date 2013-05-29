@@ -24,18 +24,18 @@
     "student of metaphysics", "techno-obsessed geek", "wisecracking mercenary"
   ], 
   "macguffin": [
-    "alien artifact", "arcane prophecy", "crazy old man",
-    "dream-inducing drug", "dusty tome", "enchanted sword",
-    "encrypted data feed", "exiled angel", "magic diadem",
-    "otherworldly portal", "talking fish", "time-travelling soldier"
+    "an alien artifact", "an arcane prophecy", "a crazy old man",
+    "a dream-inducing drug", "a dusty tome", "an enchanted sword",
+    "an encrypted data feed", "an exiled angel", "a magic diadem",
+    "an otherworldly portal", "a talking fish", "a time-travelling soldier"
   ], 
   "sentence": [
-    "In a(n) %setting1 %setting2, a young %hero stumbles across a(n) %macguffin which incites a conflict with %villain with the help of a %sidekick with %sidekick_quirk, culminating in %{climax}. The story's title is \"%{title1}%{title2}s.\""
+    "In %setting1 %setting2, a young %hero stumbles across %macguffin which incites a conflict with %villain with the help of a %sidekick with %sidekick_quirk, culminating in %{climax}. The story's title is \"%{title1}%{title2}s.\""
   ], 
   "setting1": [
-    "VR-simulated", "alternate-history", "anachronistic", "ancient",
-    "coal-powered", "dragon-filled", "dystopian", "leather-clad",
-    "metaphorical", "neo-noir", "post-apocalyptic", "shrill"
+    "a VR-simulated", "an alternate-history", "an anachronistic", "an ancient",
+    "a coal-powered", "a dragon-filled", "a dystopian", "a leather-clad",
+    "a metaphorical", "a neo-noir", "a post-apocalyptic", "a shrill"
   ], 
   "setting2": [
     "America", "Antarctica", "Atlantis", "Aztec empire", "Japan",
