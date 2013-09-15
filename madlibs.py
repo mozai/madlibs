@@ -7,17 +7,15 @@ for substituting random words or phrases from collections.   It is
 intended to be used iteratively, and uses a randomizing method
 intended for high novelty in the output.
 God this description is poor; look for a readme.txt with this.  Especially
-for how to make the vocabulary data-sets used to initialize this.
+for how to make   the vocabulary data-sets used to initialize this.
 """
-
-# wanted: backref "An %bodyPart for an %2 makes the whole world blind."
-# test: 'alpha.bet' is a valid term, decays to 'alpha' if 'alpha.bet' empty.
-# TODO: if '%{ab}' -> '%cd', that can cause '%{ab}s' -> invalid '%cds' 
-# thinking: Would it be better to subclass UserDict ?
-
-
-import random, shelve, json
+import json, random, shelve
 import anydbm # only so I can catch anydbm.error
+
+# TODO: if 'ab':['%cd'], then '%ab' -> '%cd' -> 'CD', but '%{ab}s' -> '%cds' -> error
+# wanted: backref "An %bodyPart for an %{\1} makes the whole world blind."
+# test: 'alpha.bet' is a valid term, decays to 'alpha' if 'alpha.bet' empty.
+# thinking: Would it be better to subclass UserDict ?
 
 # used for on-the-fly terms in stories. ie: %{red|cerulian|rust|cherry}
 BRACEPAIRS = (('(', ')'), ('[', ']'), ('{', '}'), ('<', '>'), ('|', '|'))
