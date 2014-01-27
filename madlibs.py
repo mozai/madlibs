@@ -330,12 +330,7 @@ class Madlibs(object):
 
     if '|' in term:
       # it's %(alpha|beta|gamma) type
-      if '|' in term:
-        term = term.replace('\x7f','') # sanity check
-        values = term.replace('|','\x7f').split('|')
-        values = [i.replace('\x7f','|') for i in values]
-      else:
-        values = term.split('|')
+      values = term.split('|')
     else:
       # else it's %fruitcolour type
       key = term
