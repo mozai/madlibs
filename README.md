@@ -78,12 +78,15 @@ A vocabulary is usually loaded from a text file at creation time,
 or with the madlibs.load() method.  You can provide a filename
 or a file-like object:
 
+    # load from JSON text file
     ML = madlibs.Madlibs('filename.json')
-    ML.load(shelve.open('vocab.db'))
 
-    ML = madlibs.Madlibs()
-    ML.load('filename.json')
-    ML.load(shelve.open('vocab.db'))
+    # load from a python shelve file
+    ML = madlibs.Madlibs(shelve.open('vocab.db'))
+
+    # load from a dict built at run-time
+    ML = madlibs.Madlibs
+    ML.load(handmade_dict)
 
 The current version expects the file to be a valid JSON dict(). You 
 can also provide any other dict() object that obeys the rules for a 
@@ -97,8 +100,10 @@ To-Do List
   i.e.: I do, I did, I am doing, I have done.
   i.e.: `I am %move.2` with `"move":[["run","ran","running","run"],]`
   becomes "I am running"
+- an unawkward way to handle unicode & accented characters
 - more dict()-like methods to make it python paradigm friendly.
 - investigate using string.Template instead of rolling my own.
 - escape \| in %() : i.e.: `%(alpha\|a|beta\|b|gamma\|c)`
 - recommended limits for Terms; see if keeping len(list()) under 255
   matters, or len(str()) under 4096
+
