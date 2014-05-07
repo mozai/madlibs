@@ -1,0 +1,204 @@
+{
+  "#": "New Age Bullshit Generator by Seb Pierce sebpierce.com", 
+  "@": [
+    "a_bunch_of_bullshit", "a_bunch_of_bullshit", "any"
+  ], 
+  "a_bunch_of_bullshit": [
+    "%explain %explain %not_selling %any %any %any %selling_point",
+    "%explain %not_selling %any %any %not_explain %explain"
+  ], 
+  "adj": [
+    "Vedic", "advanced", "amazing", "ancient", "angelic", "archetypal",
+    "astral", "authentic", "conscious", "consciousness-expanding", "cosmic",
+    "divine", "dynamic", "endless", "enlightened", "ethereal",
+    "ever-present", "heroic", "high-frequency", "higher", "holistic",
+    "infinite", "intergalatic", "internal", "interstellar", "joyous",
+    "karmic", "life-affirming", "magical", "mystical", "mythic", "non-dual",
+    "non-local", "perennial", "powerful", "pranic", "primordial", "psychic",
+    "quantum", "sacred", "self-aware", "sensual", "sentient", "spatial",
+    "spiritual", "sublime", "sublime", "technological", "transformative",
+    "unified", "unlimited", "unrestricted", "zero-point"
+  ], 
+  "adjBig": [
+    "astonishing", "breathtaking", "colossal", "ecstatic", "enormous",
+    "epic", "incredible", "jaw-dropping", "magnificent", "powerful",
+    "staggering", "unfathomable", "unimaginable", "untold"
+  ], 
+  "adjPrefix": [
+    "hyper-", "pseudo-", "supra-", "ultra-"
+  ], 
+  "adjWith": [
+    "aglow with", "beaming with", "bursting with", "buzzing with",
+    "electrified with", "full of", "overflowing with", "radiating"
+  ], 
+  "any": [
+    "%explain", "%future_hope", "%history", "%selling_point",
+    "%your_problems"
+  ], 
+  "explain": [
+    "%nMass is a constant.", "%nMass is the %nTheXOf of %nMass, and of us.",
+    "%nMass is the driver of %{nMass}.", "%nMass requires exploration.",
+    "By %ing, we %{viPerson}.",
+    "Consciousness consists of %fixedNP of quantum energy. \"Quantum\" means a %ing of the %{adj}.",
+    "Nothing is impossible.", "The %nCosmos is %adjWith %{fixedNP}.",
+    "The goal of %fixedNP is to plant the seeds of %nMass rather than %{nMassBad}.",
+    "This life is nothing short of a %ing %nOf of %adj %{nMass}.",
+    "To %vTraverse the %nPath is to become one with it.",
+    "Today, science tells us that the essence of nature is %{nMass}.",
+    "We %viPerson, we %viPerson, we are reborn.", "We exist as %{fixedNP}.",
+    "You and I are %nPersonPlural of the %{nCosmos}."
+  ], 
+  "fixedAdvP": [
+    "at the quantum level", "at the speed of light", "devoid of self",
+    "inherent in nature", "of the creative act",
+    "of unfathomable proportions", "on a cosmic scale",
+    "through non-local interactions"
+  ], 
+  "fixedNP": [
+    "a resonance cascade", "atomic ionization", "bio-electricity",
+    "bio-feedback", "chaos-driven reactions", "electrical impulses",
+    "electromagnetic forces", "electromagnetic resonance",
+    "expanding wave functions", "four-dimensional superstructures",
+    "frequencies", "meridians", "molecular structures",
+    "morphogenetic fields", "pulses", "sonar energy", "sub-atomic particles",
+    "supercharged electrons", "supercharged waveforms",
+    "superpositions of possibilities", "transmissions",
+    "ultra-sentient particles", "ultrasonic energy", "vibrations"
+  ], 
+  "future_hope": [
+    "Eons from now, we %nPersonPlural will %viPerson like never before as we are %ppPerson by the %{nCosmos}.",
+    "Imagine a %ing of what could be.", "It is a sign of things to come.",
+    "It is time to take %nMass to the next level.",
+    "Soon there will be a %ing of %nMass the likes of which the %nCosmos has never seen.",
+    "The %nOf of %nMass is now happening worldwide.",
+    "The future will be a %adj %ing of %{nMass}.", "This %nPath never ends.",
+    "We are being called to explore the %nCosmos itself as an interface between %nMass and %{nMass}.",
+    "We must %vtPerson ourselves and %vtPerson others.",
+    "We must learn how to lead %adj lives in the face of %{nMassBad}."
+  ], 
+  "history": [
+    "Humankind has nothing to lose.",
+    "Our conversations with other %nPersonPlural have led to a %ing of %adjPrefix %adj consciousness.",
+    "Reality has always been %adjWith %nPersonPlural whose %nOurPlural are %ppThingPrep %{nMass}.",
+    "Throughout history, humans have been interacting with the %nCosmos via %{fixedNP}.",
+    "We are at a crossroads of %nMass and %{nMassBad}.",
+    "We are in the midst of a %adj %ing of %nMass that will %vOpenUp the %nCosmos itself.",
+    "Who are we? Where on the great %nPath will we be %{ppPerson}?"
+  ], 
+  "ing": [
+    "awakening", "blossoming", "condensing", "deepening", "ennobling",
+    "evolving", "flowering", "maturing", "redefining", "refining",
+    "summoning", "unfolding", "unveiling"
+  ], 
+  "nCosmos": [
+    "cosmos", "dreamscape", "galaxy", "grid", "infinite", "multiverse",
+    "nexus", "planet", "quantum cycle", "quantum matrix", "quantum soup",
+    "solar system", "stratosphere", "totality", "universe", "world"
+  ], 
+  "nMass": [
+    "aspiration", "awareness", "balance", "beauty", "being", "chi", "choice",
+    "coherence", "complexity", "conscious living", "consciousness",
+    "curiosity", "divinity", "ecstasy", "empathy", "energy", "faith", "flow",
+    "freedom", "fulfillment", "grace", "growth", "guidance", "healing",
+    "health", "hope", "inseparability", "insight", "inspiration",
+    "interconnectedness", "intuition", "joy", "karma", "knowledge",
+    "learning", "life", "life-force", "love", "nature", "non-locality",
+    "passion", "peace", "potential", "potential", "potentiality", "power",
+    "presence", "purpose", "rebirth", "rejuvenation", "science",
+    "self-actualization", "serenity", "sharing", "spacetime", "stardust",
+    "synchronicity", "transcendence", "transformation", "truth",
+    "understanding", "wellbeing", "will", "wisdom", "wonder"
+  ], 
+  "nMassBad": [
+    "bondage", "delusion", "desire", "discontinuity", "dogma", "ego",
+    "greed", "illusion", "materialism", "pain", "selfishness", "stagnation",
+    "suffering", "turbulence", "yearning"
+  ], 
+  "nOf": [
+    "canopy", "current", "evolution", "explosion", "flow", "fount", "fusion",
+    "harmonizing", "lightning bolt", "metamorphosis", "network", "oasis",
+    "osmosis", "paradigm shift", "quantum leap", "quantum shift", "rebirth",
+    "reimagining", "reintegration", "rekindling", "revolution", "source",
+    "spark", "transmission", "unifying", "uprising", "vector", "vision",
+    "wellspring"
+  ], 
+  "nOurPlural": [
+    "bodies", "brains", "chakras", "dreams", "essences", "hearts", "hopes",
+    "lives", "souls", "third eyes"
+  ], 
+  "nPath": [
+    "circuit", "journey", "mission", "myth", "path", "quest", "story",
+    "vision quest"
+  ], 
+  "nPerson": [
+    "being", "child", "entity", "lifeform", "prophet", "traveller",
+    "visitor", "wanderer"
+  ], 
+  "nPersonPlural": [
+    "adventurers", "beings", "children", "dreamers", "dreamweavers",
+    "entities", "lifeforms", "messengers", "pilgrims", "storytellers",
+    "travellers", "warriors"
+  ], 
+  "nSubject": [
+    "Kabala", "acupuncture", "affirmations", "alternative medicine",
+    "aromatherapy", "astral projection", "astrology", "ayurvedic medicine",
+    "crystal healing", "faith healing", "feng shui", "homeopathy",
+    "naturopathy", "numerology", "prayer", "reiki", "tarot",
+    "the Law of Attraction", "the akashic record"
+  ], 
+  "nTheXOf": [
+    "growth", "healing", "knowledge", "nature", "richness", "truth"
+  ], 
+  "not_explain": [
+    "%future_hope", "%history", "%selling_point", "%your_problems"
+  ], 
+  "not_selling": [
+    "%explain", "%future_hope", "%history", "%your_problems"
+  ], 
+  "ppPerson": [
+    "aligned", "awakened", "guided", "re-energized", "reborn", "recreated"
+  ], 
+  "ppThingPrep": [
+    "baptized in", "engulfed in", "enveloped in", "immersed in",
+    "nurtured by", "opened by", "transformed into"
+  ], 
+  "selling_point": [
+    "%nSubject may be the solution to what's holding you back from a %adjBig %nOf of %{nMass}.",
+    "As you %viPerson, you will enter into infinite %nMass that transcends understanding.",
+    "Through %nSubject, our %nOurPlural are %ppThingPrep %{nMass}.",
+    "You will soon be %ppPerson by a power deep within yourself -- a power that is %adj, %{adj}."
+  ], 
+  "vOpenUp": [
+    "align us with", "clear a path toward", "enable us to access",
+    "give us access to", "let us access", "open up",
+    "remove the barriers to", "tap into"
+  ], 
+  "vTraverse": [
+    "embark on", "engage with", "follow", "go along", "navigate", "roam",
+    "traverse", "walk", "wander"
+  ], 
+  "viPerson": [
+    "believe", "dream", "exist", "grow", "heal", "live", "reflect",
+    "self-actualize", "vibrate"
+  ], 
+  "vtMass": [
+    "bring about", "bring forth", "create", "discover", "engender", "foster",
+    "generate", "harmonize", "ignite", "inspire", "integrate", "leverage",
+    "manifest", "rediscover", "release", "reveal", "spark"
+  ], 
+  "vtPerson": [
+    "awaken", "beckon", "bless", "change", "develop", "empower", "enlighten",
+    "fulfill", "ground", "heal", "inspire", "recreate", "strengthen",
+    "synergize", "unify"
+  ], 
+  "your_problems": [
+    "%nPerson, look within and %vtPerson yourself.",
+    "Although you may not realize it, you are %{adj}.",
+    "Have you found your %{nPath}?",
+    "How should you navigate this %adj %{nCosmos}?",
+    "How will we %vtMass this %adj %{nCosmos}?",
+    "If you have never experienced this %nOf %fixedAdvP, it can be difficult to %{viPerson}.",
+    "It can be difficult to know where to begin.",
+    "The %nCosmos is calling to you via %fixedNP. Can you hear it?"
+  ]
+}
