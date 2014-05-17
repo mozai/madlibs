@@ -236,7 +236,7 @@ class Madlibs(object):
         self.errors.append('term "%s": %s' % (term, repr(err)))
     for term in terms:
       if len(term) > 1 and not term in termsseen :
-        self.errors.append('term "%s" is unused' % term)
+        self.warnings.append('term "%s" is unused' % term)
     return len(self.errors) == 0
 
   def addterm(self, term, data=None):
