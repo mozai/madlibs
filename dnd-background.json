@@ -1,0 +1,137 @@
+{
+  "#": "from http://whothefuckismydndcharacter.com/", 
+  "@": [
+    "character"
+  ], 
+  "adj": [
+    "Machiavellian", "absent minded", "adventurous", "agreeable",
+    "ambitious", "anxious", "apathetic", "argumentative", "assertive",
+    "attentive", "bigoted", "bitchy", "blunt", "boisterous", "bossy",
+    "brave", "callous", "cautious", "charming", "cheerful", "churlish",
+    "cold", "composed", "conceited", "condescending", "confident",
+    "conscientious", "cool-headed", "courageous", "crabby", "crass",
+    "critical", "cruel", "cunning", "curious", "cynical", "decisive",
+    "delightful", "demure", "dependable", "depressed", "determined",
+    "diligent", "discerning", "disruptive", "dramatic", "driven", "dutiful",
+    "eager", "easy-going", "egotistical", "emotional", "enterprising",
+    "enthusiastic", "excitable", "fearless", "flamboyant", "flirtatious",
+    "frank", "friendly", "funny", "fussy", "generous", "gentle", "gloomy",
+    "grave", "grouchy", "gruff", "guarded", "hateful", "headstrong",
+    "helpful", "hot-headed", "hot-headed", "hypercritical", "impatient",
+    "impetuous", "impulsive", "inconsiderate", "insensitive", "intolerant",
+    "inventive", "irritable", "lazy", "level-headed", "loud", "mean",
+    "methodical", "meticulous", "miserable", "moody", "morose", "motivated",
+    "naive", "nosy", "obnoxious", "old-fashioned", "outgoing", "outspoken",
+    "overemotional", "peaceful", "pensive", "philosophical",
+    "plain-speaking", "playful", "plucky", "pompous", "positive",
+    "prejudiced", "pretty chill", "proud", "quick-tempered", "reliable",
+    "reluctant", "resentful", "resourceful", "respectful", "restless",
+    "romantic", "sassy", "selfish", "sensitive", "sentimental",
+    "short-tempered", "snobby", "sombre", "sophisticated", "soulless",
+    "spiteful", "stern", "stoic", "surly", "suspicious", "sweet", "tactless",
+    "talented", "thoughtful", "unbalanced", "unpredictable", "unstable",
+    "warm-hearted", "wary", "wary", "well-intentioned"
+  ], 
+  "character": [
+    "%adj %species %job from %where who %past"
+  ], 
+  "dragoncolor": [
+    "Black", "Blue", "Brass", "Bronze", "Copper", "Gold", "Green", "Red",
+    "Silver", "White"
+  ], 
+  "dwarfsubtype": [
+    "Hill", "Mountain"
+  ], 
+  "elfsubtype": [
+    "Dark", "High", "Wood"
+  ], 
+  "faerunhumans": [
+    "Calishite", "Chondathan", "Damaran", "Illuskan", "Mulan", "Rashemi",
+    "Shou", "Tethyrian", "Turami"
+  ], 
+  "gnomesubtype": [
+    "Forest", "Rock"
+  ], 
+  "halflingsubtype": [
+    "Lightfoot", "Stout"
+  ], 
+  "job": [
+    "Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk", "Paladin",
+    "Ranger", "Rogue", "Sorcerer", "Warlock", "Wizard"
+  ], 
+  "past": [
+    "always alliterates their anecdotes", "always keeps their promises",
+    "always needs to be the centre of attention",
+    "always refers to inanimate objects as 'shes'",
+    "always romanticised adventure", "always takes first watch",
+    "always wakes up on the right side of the bed",
+    "always wanted to learn magic but struggled with it",
+    "believes they're a demi god, but hasn't figured out who's their father yet",
+    "believes trees can speak to them and them alone", "can't read",
+    "can't silence the voices", "can't stand the sight of blood",
+    "can't swim", "constantly watches their back", "deserted the army",
+    "distrusts all authority", "doesn't believe in magic, ever",
+    "doesn't have a reflection",
+    "doesn't understand the concept of politeness",
+    "failed out of every guild going",
+    "finds it impossible to speak to girls",
+    "gets nervous speaking in front of crowds", "grew up fat",
+    "grew up in a graveyard", "has a bad gambling problem",
+    "has a drinking problem", "has a huge debt to pay back",
+    "has always wanted to open their own tavern", "has anger problems",
+    "has no other family but the team", "has serious body image problems",
+    "has serious daddy issues", "hates music", "hates the monarchy",
+    "hates wearing their glasses", "is a recovering cannibal",
+    "is a recovering gambling addict", "is afraid of dogs",
+    "is afraid of fire", "is afraid of heights", "is afraid of sharp edges",
+    "is afriad the rest of the party will kill them if they try to leave",
+    "is certain their days are numbered", "is completely colour blind",
+    "is downright racist towards living skeletons",
+    "is really (I MEAN REALLY) afraid of the dark",
+    "is responsible for their sisters death",
+    "is trying to get out of the adventuring business to settle down",
+    "is uncomfortable around old people (they smell like death)",
+    "is writing an autobiography",
+    "makes inappropriate jokes at the worst times", "meditates before dawn",
+    "mistrusts anyone smaller than them",
+    "never takes their armour off, just in case",
+    "saw their whole family consumed by a gelatinous cube",
+    "secretly became an adventurer to impress a love interest",
+    "studied interior dungeon design", "suffers from claustrophobia",
+    "suffers from nosebleeds",
+    "takes great delight in identifying new beetle species",
+    "wants everyone to like them", "wants to be famous, no matter what",
+    "was brought up to be a librarian", "was left out of their fathers will",
+    "was raised by ghosts", "was raised by wolves",
+    "was told they'll never be good enough"
+  ], 
+  "species": [
+    "%dragoncolor Draconian", "%dwarfsubtype Dwarf", "%elfsubtype Elf",
+    "%faerunhumans Human", "%gnomesubtype Gnome",
+    "%halflingsubtype Halfling", "Half-Elf", "Half-Orc", "Tiefling"
+  ], 
+  "where": [
+    "a boarding school for the children of middle-class wizards",
+    "a bustling city", "a carnival freak show", "a cavern without echoes",
+    "a city that never slept", "a commune", "a company of sellswords",
+    "a fishing village", "a floating city", "a forgotten elven monastery",
+    "a haberdashery", "a haunted castle", "a large family",
+    "a local street gang", "a maximum security prison",
+    "a mercenary company", "a mid-level cult", "a nocturnal town",
+    "a orphanage workhouse", "a royal lineage", "a ruined city",
+    "a slave owning city", "a small family farm", "a small town tavern",
+    "a strict monastery", "a super religious upbringing",
+    "a theatre company", "a tiny village ",
+    "a town that only ever bartered for goods", "a travelling band",
+    "a village without a tavern", "an illusory forest",
+    "an unchartable island", "an underground city",
+    "an underground network of dragon caves", "an unpure bloodline",
+    "the base of a volcano", "the best library in the city",
+    "the city post office", "the city sewers", "the forest of sadness",
+    "the grave diggers union", "the guard's academy", "the gutter",
+    "the now dry swamp", "the petrified wood",
+    "the pirate infested Isles of Woe", "the royal bank",
+    "the slave fighting pits", "the smallest mountain in the world",
+    "the wet desert"
+  ]
+}
