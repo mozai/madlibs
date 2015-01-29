@@ -1,0 +1,144 @@
+{
+  "#": "from http://whatthefuckismyquestr.com/, written by Matthew LaFever", 
+  "@": [
+    "quest"
+  ], 
+  "adjective1": [
+    "amiable", "amicable", "amorphous", "anachronistic", "anarchic",
+    "arguable", "bearded", "beautiful", "brooding", "burly", "celebratory",
+    "clockwork", "clumsy", "courageous", "crestfallen", "deceitful",
+    "delightful", "demonic", "devious", "disgusting", "dodgy", "dread",
+    "eldest", "famous", "fearful", "glowing", "great and powerful",
+    "handsome", "honest", "inexplicably fond of plaid", "infamous", "insane",
+    "intolerable", "invisible", "iron", "jaded", "lethargic", "maligned",
+    "mastadonic", "masterful", "misanthropic", "mysterious", "noxious",
+    "obnoxious", "oddly", "old", "quizzical", "really gross", "scary",
+    "small", "smarmy", "smart", "strange", "strong", "tall", "thoughtful",
+    "treacherous", "voiceless", "voluptuous", "weird", "wise", "witty",
+    "youthful"
+  ], 
+  "adjective2": [
+    "amorphous", "ancient", "black", "blue", "clockwork", "cursed",
+    "gargantuan", "ghostly", "glowing", "gooey", "holy", "ivory", "jade",
+    "magical", "magnetic", "messed up", "mysterious", "old", "shimmering",
+    "slightly chewed", "slimy", "slippery", "smooth", "soggy", "star-filled",
+    "sticky", "talking", "technologically enhanced", "tiny", "translucent",
+    "unholy", "unsanitary", "vorpal", "white"
+  ], 
+  "describe2": [
+    "covered in ancient symbols", "covered in strange algorhythms",
+    "created by the titans", "from before the spellwar",
+    "made from dragon bone", "made of pure light", "of burning ice",
+    "of crippling pain", "of crystallized dragon's tears or some shit",
+    "of cuil theory", "of darkness", "of destiny", "of lightness",
+    "of liquid fire", "of the ancients", "of the arch-demon",
+    "of the dead gods", "of the god of fates", "of the lowly kobold people",
+    "of the omnipotent worm", "possessed by the spirit of a lewd dwarf",
+    "that can only be held by a hero",
+    "that cannot be put down once picked up",
+    "that disassembles and reassembles itself when no one is watching",
+    "that emits a faint hum", "that explodes when it touches water",
+    "that fell from the rift in the sky",
+    "that gets dryer the more you get it wet",
+    "that has been telepathically communicating with you for some time now",
+    "that is always soaking wet",
+    "that is currently in the center of the lake",
+    "that is currently in the possession of the dread pirate Roberts",
+    "that is currently in the possession of the ghosts of Naal",
+    "that is currently in the possession of the hydra",
+    "that is currently in the possession of the king",
+    "that is currently in the possession of the mages guild",
+    "that is currently in the possession of the thieves guild",
+    "that is never where you left it last",
+    "that is of slightly smaller proportions than you would have expected",
+    "that is unexplainably larger when held in your left hand",
+    "that puts out fires when you're within ten feet of one",
+    "that slips from your hands when you try to hold it",
+    "that sometimes vanishes from time and space",
+    "that the centaur of rock mountain once carried",
+    "that the lich mage holds",
+    "that the sphinx will award for answering his riddles",
+    "that turns into dust when it gets wet", "that's hidden out of time",
+    "that's only visible in complete darkness",
+    "the elves created during the spellwar"
+  ], 
+  "finale": [
+    "can you at last understand the words of the babbling statues of the %where1",
+    "can you bring light to the %where1 of darkness",
+    "can you bring peace to the two kingdoms",
+    "can you commune with the gods",
+    "can you defeat the army invading your kingdom",
+    "can you destroy the %noun1",
+    "can you finally avenge your fathers death",
+    "can you finally rule the world",
+    "can you prove your worth to your tribe",
+    "can you raise an army to defeat the forces of hell",
+    "can you repair the kingdom by travelling back in time and preventing this from ever happening in the first place",
+    "can you save the planet from annihilation",
+    "can you save your small village", "can you slay the %noun1",
+    "can your ancestors rest in peace", "will night turn to day again",
+    "will the %noun1 activate and allow you to save the %{noun1}s",
+    "will the drought end", "will the fog dissipate",
+    "will the king let your %noun1 friend go", "will the kingdom be safe",
+    "will the old gods be set free",
+    "will the omnipotent worm meet you in a dream",
+    "will the parasite detach itself from your spinal column",
+    "will the time paradox right itself",
+    "will your family allow you to return home"
+  ], 
+  "noun1": [
+    "alchemist", "barbarian", "beholder", "being of pure energy", "centaur",
+    "cleric", "crab", "demon", "devil", "dragon", "drake", "dwarf", "fairy",
+    "flumph", "gazebo", "gelatinous cube", "ghost", "giant", "goblin",
+    "golem", "guy that looks like Gargamel", "halfling", "harpy", "hermit",
+    "king", "kobold", "leprechaun", "leviathan", "lich", "lizard king",
+    "lycanthrope", "mage", "man", "mantis", "mermaid", "mindflayer",
+    "minotaur", "monk", "mountain king", "necromancer", "orc", "paladin",
+    "queen", "radiation monster", "roc", "sea monster",
+    "sentient celery stalk", "snake", "sorcerer", "spider", "starspawn",
+    "swarm of cruelty", "talking beaver", "talking rock", "thief", "troll",
+    "unicorn", "vampire", "warrior", "witch", "wizard", "woman", "worm"
+  ], 
+  "noun2": [
+    "amulet", "bag", "boots", "bow", "chainmail", "clock", "crystal",
+    "dagger", "doll", "feather", "gem", "helmet", "leather jerkin", "lyre",
+    "orb", "pipe", "ring", "rock", "ruby", "scroll", "skeletal hand",
+    "spellbook", "sphere", "stone", "sword", "sword", "throw rug", "vest",
+    "wand"
+  ], 
+  "quest": [
+    "%travelhow %(to|through) the %where1 of %{where2}, %verb1 the %adjective1 %noun1, then %verb2 the %adjective2 %noun2 %{describe2}. %(Only then|Then|On that day) %{finale}."
+  ], 
+  "travelhow": [
+    "Caulk the wagon and float", "Fly", "Move quickly", "Ride a giant bird",
+    "Ride your steed", "Run", "Take an airship", "Take the fastest route",
+    "Teleport", "Walk"
+  ], 
+  "verb1": [
+    "Give the secret handshake to", "become an apprentice of", "befuddle",
+    "confuse", "dance with", "defeat", "explain your quest to",
+    "fall in love with", "give this letter to", "join forces with", "kill",
+    "kiss", "learn the secrets of", "party up with", "play a game with",
+    "set aside your differences with", "set sail with", "slay", "speak to",
+    "speak with", "strike down", "talk to"
+  ], 
+  "verb2": [
+    "activate", "break", "crush", "destroy", "discover the true secret of",
+    "disenchant", "equip", "find", "find the instructions to", "grab",
+    "grasp", "learn to use", "loot", "say the magic word to activate",
+    "steal", "take"
+  ], 
+  "where1": [
+    "cave", "forest", "jungle", "mountain", "rift", "river", "sea"
+  ], 
+  "where2": [
+    "ancient symbols", "blades", "cruelty", "darkness", "demonic influence",
+    "flames", "forgotten beasts", "glory", "goblins", "honesty", "ice",
+    "lies", "madness", "misery", "mystery", "questions", "sadness",
+    "screams", "spirits", "strange distances", "strange dreams",
+    "strange statues", "the ancients", "the damned", "the dead",
+    "the dead king", "the forgotten", "the god of death", "the king",
+    "the kobolds", "the rock giants", "time and space", "treachery", "truth",
+    "virtue", "weird rock formations"
+  ]
+}
