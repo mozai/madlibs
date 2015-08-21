@@ -1,0 +1,61 @@
+{
+  "#": "Edgy Steven Universe Theory, inspired by bloggoth", 
+  "@": [
+    "z_theory"
+  ], 
+  "diamond": [
+    "Blue Diamond", "Pink Diamond", "White Diamond", "Yellow Diamond"
+  ], 
+  "fusion": [
+    "Alexandrite", "Garnet", "Malachite", "Opal", "Rainbow Quartz",
+    "Sardonyx", "Sugalite"
+  ], 
+  "gem": [
+    "Amethyst", "Garnet", "Jasper", "Lapis Lazuli", "Pearl", "Peridot",
+    "Ruby", "Steven"
+  ], 
+  "what": [
+    "Blue Diamond", "Green Diamond", "Jamie in costume", "Pink Diamond",
+    "Yellow Diamond", "a Homeworld gem", "a cluster fusion",
+    "a corrupted gem", "a crystal gem", "a double agent",
+    "a fan of %(My Little Pony|Gravity Falls|Homestuck)", "a forced fusion",
+    "a fusion", "a fusion of %{fusion} and %{fusion}", "a gem", "a ghost",
+    "a gun", "a human", "a knife", "a lesbian", "a lie", "a male gem",
+    "a mass produced servant", "a mute",
+    "a next generation mass-produced gem", "a really good singer",
+    "a spy for %{diamond}", "a spy for Earth", "a spy for Homeworld",
+    "a weeaboo", "actual cannibal Shia Lebouf", "actually John Cena",
+    "actually evil this whole time", "alive", "an ascended fancharacter",
+    "at the bottom of the ocean", "behind you", "blind", "cis scum", "crazy",
+    "dead", "depressed", "evil", "fake", "fandom trash", "from Homeworld",
+    "from earth", "from the Kindergarten",
+    "going to need your help in the next episode (yes you!)", "good",
+    "has a shitpost blog", "has mental disorders", "hiding in %{gem}'s gem",
+    "in love", "in love with %who",
+    "just a cheap tactic to make weak gems stronger", "just a hologram",
+    "just a small town %{boy|girl} living in a lonely world", "lacking ears",
+    "made of love", "made of mutual hatred", "merely a weapon", "real",
+    "really mad at %who", "really thirsty for a tall glass of %who",
+    "secretly in love with %who", "shipping themselves with someone else",
+    "shipping trash", "stalking you on %{Tumblr|reddit|Facebook} RIGHT NOW",
+    "suffering from PTSD from to the last Homeworld offensive",
+    "suffering from stunted growth",
+    "the ring leader of an organized crime family", "transgender",
+    "true neutral", "trying to contact %{the Crystal Gems|Homeworld}",
+    "two lesbians in a trenchcoat", "very messy", "very organized",
+    "voiced by a popular Youtube Vlogger"
+  ], 
+  "who": [
+    "Alexandrite", "Amethyst", "Blue Diamond", "Buck Dewey", "Connie",
+    "Garnet", "Greg Universe", "Jamie", "Jasper", "Jenny", "Kiki", "Kofi",
+    "Lapis Lazuli", "Lars", "Lion", "Malachite", "Marty", "Mayor Dewey",
+    "Mr.Fryman", "Mr.Smiley", "Mrs.Maheswaran", "Nanefua", "Onion", "Opal",
+    "Pearl", "Peedee", "Peridot", "Pink Diamond", "Rainbow Quartz",
+    "Ronaldo", "Rose Quartz", "Ruby", "Sadie", "Sadie's Mom", "Sapphire",
+    "Sardonyx", "Sour Cream", "Steven", "Sugilite", "Vidalia",
+    "White Diamond", "Yellow Diamond", "Yellowtail"
+  ], 
+  "z_theory": [
+    "%who %{is|was} %what", "%who is %(secretly|actually|unknowingly) %who"
+  ]
+}
