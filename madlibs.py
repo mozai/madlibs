@@ -128,7 +128,7 @@ class Madlibs(object):
   def delterm(self, term):
     " for removing a term from the vocabulary "
     del(self.vocabulary[term])
-    
+
   def __delitem__(self, term):
     " see delterm(t) "
     # shut UP pylint; I define it in __init__()
@@ -204,8 +204,10 @@ class Madlibs(object):
         elif term == '@':
           for story in self.vocabulary['@']:
             termsseen.add(story)
-            if not (_good_term(story) and (story in self.vocabulary)) :
-              self.errors.append('bad story Term \"s\" in \'@\'' % story)
+            if not _good_term(story):
+              self.errors.append('bad story Term \"%s\" in \'@\'' % story)
+            if self.vocabulary.get(story) is None:
+              self.errors.append('missing story Term \"%s\" in \'@\'' % story)
             for storyterm in self.vocabulary[story]:
               if not _extract_terms(storyterm) :
                 self.warnings.append("no substitutions in \"%s\"" % storyterm)
