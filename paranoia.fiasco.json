@@ -1,0 +1,213 @@
+{
+  "#": "from the Alpha Complex playset for Fiasco, written by Dan Curtis Johnson", 
+  "@": [
+    "fiasco"
+  ], 
+  "fiasco": [
+    "$1 and $2 %{relationship} %{at|in} %{location}.",
+    "$1 and $2 %{relationship} and they have %{object}.",
+    "$1 and $2 %{relationship} and they need %{need}."
+  ], 
+  "location": [
+    "%location_af", "%location_cpu", "%location_hpdmc", "%location_is",
+    "%location_plc", "%location_rd"
+  ], 
+  "location_af": [
+    "a fuel-and-ammo depot with way too much of both",
+    "a parade marching field with bleacher seating for ten thousand",
+    "a railgun turret, supposedly aimed at Beta Complex",
+    "a secure armored barracks for elite Vulture Squadron Warriors",
+    "a survival obstacle course", "an indoor artillery range"
+  ], 
+  "location_cpu": [
+    "Local Caching Sub-CompNode 6134",
+    "a central switching hub for pneumatic tube communication system",
+    "a gigantic printer for bulk-generating official forms",
+    "rows and rows of file cabinets containing billions of note cards",
+    "the Exciting World of Data Modification (museum)",
+    "vast cube farm of customer support techs on headsets"
+  ], 
+  "location_hpdmc": [
+    "a hallway with no functioning cameras",
+    "a storage facility for effects of dead citizens awaiting new clones",
+    "an INFRARED Clearance cafeteria",
+    "new construction at the top or bottom level of this sector",
+    "the new set for The Teela O'Malley Show",
+    "the private suite of a much higher-clearance citizen"
+  ], 
+  "location_is": [
+    "a BLUE Clearance IntSec officers's locker room",
+    "a completely silent, pitch-black room",
+    "a data warehouse for cold cases and long-term archives",
+    "a mobile Confession Booth (follows citizens who 'look troubled')",
+    "an IntSec monitor control room with hundreds of screens",
+    "an enhanced Interrogation Chamber with seating for two subjects"
+  ], 
+  "location_plc": [
+    "a break room filled with competing vendobots",
+    "a distribution center operated by hundreds of scary-fast bots",
+    "a mission equipment supply counter with surly, incompetent staff",
+    "a recycling compactor, guaranteed to accept almost anything",
+    "an empty warehouse that was supposed to be full of something",
+    "an overworked Hot Fun facility"
+  ], 
+  "location_rd": [
+    "Project Infinite Hole, which 'might' go down 'forever'",
+    "a brightly-lit prototype demonstration theater",
+    "a chamber packed with glass tubing full of experimental drugs",
+    "a heavy sealed blast door ('WARNING. DO NOT OPEN. EVER.')",
+    "a new kind of reactor center",
+    "a weapons laboratory budgeted as medical research"
+  ], 
+  "need": [
+    "%need_escape", "%need_happiness", "%need_learn", "%need_respect",
+    "%need_revenge", "%need_wealth"
+  ], 
+  "need_escape": [
+    "to escape to a rival secret society",
+    "to escape to anywhere that's not under surveillance",
+    "to escape to the Outdoors",
+    "to finally gain death, without any more clone replacements",
+    "to flee to a different service group or firm",
+    "to flee to another sector"
+  ], 
+  "need_happiness": [
+    "happiness through acquisition of the coolest gadgets",
+    "happiness through maintaining (or restoring) a treason-free record",
+    "happiness through the pursuit of Science!",
+    "to find happiness through 'helping' other citizens perfect their hygiene",
+    "to find happiness through lots of drugs",
+    "to find happiness through secretly sowing chaos"
+  ], 
+  "need_learn": [
+    "to learn about a spy within your service group or firm",
+    "to learn about someone else's unregistered mutation",
+    "to learn the truth about a high-clearance R&D experiment",
+    "to learn the truth about one of your previous missions",
+    "to learn what's hidden deep in the Underplex",
+    "to learn what's the secret society's latest plan"
+  ], 
+  "need_respect": [
+    "respect from higher-clearance management",
+    "respect from lower-clearance citizens",
+    "respect from secret society superiors",
+    "the respect of Friend Computer",
+    "the respect of fellow Troubleshooters",
+    "the respect of service group peers"
+  ], 
+  "need_revenge": [
+    "revenge on a secret society contact for lying",
+    "revenge on the IntSec GREEN goon who terminated a previous clone",
+    "revenge on the PLC vendor who provided badwrong equipment",
+    "revenge on the briefing officer who sent people on the wrong mission",
+    "revenge on the last Team Leader, just because",
+    "revenve on the CPU bureaucrat who denied recent paperwork"
+  ], 
+  "need_wealth": [
+    "to get rich by becoming an HPD&MC vidshow star",
+    "to get rich by being an informant for Internal Security",
+    "to get rich by blackmailing other Troubleshooters over their secrets",
+    "to get rich by earning bonuses for completing service services",
+    "to get rich by hacking the Gray Subnets",
+    "to get rich by trading on the INFRARED Market or C-Bay"
+  ], 
+  "object": [
+    "%object_experiment", "%object_highsec", "%object_mutation",
+    "%object_transport", "%object_treason", "%object_weapon"
+  ], 
+  "object_experiment": [
+    "a Safe-T-Pak compressed foam bag", "a bot-controlling whistle",
+    "a pair of Manacles of Truth",
+    "a pair of pulse-detonation-engine jetboots",
+    "an exoskeleton with extra limbs",
+    "some MemGo 'Spotless Mind' memory eraser"
+  ], 
+  "object_highsec": [
+    "a VIP invitation to exclusive R&D tech demo and runway show",
+    "a bouquet of living flowers brought from the Outdoors",
+    "a genetic purity testing kit",
+    "a heavy dose of 'Supermind' brain accelerant",
+    "some RFID Tracking Dust", "the plans for a Mark V warbot"
+  ], 
+  "object_mutation": [
+    "a charm-pheromones mutation", "a deep-probe mutation",
+    "a regeneration mutation", "a telekinesis mutation",
+    "an electroshock mutation", "hypersenses mutation"
+  ], 
+  "object_transport": [
+    "a Vulture fighter flybot with live weapon load",
+    "a combat-scarred TreadTrack crawler for Outdoor exploration",
+    "a high-velocity transbot with funny ideas about route planning",
+    "a poorly maintained and deeply bitter multi-directional elevator",
+    "a variable-speed SlideWalk that's leaking lubricant",
+    "an autocar that's juuust out of warranty"
+  ], 
+  "object_treason": [
+    "a bucket of red paint that can make anything RED Clearance",
+    "a jackobot with its asimov circuits disabled",
+    "a wall-mounted terminal with ULTRAVIOLET data access",
+    "an actual live mouse",
+    "the Gatzmann Archive of Old Reckoning history and literature",
+    "the formula for Bouncy Bubbly Beverage, encrypted on a Grey Subnet"
+  ], 
+  "object_weapon": [
+    "a bandolier of 'Variety Grab Bag' grenades",
+    "a laser pistol with VIOLET-Clearance barrel",
+    "a pristine, never-been-used, force sword in very secure packaging",
+    "a shoulder-fired cone rifle currently lacking in ammo",
+    "a tangler rifle that tends to backfire",
+    "an ice-needle pistol with darts that melt to leave no trace"
+  ], 
+  "relationship": [
+    "%relationship_clones", "%relationship_doing", "%relationship_done",
+    "%relationship_duties", "%relationship_past", "%relationship_secret"
+  ], 
+  "relationship_clones": [
+    "are a current clone and accidentally prematurely-activated next clone",
+    "had a MemoMax upload accident where some of their memories were swapped",
+    "have a shared mutant power (it only works when they're near each other)",
+    "have different clone lines that coincidentally look almost identical",
+    "know that one of them can easily afford a new clone but the other cannot",
+    "were both recently decanted from a 'cut-rate discount' bank"
+  ], 
+  "relationship_doing": [
+    "are 'borrowing' someone else's identity for occasional hacking",
+    "are anonymously selling questionable items on C-Bay",
+    "are getting deeper into debt from treasonous gambling",
+    "are holding multicorder evidence of someone else's major treason",
+    "are lying to IntSec to send rivals to Enhanced Interrogation",
+    "are reprogramming rogue bots to attack rivals"
+  ], 
+  "relationship_done": [
+    "'Got through' an Internal Security 'inquiry'",
+    "accidentally caused a reactor core meltdown",
+    "exposed, maybe, to a little Communist Propaganda (briefly)",
+    "framed a very high-clearance citizen for treason",
+    "saw something strange while working in the Food Vats",
+    "transferred from a sector that doesn't exist any more"
+  ], 
+  "relationship_duties": [
+    "are Loyalty Officers specifically assigned to monitor each other",
+    "are a Happiness Officer and a desperate pill addict",
+    "are the Equipment Guy and a clumsy teammate who breaks things",
+    "are the Hygiene Officer and a citizen with a disgusting tic or habit",
+    "are the Recording Officer and someone who doesn't want to be seen",
+    "are the Team Leader and the former (demoted) Team Leader"
+  ], 
+  "relationship_past": [
+    "endured a mission in a HPD&MC 'reality contest show'",
+    "suffered together when their team was ordered to (shudder) change a lightbulb",
+    "together guarded a secret vehicle that maybe didn't exist",
+    "were on a team together that was supposed to catch 'the VIOLET Killer'",
+    "were there when a Food Vat got destroyed and they had to cover it up",
+    "were there when every bot in the sector went crazy from a digital virus"
+  ], 
+  "relationship_secret": [
+    "are a Frankenstein Destroyer and a Corpore Metal cyborg wannabe",
+    "are a Sierra Club tree-hugger and a Pro-Tech gadget fanatic",
+    "are a high-rank Illuminati master and a know-nothing new recruit",
+    "are a registered mutant (possibly in Psion) and a Anti-Mutant hater",
+    "are two rival Free Enterprise wheeler-dealers",
+    "belong to two opposed FCCC-P sects infiltrating each others's congregations"
+  ]
+}
