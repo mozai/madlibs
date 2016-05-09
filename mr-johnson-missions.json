@@ -1,0 +1,25 @@
+{
+  "#": "from mosntersandmanuals", 
+  "@": [
+    "a_mission"
+  ], 
+  "a_mission": [
+    "%client %wants_to %verb %target"
+  ], 
+  "client": [
+    "A corporation", "A local businessman", "A local gang", "A pimp",
+    "A priest", "A prostitute", "Some thugs"
+  ], 
+  "target": [
+    "a corporation", "a local businessman", "a local gang", "a pimp",
+    "a priest", "a prostitute", "some thugs"
+  ], 
+  "verb": [
+    "deliver", "escape from", "intimidate", "kill", "maim", "protect",
+    "spy on"
+  ], 
+  "wants_to": [
+    "must to", "must to", "needs to", "needs to", "plans to", "wants to",
+    "wants to"
+  ]
+}
