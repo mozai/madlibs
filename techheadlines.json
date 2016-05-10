@@ -1,8 +1,6 @@
 {
   "#": "roll your own linkbait tech headline by WhatToFix.com", 
-  "@": [
-    "z_template_list"
-  ], 
+  "@": "%z_template_list", 
   "advances_science": [
     "Advances Chaos Research", "Astounds Mathematical Community",
     "Completes Grand Unification Theory", "Creates Drug That Halts Aging",

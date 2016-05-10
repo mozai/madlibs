@@ -1,8 +1,6 @@
 {
   "#": "from http://whothefuckismydndcharacter.com/, whom I can't credit because they're hiding their name", 
-  "@": [
-    "character"
-  ], 
+  "@": "%adj %species %job from %where who %past",
   "adj": [
     "Machiavellian", "absent minded", "adventurous", "agreeable",
     "ambitious", "anxious", "apathetic", "argumentative", "assertive",
@@ -31,9 +29,6 @@
     "spiteful", "stern", "stoic", "surly", "suspicious", "sweet", "tactless",
     "talented", "thoughtful", "unbalanced", "unpredictable", "unstable",
     "warm-hearted", "wary", "wary", "well-intentioned"
-  ], 
-  "character": [
-    "%adj %species %job from %where who %past"
   ], 
   "dragoncolor": [
     "Black", "Blue", "Brass", "Bronze", "Copper", "Gold", "Green", "Red",

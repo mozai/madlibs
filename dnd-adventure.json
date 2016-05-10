@@ -1,8 +1,6 @@
 {
   "#": "from http://whatthefuckismyquestr.com/, written by Matthew LaFever", 
-  "@": [
-    "quest"
-  ], 
+  "@": "%travelhow %(to|through) the %where1 of %{where2}, %verb1 the %adjective1 %noun1, then %verb2 the %adjective2 %noun2 %{describe2}. %(Only then|Then|On that day) %{finale}.",
   "adjective1": [
     "amiable", "amicable", "amorphous", "anachronistic", "anarchic",
     "arguable", "bearded", "beautiful", "brooding", "burly", "celebratory",
@@ -105,9 +103,6 @@
     "orb", "pipe", "ring", "rock", "ruby", "scroll", "skeletal hand",
     "spellbook", "sphere", "stone", "sword", "sword", "throw rug", "vest",
     "wand"
-  ], 
-  "quest": [
-    "%travelhow %(to|through) the %where1 of %{where2}, %verb1 the %adjective1 %noun1, then %verb2 the %adjective2 %noun2 %{describe2}. %(Only then|Then|On that day) %{finale}."
   ], 
   "travelhow": [
     "Caulk the wagon and float", "Fly", "Move quickly", "Ride a giant bird",

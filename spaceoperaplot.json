@@ -1,8 +1,6 @@
 {
   "#": "d20 Space Opera Plot Hook Generator by AaFen@reddit", 
-  "@": [
-    "ze_plot"
-  ], 
+  "@": "%{aa_start}. %{bb_destination}. %{cc_antagonist}. %{dd_needed}. %{ee_assistance}.",
   "aa_start": [
     "The crew has %{macguffin}", "The crew is supposed to have %{macguffin}"
   ], 
@@ -99,8 +97,5 @@
     "the edge of known space at coordinates x:y:z", "the heart of the galaxy",
     "the hideout", "the professional association of one of the crew",
     "their old boss"
-  ], 
-  "ze_plot": [
-    "%{aa_start}. %{bb_destination}. %{cc_antagonist}. %{dd_needed}. %{ee_assistance}."
-  ]
+  ] 
 }

@@ -1,7 +1,16 @@
 {
   "#": "inspired by IGeNerator by jocchan", 
   "@": [
-    "z_IGN"
+    "%game Meets %game In The New %game sequel",
+    "%list_amount %best %game_pieces In Videogames",
+    "%tradeshow Belongs To %company, And Here's Why",
+    "%tradeshow: The %game_pieces In %game Gave Me %feefee",
+    "How %game_pieces Could Increase %game's Popularity",
+    "Is %game Just %game For Adults?",
+    "Should %game Be A %genre Game?",
+    "What %game Could Learn From %game",
+    "Why %game Will Make You Forget About %game",
+    "Why %genre Games Must Succeed"
   ], 
   "best": [
     "Best", "Most Overrated", "Most Uncomfortable", "Most Underrated",
@@ -40,17 +49,5 @@
   ], 
   "tradeshow": [
     "CES", "E3", "PAX", "TGS"
-  ], 
-  "z_IGN": [
-    "%game Meets %game In The New %game sequel",
-    "%list_amount %best %game_pieces In Videogames",
-    "%tradeshow Belongs To %company, And Here's Why",
-    "%tradeshow: The %game_pieces In %game Gave Me %feefee",
-    "How %game_pieces Could Increase %game's Popularity",
-    "Is %game Just %game For Adults?",
-    "Should %game Be A %genre Game?",
-    "What %game Could Learn From %game",
-    "Why %game Will Make You Forget About %game",
-    "Why %genre Games Must Succeed"
   ]
 }

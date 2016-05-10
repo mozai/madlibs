@@ -1,10 +1,10 @@
 {
   "#": "initial data set from Tim Ballew's Cliche Generator (Apr 2010) at his Risusmonkey journal. missing 'atomic_cliche' for post-WWII and 'mutant_cliche' for post-apocalypse", 
   "@": [
-    "ancient_cliche", "cyber_cliche", "magic_cliche", "medieval_cliche",
-    "modern_cliche", "omni_cliche", "pulp_cliche", "space_cliche",
-    "steam_cliche", "super_cliche", "swashbuckling_cliche",
-    "universal_cliche"
+    "%ancient_cliche", "%cyber_cliche", "%magic_cliche", "%medieval_cliche",
+    "%modern_cliche", "%omni_cliche", "%pulp_cliche", "%space_cliche",
+    "%steam_cliche", "%super_cliche", "%swashbuckling_cliche",
+    "%universal_cliche"
   ], 
   "ancient_career": [
     "Archer", "Barbarian", "Bard", "Berserker", "Blacksmith", "Centurion",

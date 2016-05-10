@@ -1,11 +1,6 @@
 {
   "#": "from mosntersandmanuals", 
-  "@": [
-    "a_mission"
-  ], 
-  "a_mission": [
-    "%client %wants_to %verb %target"
-  ], 
+  "@": "%client %wants_to %verb %target",
   "client": [
     "A corporation", "A local businessman", "A local gang", "A pimp",
     "A priest", "A prostitute", "Some thugs"

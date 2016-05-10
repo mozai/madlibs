@@ -1,9 +1,6 @@
 {
   "#": "from the Alpha Complex playset for Fiasco, written by Dan Curtis Johnson", 
   "@": [
-    "fiasco"
-  ], 
-  "fiasco": [
     "$1 and $2 %{relationship} %{at|in} %{location}.",
     "$1 and $2 %{relationship} and they have %{object}.",
     "$1 and $2 %{relationship} and they need %{need}."

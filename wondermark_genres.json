@@ -1,8 +1,6 @@
 {
   "#": "'The electro-plasmic hydrocephalic genre-fiction generator' by David Malki", 
-  "@": [
-    "sentence"
-  ], 
+  "@": "In %setting1 %setting2, a young %hero stumbles across %macguffin which incites a conflict with %villain with the help of a %sidekick with %sidekick_quirk, culminating in %{climax}. The story's title is \"%{title1}%{title2}s.\"", 
   "climax": [
     "a cliffhanger for the sake of prompting a series",
     "a daring rescue preceeding a giant explosion", "a duel atop a tower",
@@ -28,9 +26,6 @@
     "a dream-inducing drug", "a dusty tome", "an enchanted sword",
     "an encrypted data feed", "an exiled angel", "a magic diadem",
     "an otherworldly portal", "a talking fish", "a time-travelling soldier"
-  ], 
-  "sentence": [
-    "In %setting1 %setting2, a young %hero stumbles across %macguffin which incites a conflict with %villain with the help of a %sidekick with %sidekick_quirk, culminating in %{climax}. The story's title is \"%{title1}%{title2}s.\""
   ], 
   "setting1": [
     "a VR-simulated", "an alternate-history", "an anachronistic", "an ancient",

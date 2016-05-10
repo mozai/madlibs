@@ -1,8 +1,6 @@
 {
   "#": "Initial data set started from mIRC yiff.txt list with multiple sources each claiming sole credit for the same data... so I'll have to assume none of them are the original author. The data has been edited since. '$2' is meant to be the target of yiffing, '$1' is meant to be the person asking the bot to yiff someone", 
-  "@": [
-    "yiff"
-  ], 
+  "@": "%yiff",
   "animal": [
     "bunny", "canine", "cat", "coyote", "deer", "dingo", "dog", "dragon",
     "elephant", "feline", "fox", "hamster", "horse", "kangaroo", "kitty",

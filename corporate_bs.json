@@ -1,8 +1,10 @@
 {
   "#": "from atrixnet", 
   "@": [
-    "z_buzzword"
-  ], 
+    "%adv %v %adj %n", 
+    "%adv %v %n", 
+    "%v %adj %n"
+  ],
   "adj": [
     "24/365", "24/7", "B2B", "B2C", "accurate", "adaptive", "alternative",
     "an expanded array of", "backend", "backward-compatible",
@@ -94,8 +96,5 @@
     "streamline", "supply", "syndicate", "synergize", "synthesize", "target",
     "transform", "transition", "underwhelm", "unleash", "utilize",
     "visualize", "whiteboard"
-  ], 
-  "z_buzzword": [
-    "%adv %v %adj %n", "%adv %v %n", "%v %adj %n"
-  ]
+  ] 
 }

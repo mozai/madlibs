@@ -1,7 +1,14 @@
 {
   "#": "Web 2.0 Business Generator, from work by Jacqueline \"Kira\" Hamilton, emptybottle.org, and Andrew Wooldridge", 
   "@": [
-    "z_web20"
+    "%kira_bizname: %empty_mission",
+    "%kira_bizname: %empty_mission -- %brownpau_phrase",
+    "%kira_bizname: %wooldridge_mission",
+    "%kira_bizname: %wooldridge_mission -- %brownpau_phrase",
+    "%wooldridge_bizname: %empty_mission",
+    "%wooldridge_bizname: %empty_mission -- %brownpau_phrase",
+    "%wooldridge_bizname: %wooldridge_mission",
+    "%wooldridge_bizname: %wooldridge_mission -- %brownpau_phrase"
   ], 
   "kira_ab": [
     "Babble", "Blog", "Blue", "Brain", "Bright", "Browse", "Bubble", "Buzz",
@@ -66,16 +73,6 @@
     "%empty_mission_1 %empty_mission_2 %empty_mission_3"
   ],
   "brownpau_phrase": [ "It's all changing.", "Faster. Faster!", "The words aren't what they were.", "The new is old.", "Cry out, blogosphere!", "We're about what Web 2.0 is about.", "An AJAX-driven GUI.", "Folksonomy.", "Clustering.", "News clouds.", "Podcasts.", "On-demand streams.", "Tag me.", "\"ASL\" is geezer speak.", "Float this.", "Clear that.", "Hack it.", "Roll your own roll-your-own.", "Splog is an aggregate noun.", "Always be launching.", "This will change everything.", "We shall transcend borders.", "We are on the brink of a new age.", "The buzz is loud and clear.", "Label what defies categorization.", "This is newer media.", "You need someone who gets it.", "MSM just doesn't get it.", "It's all about community.", "Social is the new push.", "2.0 is the new New.", "Single. Word. Sentences!"
-  ],
-  "z_web20": [
-    "%kira_bizname: %empty_mission",
-    "%kira_bizname: %empty_mission -- %brownpau_phrase",
-    "%kira_bizname: %wooldridge_mission",
-    "%kira_bizname: %wooldridge_mission -- %brownpau_phrase",
-    "%wooldridge_bizname: %empty_mission",
-    "%wooldridge_bizname: %empty_mission -- %brownpau_phrase",
-    "%wooldridge_bizname: %wooldridge_mission",
-    "%wooldridge_bizname: %wooldridge_mission -- %brownpau_phrase"
   ]
 }
 

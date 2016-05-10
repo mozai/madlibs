@@ -1,9 +1,6 @@
 {
   "#": "From the card game 'Once Upon A Time'", 
   "@": [
-    "A_tale"
-  ], 
-  "A_tale": [
     "A %Aspect %Character, a %Item, and a %{Event}.",
     "A %Character and a %Character %(meet at|find a) %{Place}.",
     "A %Character, a %Aspect %Item, and a %{Event}."

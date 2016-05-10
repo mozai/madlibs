@@ -1,6 +1,6 @@
 {
-  "@": [ "test_set_1", "test_set_2" ], 
   "#": "Test vocabulary for the madlibs python module" ,
+  "@": [ "%test_set_1", "%test_set_2" ], 
   "greek" : [ "alpha", "beta", "gamma", "delta", "epsilon" ],
   "number" : [ "one", "two", "three", "four", "five" ],
   "unicode" : [ "㋡", "(◡‿◡✿)", "(⌐■_■)", "ᐁᐃᐅᐊ", "ᑫᑭᑯᑲ" ],
@@ -13,9 +13,6 @@
     ["alphaish","betaish","gammaish"]
   ],
   "term_with_str_value": "passed",
-  "incorrect!term!with!bangs" : [ "should fail" ],
-  "incorrect_term_int": 0,
-  "incorrect_term_dict": { },
   "incorrect_term_empty" : [ ],
   "test_set_1": [
     "no terms in this line: null",

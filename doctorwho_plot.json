@@ -1,11 +1,6 @@
 {
   "#": "distilled from http://toys.usvsth3m.com/drwho/", 
-  "@": [
-    "a_plot"
-  ], 
-  "a_plot": [
-    "%arrival %{destination}, %{menace}. %team %verb %{villain}. %{resolution}. %guest %{role}."
-  ], 
+  "@": "%arrival %{destination}, %{menace}. %team %verb %{villain}. %{resolution}. %guest %{role}.",
   "arrival": [
     "A failsafe on the TARDIS console blows, sending her crashing towards",
     "A flashback sequence introduces us to",

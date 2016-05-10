@@ -1,8 +1,9 @@
 {
   "#": "Edgy Steven Universe Theory, inspired by bloggoth", 
   "@": [
-    "z_theory"
-  ], 
+    "%who %{is|was} %what", 
+    "%who is %(secretly|actually|unknowingly) %who"
+  ],
   "diamond": [
     "Blue Diamond", "Pink Diamond", "White Diamond", "Yellow Diamond"
   ], 
@@ -54,8 +55,5 @@
     "Ronaldo", "Rose Quartz", "Ruby", "Sadie", "Sadie's Mom", "Sapphire",
     "Sardonyx", "Sour Cream", "Steven", "Sugilite", "Vidalia",
     "White Diamond", "Yellow Diamond", "Yellowtail"
-  ], 
-  "z_theory": [
-    "%who %{is|was} %what", "%who is %(secretly|actually|unknowingly) %who"
   ]
 }

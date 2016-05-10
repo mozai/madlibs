@@ -1,7 +1,10 @@
 {
   "#": "From issue 2 of Kagan Mcleod's 'Infinite Kung-Fu'", 
   "@": [
-    "z_kungfu_wanted_poster"
+    "WANTED: %a %b! A hopeless drunk should be punished, and here is a man who will give up his %e for some wine! Wanted for %c %d %e while drunk, this bastard is ruthless! Beware, his special techniques utilize his %e in a surprising way. If you kill him, or just leave him %f, you will receive the bonus reward of a new %{e}.",
+    "WANTED: %a %b! Although %c innocent animals is legal in the martial world, leaving them %f is not! This dishonorable fighter won't hesitate to do so, nor will he ever stop %c all things living.  He is often seen at the mouth of the Great River, torturing %d %{e}. Not since %a %b have we seen an enemy with this kind of %{e}.",
+    "WANTED: %a %b! If %c the heads of people was an everyday practice, this villain would have no use for his %e! His last victim, %a %b, was %f, and then forced to eat %d %e as he watched! His %e is unmistakable, so when spotted he should be %f immediately.",
+    "WANTED: %a %b! This evil monk is wanted for brutally %c %d %{e}. He lived hiding in %d basement for two years, but is now out %c innocent victims again.  If you see this villain notify %a %b, for his father was found %f -- the work of this disgraceful man! Vengence is the only key to restoring his family's %{e}."
   ], 
   "a": [
     "\"Ironface\"", "Bastard", "Blind man", "Bruce", "Brutal", "Butcher",
@@ -44,11 +47,5 @@
     "punished", "pushed down", "really dead", "rotting in the sun",
     "sleeping... forever!", "smacked around", "spanked, and spanked hard",
     "talking to the hand"
-  ], 
-  "z_kungfu_wanted_poster": [
-    "WANTED: %a %b! A hopeless drunk should be punished, and here is a man who will give up his %e for some wine! Wanted for %c %d %e while drunk, this bastard is ruthless! Beware, his special techniques utilize his %e in a surprising way. If you kill him, or just leave him %f, you will receive the bonus reward of a new %{e}.",
-    "WANTED: %a %b! Although %c innocent animals is legal in the martial world, leaving them %f is not! This dishonorable fighter won't hesitate to do so, nor will he ever stop %c all things living.  He is often seen at the mouth of the Great River, torturing %d %{e}. Not since %a %b have we seen an enemy with this kind of %{e}.",
-    "WANTED: %a %b! If %c the heads of people was an everyday practice, this villain would have no use for his %e! His last victim, %a %b, was %f, and then forced to eat %d %e as he watched! His %e is unmistakable, so when spotted he should be %f immediately.",
-    "WANTED: %a %b! This evil monk is wanted for brutally %c %d %{e}. He lived hiding in %d basement for two years, but is now out %c innocent victims again.  If you see this villain notify %a %b, for his father was found %f -- the work of this disgraceful man! Vengence is the only key to restoring his family's %{e}."
-  ]
+  ] 
 }

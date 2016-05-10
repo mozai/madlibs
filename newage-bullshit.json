@@ -1,7 +1,7 @@
 {
   "#": "New Age Bullshit Generator by Seb Pierce sebpierce.com", 
   "@": [
-    "a_bunch_of_bullshit", "a_bunch_of_bullshit", "any"
+    "%a_bunch_of_bullshit", "%a_bunch_of_bullshit", "%any"
   ], 
   "a_bunch_of_bullshit": [
     "%explain %explain %not_selling %any %any %any %selling_point",

@@ -1,8 +1,6 @@
 {
   "#": "Proverbs in English, mostly from WikiQuote, but all of them are folk-knowledge and I highly doubt a copyright claim can be made on word-of-mouth that could be hundreds of years old.  Some proverbs use %{}s for plurals, so avoid adding values to terms that require '-es' or '-ies'.", 
-  "@": [
-    "z_proverb"
-  ], 
+  "@": "%z_proverb",
   "adjBad": [
     "bad", "bitter", "broken", "cold", "guilty"
   ], 

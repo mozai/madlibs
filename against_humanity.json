@@ -1,8 +1,6 @@
 {
   "#": "Cards Against Humanity is free to use under the Creative Commons BY-NC-SA 2.0 License; published by Cards Against Humanity, LLC.", 
-  "@": [
-    "black"
-  ], 
+  "@": "%black",
   "black": [
     "%{white} + %{white} = %{white}.",
     "%{white} is a slippery slope that leads to %{white}.",
