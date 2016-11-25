@@ -92,9 +92,10 @@ class Madlibs(object):
     self.shuffles = {}
     self.errors = []
     self.warnings = []
-    self.__cmp__ = self.vocabulary.__cmp__
-    self.__iter__ = self.vocabulary.__iter__
     self.__contains__ = self.vocabulary.__contains__
+    self.__eq__ = self.vocabulary.__eq__
+    self.__iter__ = self.vocabulary.__iter__
+    self.__lt__ = self.vocabulary.__lt__
     if vocabulary:
       self.load(vocabulary)
 
@@ -180,7 +181,7 @@ class Madlibs(object):
       self._is_valid()
     except VocabularyError as err:
       self.errors.append(repr(err))
-    terms = self.vocabulary.keys()
+    terms = list(self.vocabulary.keys())
     terms.sort()
     termsseen = set()
     if isinstance(self.vocabulary['@'], str):
