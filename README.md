@@ -82,17 +82,13 @@ or a file-like object:
     # load from JSON text file
     ML = madlibs.Madlibs('filename.json')
 
-    # load from a python shelve file
-    ML = madlibs.Madlibs(shelve.open('vocab.db'))
-
     # load from a dict built at run-time
     ML = madlibs.Madlibs
     ML.load(handmade_dict)
 
 The current version expects the file to be a valid JSON dict(). You
 can also provide any other dict() object that obeys the rules for a
-valid vocabulary, which permits use of the Python module 'shelve'
-or other methods for persistence.
+valid vocabulary.  Support for shelve files is deprecated.
 
 
 To-Do List
@@ -101,7 +97,7 @@ To-Do List
   i.e.: I do, I did, I am doing, I have done.
   i.e.: `I am %move.2` with `"move":[["run","ran","running","run"],]`
   becomes "I am running"
-- an unawkward way to handle unicode & accented characters
+- improve modifiying the vocabulary at runtime and persisting changes.
 - more dict()-like methods to make it python paradigm friendly.
 - investigate using string.Template instead of rolling my own.
 - escape \| in %() : i.e.: `%(alpha\|a|beta\|b|gamma\|c)`
