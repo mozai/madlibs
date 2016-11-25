@@ -1,7 +1,7 @@
 # madlibs.py
 # encoding: utf8
 # author: Mozai <moc.iazom@sesom>
-# version: 20160509
+# version: 20161124
 """ Madlibs takes a dict as vocabulary of story-strings with marked spots
 for substituting random words or phrases from collections.   It is
 intended to be used iteratively, and uses a randomizing method
@@ -9,10 +9,11 @@ intended for high novelty in the output.
 God this description is poor; look for a readme.txt with this.  Especially
 for how to make the vocabulary data-sets used to initialize this.
 """
-import anydbm  # only so I can catch anydbm.error
+# 20161124 : converting to Python3.
+#  taking out 'shelve' because I never used it
+
 import json
 import random
-import shelve
 
 # TODO: if 'ab':['%cd'], then '%ab' -> '%cd' -> 'CD',
 #       but '%{ab}s' -> '%cds' -> error
@@ -68,7 +69,7 @@ def _extract_terms(data):
 def _good_term(termname):
   # validate a term name
   # I'm trying to avoid importing re
-  if not isinstance(termname, basestring):
+  if not isinstance(termname, str):
     return False
   if not termname[0].isalpha():
     return False
@@ -98,34 +99,27 @@ class Madlibs(object):
       self.load(vocabulary)
 
   def __del__(self):
-    # if isinstance(self.vocabulary, shelve.Shelf):
-    # can't use above, get 'NoneType' for the 'shelve' reference
-    try:
-      self.vocabulary.sync()
-    except AttributeError:
-      pass
-    try:
-      self.vocabulary.close()
-    except AttributeError:
-      pass
+    # if we were using a shelve, or pickle, or database
+    # this is where we'd close filehandles safely
+    NotImplemented
 
   def _is_valid(self):
     """ quick check of self.vocabulary for correctness of structure
     raises VocabularyError. use validate() method for diagnosing
     problems inside the data
     """
-    if not isinstance(self.vocabulary, (dict, shelve.Shelf)):
+    if not isinstance(self.vocabulary, (dict)):
       raise VocabularyError('vocabulary bad data type "%s"' % type(self.vocabulary))
     if '@' not in self.vocabulary:
       raise VocabularyError('term "@" is missing')
     for term in self.vocabulary.keys():
-      if not isinstance(self.vocabulary[term], (basestring, list)):
+      if not isinstance(self.vocabulary[term], (str, list)):
         raise VocabularyError('term %s is type %s' % (term, type(self.vocabulary[term])))
       if term == '@':
         if len(self.vocabulary['@']) == 0:
           raise VocabularyError('term "@" is empty')
       elif term == '#':
-        if not isinstance(self.vocabulary.get('#', ''), basestring):
+        if not isinstance(self.vocabulary.get('#', ''), str):
           raise VocabularyError('term "#" is not a string')
       elif not _good_term(term):
         raise VocabularyError('term "%s" is illegal' % term)
@@ -146,43 +140,30 @@ class Madlibs(object):
     raises VocabularyError if improper structure.
     """
     self.vocabulary = None
-    if isinstance(filenameordict, (dict, shelve.Shelf)):
+    if isinstance(filenameordict, (dict)):
       self.vocabulary = filenameordict
-    elif isinstance(filenameordict, basestring):
-      try:
-        self.vocabulary = shelve.open(filenameordict, flag='w')
-      except anydbm.error:  # not my fault this doesn't inherit from BaseException
-        infile = open(filenameordict, 'r')
-        self.vocabulary = json.load(infile)
-        infile.close()
+    elif isinstance(filenameordict, str):
+      infile = open(filenameordict, 'r')
+      self.vocabulary = json.load(infile)
+      infile.close()
+    else:
+      raise TypeError("expecting filename or dict")
     if self.vocabulary:
       self.__iter__ = self.vocabulary.__iter__
       self.__contains__ = self.vocabulary.__contains__
     return self._is_valid()
 
   def sync(self):
-    " for when you used Madlibs.load(shelve.open()) "
-    if isinstance(self.vocabulary, shelve.Shelf):
-      return self.vocabulary.sync()
-    elif 'sync' in dir(self.vocabulary):
-      return self.vocabulary.sync()
-    else:
-      raise VocabularyError('vocabulary doesn\'t have sync() method')
+    # if we were using a shelve, or pickle, or database
+    # this is where we'd flush buffers
+    NotImplemented
 
   def save(self, filething):
     " saves the vocabulary state to file or file-object "
-    if isinstance(self.vocabulary, shelve.Shelf):
-      # also flush to disk
-      self.vocabulary.sync()
-    if isinstance(filething, basestring):
+    if isinstance(filething, str):
       filething = open(filething, 'w')
-    if isinstance(filething, file):
-      try:
-        json
-      except NameError:
-        filething.write(str(self.vocabulary))
-      else:
-        json.dump(self.vocabulary, filething, sort_keys=True, indent=2)
+    if hasattr(filething, 'read'):  # can't isinstance(f, file) in Python3
+      json.dump(self.vocabulary, filething, sort_keys=True, indent=2)
       filething.close()
     else:
       raise TypeError("expected str or file object; received " + type(filething))
@@ -202,7 +183,7 @@ class Madlibs(object):
     terms = self.vocabulary.keys()
     terms.sort()
     termsseen = set()
-    if isinstance(self.vocabulary['@'], basestring):
+    if isinstance(self.vocabulary['@'], str):
       first_stories = [self.vocabulary['@']]
     else:
       first_stories = self.vocabulary['@']
@@ -219,7 +200,7 @@ class Madlibs(object):
           pass
         else:
           values = self.vocabulary[term]
-          if isinstance(values, basestring):
+          if isinstance(values, str):
             values = [values, ]
           if not isinstance(values, list):
             self.errors.append('term %s has unexpected value type "%s"' % (term, type(values)))
@@ -235,9 +216,9 @@ class Madlibs(object):
                 (i, j) = _next_term_ij(blurb)
                 if (i, j) != (-1, -1):
                   self.errors.append('term "%s" has unknown term "%s" in value "%s"' % (term, blurb[i:j], value))
-              except (VocabularyError, StandardError) as err:
+              except (VocabularyError, LookupError) as err:
                 self.errors.append('term "%s" has troublesome value "%s"; (%s)' % (term, str(value), str(err)))
-      except (VocabularyError, StandardError) as err:
+      except (VocabularyError, LookupError) as err:
         self.errors.append('term "%s": %s' % (term, repr(err)))
     for term in terms:
       if len(term) > 1 and term not in termsseen:
@@ -252,7 +233,7 @@ class Madlibs(object):
       raise TypeError('bad term; "%s"' % type(term))
     elif data is None:
       self.vocabulary[term] = []
-    elif isinstance(data, basestring):
+    elif isinstance(data, str):
       self.vocabulary[term] = [data]
     elif isinstance(data, list):
       self.vocabulary[term] = list(data)
@@ -261,11 +242,11 @@ class Madlibs(object):
 
   def insert(self, term, data=None):
     " for adding more values to a term in the vocabulary "
-    if not isinstance(term, basestring):
+    if not isinstance(term, str):
       raise TypeError('bad term; expected str, got ' + type(term))
     if term not in self.vocabulary:
       self.addterm(term, data)
-    elif isinstance(data, basestring):
+    elif isinstance(data, str):
       self.vocabulary[term].append(data)
     elif isinstance(data, list):
       # "why temp?" just in case self.vocabulary is shelve.Shelf
@@ -301,7 +282,7 @@ class Madlibs(object):
       return None
     if '@' not in self.vocabulary:
       return 0
-    if isinstance(self.vocabulary['@'], basestring):
+    if isinstance(self.vocabulary['@'], str):
       return 1
     return len(self.vocabulary['@'])
 
@@ -315,7 +296,7 @@ class Madlibs(object):
     a random choice from 'alpha' or 'beta' or 'gamma'
     single-character term is not allowed; will raise KeyError
     """
-    if not isinstance(term, basestring):
+    if not isinstance(term, str):
       raise TypeError('bad term type ' + repr(type(term)))
     if term[0] == '%':
       # in case we passed %fruit instead of 'fruit'
@@ -336,7 +317,7 @@ class Madlibs(object):
       while values is None and '.' in key:
         key = key[:key.rindex('.')]
         values = self.vocabulary.get(key)
-      if isinstance(values, basestring):
+      if isinstance(values, str):
         values = [values, ]
 
     value = default
@@ -361,7 +342,7 @@ class Madlibs(object):
 #    """
 #    if termlist == None :
 #      return self.vocabulary['@']
-#    elif isinstance(termlist, basestring):
+#    elif isinstance(termlist, str):
 #      if not termlist in self.vocabulary:
 #        raise KeyError('bad template list; "'+termlist+'" not found in vocabulary')
 #      self.vocabulary['@'] = [termlist,]
@@ -382,7 +363,7 @@ class Madlibs(object):
 #      return None
 #    if not '@' in self.vocabulary :
 #      raise VocabularyError("missing '@' term in vocabulary")
-#    if isinstance(term, basestring) :
+#    if isinstance(term, str) :
 #      template_types = [term,]
 #    elif isinstance(term, list) :
 #      template_types = list(term)
@@ -447,4 +428,3 @@ class VocabularyError(Exception):
   of the Madlibs vocabulary data; missing values, trying to add
   non-strings as terms, and so on.  Easier to catch this way.
   """
-
