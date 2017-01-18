@@ -1,7 +1,6 @@
 # madlibs.py
 # encoding: utf8
 # author: Mozai <moc.iazom@sesom>
-# version: 20161124
 """ Madlibs takes a dict as vocabulary of story-strings with marked spots
 for substituting random words or phrases from collections.   It is
 intended to be used iteratively, and uses a randomizing method
@@ -9,61 +8,101 @@ intended for high novelty in the output.
 God this description is poor; look for a readme.txt with this.  Especially
 for how to make the vocabulary data-sets used to initialize this.
 """
-# 20161124 : converting to Python3.
-#  taking out 'shelve' because I never used it
+# I'm taking the slow road to writing context-free grammars, aren't I?
 
 import json
 import random
+# why am I avoiding using 're' ?
+__version__ = '20161214'
+# 20161124 : converting to Python3.
+#   took out 'shelve' because I never used it
+# 20161201 : slowing adding chatbot features, special term '$'
+# 20161214 : adding mutators -- %{s:food} & food:(apple, candy) could
+#            become "apples" or "candies"
 
-# TODO: if 'ab':['%cd'], then '%ab' -> '%cd' -> 'CD',
-#       but '%{ab}s' -> '%cds' -> error
+# FIXME: '%{ab}s' with {'ab':['%cd']} becomes '%cds' and an error
 # wanted: backref "An %bodyPart for an %{\1} makes the whole world blind."
-# test: 'alpha.bet' is a valid term, decays to 'alpha' if 'alpha.bet' empty.
+#         maybe as a mutator? "%{set1:bodyPart} for an %{1}" ???
 # thinking: Would it be better to subclass UserDict ?
 
-# used for on-the-fly terms in stories. ie: %{red|cerulian|rust|cherry}
-BRACEPAIRS = (('(', ')'), ('[', ']'), ('{', '}'), ('<', '>'), ('|', '|'))
-TERMCHARS = '.0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz'
+BRACEPAIRS = (('(', ')'), ('[', ']'), ('{', '}'), ('<', '>'))
+TERMCHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789:_'
+RESERVEDTERMS = '!@#$%^&*:'
+MUTATORS = { }  # append as they're defined, below
 
-
-def _next_term_ij(data, start=0):
-  # find %blah or %(blah) in string data; returns (i,j) pair for s[i:j]"
+def _next_term_ij(data):
+  # find %blah or %(blah) in string data; returns (i,j) to be used as s[i:j]"
+  # returns (-1, -1) when not found
   # used repeatedly in Madlibs.get()
-  i = -1
-  j = -1
-  while i < 0 and j < 0:
-    i = data.find('%', start)
-    if ((i + 1) == len(data)) or (i < 0):
-      i = -1
+  # turns out nested parens is one of the medium-hard problems of compsci
+  i = 0  # guess at left edge of term
+  j = len(data)  # rightmost limit for a useful '%'
+  found = (-1, -1)
+  while i >= 0:
+    i = data.rfind('%', None, j)
+    if (i < 0):
       break
+    if (i == j - 1) or (i != 0 and data[i - 1] == '%'):
+      # "shown at 72%" or "%%terms like this"
+      j = i - 1
+      continue
+    lbrace, rbrace = None, None
     for bracepair in BRACEPAIRS:
       if data[i + 1] == bracepair[0]:
-        j = data.find(bracepair[1], i + 2) + 1
-    if j < i:
-      if ((i + 2) < len(data)) and (data[i:i + 2] == '%%'):
-        return (i, i + 2)
+        lbrace, rbrace = bracepair[0], bracepair[1]
+    if lbrace is None:
+      # either "with 37% share" or "eat %noun quickly"
       j = i + 1
-      while j < len(data) and (data[j] in TERMCHARS):
+      while (j < len(data)) and (data[j] in TERMCHARS):
         j += 1
-    if j == i + 1:
-      start = i + 1
-      i = -1
-      j = -1
-  return (i, j)
+      if j == i + 1:
+        j = i
+        continue
+      else:
+        found = (i, j)
+        break
+    else:
+      # "eat the %{noun} quickly"
+      j = data.find(rbrace, i)
+      if j < 0:
+        j = i
+        continue
+      else:
+        found = (i, j + 1)
+        break
+  return found
 
 
-def _extract_terms(data):
-  # "%alpha is a %beta with a huge %gamma" -> ['alpha', 'beta', 'gamma']
-  terms = []
-  (i, j) = (0, 0)
-  (i, j) = _next_term_ij(data)
-  while (i, j) != (-1, -1):
-    term = data[i + 1:j]
-    if (term[0], term[-1]) in BRACEPAIRS:
-      term = term[1:-1]
-    terms.append(term)
-    (i, j) = _next_term_ij(data, j)
-  return terms
+def _unbrace(term):
+  # "%{alpha}" becomes "alpha", "%beta" becomes "beta"
+  # TODO: what of %{alpha|beta} ?
+  if not term.startswith('%'):
+    raise VocabularyError("trying to unbrace non-term \"{}\"".format(term))
+  if (term[1], term[-1]) in BRACEPAIRS:
+    term = term[2:-1]
+  else:
+    term = term[1:]
+  return term
+
+
+def _mutator_a(noun):
+  # "apple" becomes "an apple"
+  if noun[0] in 'aeiou':
+    return 'an ' + noun
+  else:
+    return 'a ' + noun
+MUTATORS['a'] = _mutator_a
+
+
+def _mutator_s(noun):
+  # "candy" becomes "candies"
+  if noun[-1] == 's':
+    return noun + 'es'
+  elif noun[-1] == 'y':
+    return noun[:-1] + 'ies'
+  else:
+    return noun + 's'
+MUTATORS['s'] = _mutator_s
 
 
 def _good_term(termname):
@@ -71,11 +110,32 @@ def _good_term(termname):
   # I'm trying to avoid importing re
   if not isinstance(termname, str):
     return False
+  if ':' in termname:
+    mutator, termname = termname.split(':', 1)
+    if mutator not in MUTATORS:
+      return False
   if not termname[0].isalpha():
     return False
-  if not termname.replace('.', '').replace('_', '').isalnum():
+  if '|' in termname:
+    # it's valid, but not itself a vocabulary term
+    return False
+  if [i for i in termname if i not in TERMCHARS]:
     return False
   return True
+
+
+def _extract_terms(data):
+  # "%alpha is a %beta with a %{big|huge} %gamma" -> ['alpha', 'beta', 'gamma']
+  terms = []
+  (i, j) = (0, 0)
+  (i, j) = _next_term_ij(data)
+  while (i, j) != (-1, -1):
+    term = _unbrace(data[i:j])
+    if _good_term(term):
+      terms.append(term)
+    data = data[:i] + data[j+1:]
+    (i, j) = _next_term_ij(data)
+  return terms
 
 
 class Madlibs(object):
@@ -109,21 +169,31 @@ class Madlibs(object):
     raises VocabularyError. use validate() method for diagnosing
     problems inside the data
     """
+    self.errors = []
     if not isinstance(self.vocabulary, (dict)):
-      raise VocabularyError('vocabulary bad data type "%s"' % type(self.vocabulary))
+      self.errors.append('vocabulary is not a dict "%s"' % type(self.vocabulary))
     if '@' not in self.vocabulary:
-      raise VocabularyError('term "@" is missing')
+      self.errors.append('term "@" is missing')
+    if len(self.vocabulary['@']) == 0:
+      self.errors.append('term "@" is empty')
+    if not isinstance(self.vocabulary.get('#', ''), str):
+      self.errors.append('term "#" is not a string')
+    if '$' in self.vocabulary:
+      if isinstance(self.vocabulary['$'], list):
+        for i in self.vocabulary['$']:
+          if (not isinstance(i, list)) or (len(i) < 2) or [j for j in i if not isinstance(j, str)]:
+            self.errors.append('improper item in "$": ' + repr(i))
+      else:
+        self.errors.append('term "$" is not a list')
     for term in self.vocabulary.keys():
-      if not isinstance(self.vocabulary[term], (str, list)):
-        raise VocabularyError('term %s is type %s' % (term, type(self.vocabulary[term])))
-      if term == '@':
-        if len(self.vocabulary['@']) == 0:
-          raise VocabularyError('term "@" is empty')
-      elif term == '#':
-        if not isinstance(self.vocabulary.get('#', ''), str):
-          raise VocabularyError('term "#" is not a string')
+      if term in RESERVEDTERMS:
+        pass
+      elif not isinstance(self.vocabulary[term], (str, list)):
+        self.errors.append('term %s is type %s' % (term, type(self.vocabulary[term])))
       elif not _good_term(term):
-        raise VocabularyError('term "%s" is illegal' % term)
+        self.errors.append('term "%s" is illegal' % term)
+    if self.errors:
+      raise VocabularyError("There were problems:\n" + "\n".join(self.errors))
     return True
 
   def delterm(self, term):
@@ -179,27 +249,21 @@ class Madlibs(object):
     self.warnings = []  # side effects! hisssss!
     try:
       self._is_valid()
-    except VocabularyError as err:
-      self.errors.append(repr(err))
+    except VocabularyError:
+      # we might have more errors to pile on
+      pass
     terms = list(self.vocabulary.keys())
     terms.sort()
     termsseen = set()
-    if isinstance(self.vocabulary['@'], str):
-      first_stories = [self.vocabulary['@']]
-    else:
-      first_stories = self.vocabulary['@']
-    for story in first_stories:
-      if not _extract_terms(story):
-        self.warnings.append("no substitutions in '@' \"%s\"" % story)
+    # if we're going to have term '$' for call-response,
+    #   we'll need extra validation
     for term in terms:
       try:
-        if term in '!$%^&*':
-          # reserved, presently unused
-          continue
-        elif term == '#':
+        if (term != '@') and (term in RESERVEDTERMS):
           # already checked with self._is_valid()
           pass
         else:
+          # term
           values = self.vocabulary[term]
           if isinstance(values, str):
             values = [values, ]
@@ -209,18 +273,18 @@ class Madlibs(object):
             self.errors.append('term "%s" has zero values' % term)
           else:
             for value in values:
-              # someday, values will themselves be lists,
-              # for terms like ['run', 'running', 'ran']
-              termsseen.update(_extract_terms(value))
+              foundterms = _extract_terms(value)
+              termsseen.update(foundterms)
               try:
-                blurb = self.story(value)
-                (i, j) = _next_term_ij(blurb)
-                if (i, j) != (-1, -1):
-                  self.errors.append('term "%s" has unknown term "%s" in value "%s"' % (term, blurb[i:j], value))
-              except (VocabularyError, LookupError) as err:
+                for termtolookup in foundterms:
+                  termtolookup = termtolookup[termtolookup.find(':')+1:]
+                  if termtolookup not in self.vocabulary:
+                    self.errors.append('term "%s" has unknown term "%s" in value "%s"' % (term, termtolookup, value))
+              except Exception as err:
                 self.errors.append('term "%s" has troublesome value "%s"; (%s)' % (term, str(value), str(err)))
-      except (VocabularyError, LookupError) as err:
+      except Exception as err:
         self.errors.append('term "%s": %s' % (term, repr(err)))
+        raise
     for term in terms:
       if len(term) > 1 and term not in termsseen:
         self.warnings.append('term "%s" is unused' % term)
@@ -389,38 +453,33 @@ class Madlibs(object):
     random item and replaces %keyname with a random item from the
     vocab if template not provided, gets a new one from get_template()
     """
-    # if template == None or template == '@':
-    #   template = self.get_template()
-    # if template == None:
-    #   return None
     if template is None:
+      #template = self.get_template()
       template = self.get('@')
     text = template
     bad_loop = []
-    (i, j) = _next_term_ij(text, 0)
-    old_j = -1
+    (i, j) = _next_term_ij(text)
+    old_i = i
+    old_j = j
     while i >= 0 and j > 0:
-      if text[i:j] == '%%':
-        text = text[:i] + '%' + text[i + 2:]
-        (i, j) = _next_term_ij(text, i + 3)
-        continue
-      vocabword = text[i + 1:j]  # doesn't pick up the %
+      term = _unbrace(text[i:j])
       try:
-        vocabword = self.get(vocabword)
+        term = self.get(term)
       except KeyError as err:
         raise VocabularyError('bad template "%s"; (%s)' % (template, str(err)))
-      if vocabword is not None:
-        text = text[:i] + vocabword + text[j:]
-        (i, j) = _next_term_ij(text, i)
+      if term is not None:
+        text = text[:i] + term + text[j:]
+        (i, j) = _next_term_ij(text)
       else:
-        (i, j) = _next_term_ij(text, i + 1)
+        (i, j) = _next_term_ij(text)
       if j > 0 and j <= old_j:
-        bad_loop.append(vocabword)
+        bad_loop.append(term)
         if len(bad_loop) > 5:
-          raise VocabularyError('vocabulary loop detected ' + bad_loop)
+          raise VocabularyError('vocabulary loop detected ' + repr(bad_loop) + ' in \"' + template + '\"')
       else:
         bad_loop = []
       old_j = j
+    text = text.replace('%%', '%')  # unescape the doubled percents
     return text
 
 
