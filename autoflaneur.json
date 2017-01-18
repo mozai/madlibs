@@ -1,0 +1,161 @@
+{
+  "#": "from the bot @autoflaneur. Creative Commons CC-A-NC-SA 4.0 license yadda yadda",
+  "@": [
+    "%{consider}.", "%{find}.", "%{find}.", "%{find}.", "%{find}.",
+    "%{other}.", "%{other}.", "%{verb}.", "%{verb}.", "%{verb}.", "%{verb}.",
+    "%{walk}.", "%{walk}.", "%{walk}.", "%{walk}.", "%{walk}.", "%{walk}.",
+    "%{walk}.", "%{walk}.", "%{walk}.", "%{walk}."
+  ],
+  "action": [
+    "draw it", "draw it", "say hello", "sketch it", "take a rubbing of it",
+    "take a rubbing of it", "touch it for %{smallnumber} minutes",
+    "wait there watching the world pass for %{time}",
+    "write a poem about it", "write down a description",
+    "write down a description"
+  ],
+  "alturnative": [
+    "breathe, then keep going", "keep going", "wait", "wait until you do"
+  ],
+  "cheapdear": [
+    "cheapest", "most expensive"
+  ],
+  "consider": [
+    "Consider %{question} you are. Should you be here? Do you want to be here? If not, %{keepgo}",
+    "Consider %{question} you are. Should you be here? Do you want to be here? If not, %{keepgo}",
+    "Consider %{question} you are. Should you be here? Do you want to be here? If not, %{keepgo}",
+    "Consider what the people around you might be thinking. Decide if you want to keep going",
+    "Consider your clothes. If you wish you were wearing something different,%{keepgo}",
+    "Consider your safety. Do you feel safe? If not, %{keepgo}",
+    "Disobey %{thisnext} instruction"
+  ],
+  "count": [
+    "the count of %{number}"
+  ],
+  "direction": [
+    "east", "north", "northeast", "northwest", "south", "southeast",
+    "southwest", "west"
+  ],
+  "distance": [
+    "%{largenumber} steps", "%{number} metres", "%{number} metres",
+    "%{smallnumber} miles"
+  ],
+  "find": [
+    "Find the nearest %{furniture} and %{action}"
+  ],
+  "furniture": [
+    "bench", "building", "lamppost", "manhole cover", "paving slab", "seat",
+    "traffic light", "wall", "wall"
+  ],
+  "keepgo": [
+    "go back", "keep going"
+  ],
+  "landmark": [
+    "against the wind", "away from the moon", "away from the sea",
+    "away from the sun", "in the direction of home",
+    "towards the highest visible point",
+    "towards the largest building nearby", "towards the moon",
+    "towards the sea", "towards the sun", "with the wind",
+    "with your back to your home"
+  ],
+  "largenumber": [
+    "eighty-five", "fifteen", "fifty", "one hundred", "ten", "thirty",
+    "thirty", "twenty"
+  ],
+  "leftright": [
+    "left", "right"
+  ],
+  "loudsoft": [
+    "loudest", "softest"
+  ],
+  "method": [
+    "backwards", "gently", "heavily", "intensely", "lightly", "quickly",
+    "sideways", "slowly"
+  ],
+  "mostleast": [
+    "least", "most"
+  ],
+  "negfeeling": [
+    "anxious", "closed", "dispirited", "frustrated", "pessimistic", "sad"
+  ],
+  "number": [
+    "eight", "eighteen", "eleven", "fifteen", "five", "four", "fourteen",
+    "nine", "nineteen", "seven", "seventeen", "six", "sixteen", "ten",
+    "thirteen", "three", "twelve", "twenty", "two"
+  ],
+  "order": [
+    "fifth", "fourth", "next", "second", "third"
+  ],
+  "other": [
+    "%{position} where you are and watch %{visible} for %{time}",
+    "Close your eyes for %{count}. Identify the %{loudsoft} sound. Now %{walkl} %{tofrom} it",
+    "Enter the nearest cafe, order the drink you are %{mostleast} likely to enjoy, and find a comfortable place to drink it",
+    "Enter the nearest shop that sells scratchcards and buy the %{cheapdear}. Scratch it",
+    "Explore the first alley you meet for %{time}. When you leave, turn %{leftright}",
+    "Explore the first alley you meet. When you leave, turn %{leftright}",
+    "Find the nearest bird, then follow it for %{temporal} or until you lose it, whichever comes sooner",
+    "Find the nearest newsagent, buy %{paper}, read it %{reading}, then leave it with a note",
+    "Get on the next bus you can, and get off after %{number} stops",
+    "If you feel %{posfeeling}, turn left. If you feel %{negfeeling}, turn right. If neither, %{alturnative}",
+    "Take the most %{updown} route for %{temporal}"
+  ],
+  "paper": [
+    "a newspaper you disagree with", "a newspaper you'd never usually read",
+    "your favourite newspaper"
+  ],
+  "posfeeling": [
+    "calm", "delighted", "exhilarated", "happy", "open", "optimistic"
+  ],
+  "position": [
+    "Kneel", "Lie down", "Sit", "Sit", "Stand", "Stand", "Stand"
+  ],
+  "question": [
+    "where", "where", "where", "who", "who", "why"
+  ],
+  "reading": [
+    "for %{number} minutes", "for %{number} pages"
+  ],
+  "smallnumber": [
+    "five", "four", "three", "two"
+  ],
+  "spatial": [
+    "%{direction}", "%{landmark}", "%{method}", "%{method} %{direction}",
+    "%{method} %{landmark}"
+  ],
+  "temporal": [
+    "%{count}", "%{distance}", "%{time}", "%{time}", "a little while",
+    "a while", "a while"
+  ],
+  "thisnext": [
+    "the next", "the next", "this"
+  ],
+  "time": [
+    "%{number} minutes", "%{number} minutes", "%{number} seconds", "one hour"
+  ],
+  "tofrom": [
+    "away from", "towards"
+  ],
+  "updown": [
+    "downhill", "uphill"
+  ],
+  "verb": [
+    "Breathe", "Look", "Pause", "Run", "Wait", "Walk", "Walk", "Watch"
+  ],
+  "visible": [
+    "the buildings", "the clouds", "the ground", "the passers by",
+    "the plants", "the sky", "the wildlife"
+  ],
+  "walk": [
+    "%{walku} %{spatial} for %{temporal}",
+    "%{walku} %{spatial} for %{temporal}", "Take the %{order} %{leftright}"
+  ],
+  "walkl": [
+    "crawl", "cruise", "fly", "go", "go", "go", "go", "head", "head",
+    "jaunt", "journey", "meander", "proceed", "proceed", "roll", "travel",
+    "travel", "walk", "wander", "wend", "wheel"
+  ],
+  "walku": [
+    "Crawl", "Cruise", "Fly", "Go", "Go", "Go", "Go", "Head", "Head",
+    "Jaunt", "Journey", "Meander", "Proceed", "Proceed", "Roll", "Travel",
+    "Travel", "Walk", "Wander", "Wend", "Wheel"
+  ]
+}
