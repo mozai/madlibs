@@ -19,13 +19,12 @@ Here is an example vocabulary dict():
 
     {
       "#": "This term is not used it is only comments",
-      "@": ["%weather"],
-      "city": [ "Cincinati", "Montreal", "London" ]
-      "weather": [
+      "@": [
         "It sure is %(sunny|wet|hot|cold|awful) here in %city.",
         "It rains %(often|not at all) in %city.",
         "Having a wonderful time in %city, wish you were here."
       ]
+      "city": [ "Cincinati", "Montreal", "London" ]
     }
 
 The names of the lists the vocabulary are called *terms*.  In the
@@ -103,4 +102,7 @@ To-Do List
 - escape \| in %() : i.e.: `%(alpha\|a|beta\|b|gamma\|c)`
 - recommended limits for Terms; see if keeping len(list()) under 255
   matters, or len(str()) under 4096
+- some call-response feature; use special term '$' ? ordered list of
+  (regex1, term1) tuples.  Given message, iterate through '$' to find
+  first tuple with matching regex, return .story(term1)
 

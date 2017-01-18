@@ -18,15 +18,18 @@ print("{} loaded; {} stories.".format(VFILE, len(ML)))
 print("validating vocabulary...")
 
 if not ML.validate():
+  print("did not pass validate")
   print("\n".join(ML.errors))
   sys.exit(1)
 
 if ML.warnings:
+  print("warnings")
   print("\n".join(ML.warnings))
 
+print("testing story generation")
 for i in range(3 * len(ML)):
   ML.story()
 
-print("(seems okay; here's five samples)")
+print("seems okay; here's five samples")
 for i in range(5):
   print("- " + ML.story())

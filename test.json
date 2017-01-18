@@ -6,14 +6,9 @@
   "unicode" : [ "㋡", "(◡‿◡✿)", "(⌐■_■)", "ᐁᐃᐅᐊ", "ᑫᑭᑯᑲ" ],
   "greek_or_number" : [ "%greek", "%number", "%(greek)", "%(number)" ],
   "greek_and_number" : [ "%greek %number", "%(greek) %(number)" ],
-  "term.with.dots" : [ "passed" ],
   "term_with_uscores" : [ "passed" ],
-  "term_with_tenses" : [ 
-    ["oneish",  "twoish", "threeish"], 
-    ["alphaish","betaish","gammaish"]
-  ],
+  "terms_with_mutators" : [ "%{s:number}", "%{a:greek}"],
   "term_with_str_value": "passed",
-  "incorrect_term_empty" : [ ],
   "test_set_1": [
     "no terms in this line: null",
     "greek: %greek",
@@ -21,8 +16,7 @@
     "brace types: %(greek) %[greek] %<greek> %{greek} %|greek|",
     "unicode values in a term: %unicode",
     "term with just str value: %term_with_str_value",
-    "term with uscores: %term_with_uscores",
-    "term with sublist, first: %term_with_tenses.0"
+    "term with uscores: %term_with_uscores"
   ],
   "test_set_2": [
     "choice of (red|blue|green): %(red|blue|green)",
@@ -30,8 +24,6 @@
     "escaping percent: %%greek %%number",
     "bad marker: %1percent , empty marker: % ",
     "chaining terms simple: %greek_or_number",
-    "chaining terms multiple: %greek_and_number",
-    "term with dots: %term.with.dots",
-    "term with sublist, second: %term_with_tenses.1"
+    "chaining terms multiple: %greek_and_number"
   ]
 }
