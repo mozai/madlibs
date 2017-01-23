@@ -1,0 +1,22 @@
+{
+  "#": "From the deck of cards 'Decktet'",
+  "@": [ "%AA_spread" ],
+  "AA_spread": [
+    "A %Personality, in the %Location, %{has|finds} a %Event",
+    "A %Personality and a %Personality meet in the %Location",
+    "A %Event happens when the %Personality is in the %Location"
+  ],
+  "Personality": [
+    "Author", "Painter", "Savage", "Sailor", "Soldier", "Lunatic",
+    "Penitent", "Diplomat", "Merchant", "Watchman", "Light-Keeper",
+    "Consul", "Bard", "Huntress"
+  ],
+  "Location": [
+    "Desert", "Origin", "Mountain", "Forest", "Market", "Castle", "Cave",
+    "Mill", "Darkness", "Borderland", "Island", "Window", "Sea", "End"
+  ],
+  "Event": [
+    "Origin", "Journey", "Battle", "Discovery", "Chance Meeting", "Betrayal",
+    "Pact", "Harvest", "Rite", "End", "Calamity", "Windfall"
+  ]
+}
