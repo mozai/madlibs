@@ -1,0 +1,43 @@
+{
+  "#": "written by zzzzzzzz414", 
+  "@": [
+    "Lord English %{le1}. The Kids %{k1}.  The new universe %{ne1}.  The Masterpiece %{mp1}.  Character Arcs %{ca1}.  The Ghost Army %{ga1}.  The Sprites and Sprites^2 %{ss2}. Gamzee %{g1}.  Vriska %{v1}. (Vriska) %{v1}. That's why I thought the ending was %{amazing|bullshit}."
+  ],
+  "v1": [
+    "is %{wonderful|awful}, got %{fucked over|rewarded}, and %{completely deserved it|didn't deserve it}"
+  ],
+  "g1": [
+    "died in Collide",
+    "survived in the fridge and arrived in Caliborn's session via the black hole"
+  ],
+  "ss2": [
+    "vanished because they are game constructs",
+    "lived because why wouldn't they"
+  ],
+  "ga1": [
+    "died in the black hole",
+    "lived because of %{the House Juju|side-character shennanigans}"
+  ],
+  "ca1": [
+    "were mostly fulfilled because of %{ultimate selves|the lilypad conversations}",
+    "were mostly unfulfilled because %{something something story conventions and \"real people don't have arcs\"|it was badly written}"
+  ],  
+  "mp1": [
+    "happened and was fulfilled by %{the kids after Act 7|a doomed or alternate set of kids}",
+    "didn't happen because %{it was in a doomed timeline|it was unhappened by the retcon}"
+  ],
+  "ne1": [
+    "is safe and happy because %{they killed/trapped Lord English|they prevented Lord English from respawning in the new universe|Lord English won't mess with his stable timeloop}",
+    "is irrelevant because the kids left the comic",
+    "is fucked because %{Sburb will be played again, destroying everything|Lord English isn't really dead|Lord English is nonlinear}"
+    ],
+  "k1": [
+    "were killed by %{the black hole|the Condense or her minions}",
+    "entered the white door which led %{outside the comic|to their new universe|to the Masterpiece|to the Lord English fight}"
+  ],
+  "le1": [
+    "won because %{the Condense isn't really dead|the House Juju was a red herring|Vriska was mindcontrolled the whole time}",
+    "was destroyed by %{the House Juju|the black hole|the Masterpiece kids|Andrew Hussie}",
+    "was trapped by %{the House Juju|the black hole|the end of the comic|Andrew Hussie} and was left %{outside the comic|inside the comic|inside the black hole|inside the House Juju}"
+  ]
+}
