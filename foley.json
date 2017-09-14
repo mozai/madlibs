@@ -1,0 +1,65 @@
+{
+  "#": "twitter bot FoleyArtists",
+  "@": [
+    "%{f}, foley artists will use %{n1} to %{v} the sound of %{n2}."
+  ],
+  "f": [
+    "Incredibly", "Occasionally", "Often", "Often", "Often", "Often",
+    "Often", "Often", "Often", "Often", "Often", "Often", "Often",
+    "Sometimes", "Sometimes"
+  ],
+  "n1": [
+    "5078 bouncy balls dropped down a flight of stairs",
+    "Beanie Babies dropped from a great height",
+    "Spice Girls tracks played backwards", "a bag of ball bearings",
+    "a bottle of fizzy water", "a brick in a washing machine",
+    "a bunch of cats taped together", "a dot matrix printer",
+    "a recording of Courteney Arquette's laugh",
+    "a slice of lemon dropped unceremoniously onto a wooden table",
+    "a twanged telephone cord", "a wet paper bag",
+    "a whole bunch of chopsticks", "altoid tins filled with sand",
+    "broken glass, smoothed from years in the sea",
+    "cheese, rolled down a hill",
+    "chunky peanut butter smeared on the bottom of a shoe",
+    "items you wouldn't expect", "loose leaf earl grey tea",
+    "old recordings of public safety announcements from the 50s",
+    "pencils snapped in two", "really old typewriters",
+    "recent drama school graduates", "scrunched monopoly money",
+    "shredded celebrity gossip magazines", "smashed lightbulbs",
+    "spaghetti hurled at a wall", "stale bread, thrown like a frisbee",
+    "their own bodies", "well controlled forest fires", "well trained mice",
+    "your last phone conversation", "your old nokia 5110"
+  ],
+  "n2": [
+    "Godzilla stomping on a bakery", "James Bond shooting someone",
+    "Monica from Friends laughing", "Orca whales pining for the ocean",
+    "a TV chef chopping vegetables",
+    "a Zamboni machine entering an ice rink", "a badger rummaging for food",
+    "a busy train station", "a child painting enthusiastically",
+    "a door softly creaking", "a drum kit falling off a cliff",
+    "a factory in the 60s", "a flock of seagulls",
+    "a group of school children at a museum",
+    "a pebble thrown into a calm mill pond",
+    "a plant growing, but speeded up", "a serene waterfall",
+    "a speeding locomotive", "a startled flock of business men",
+    "a startled unicorn", "ambient noises in a doctors surgery",
+    "an awkward silence", "an awkward silence", "an old man, dancing alone",
+    "blinking", "demolition", "dinosaur eggs hatching", "distant thunder",
+    "dropping change into a tip jar", "drum solos", "emotional weeping",
+    "fairies laughing at a dirty joke", "gentle brushstrokes on canvas",
+    "gravitational waves", "happy crying at a wedding",
+    "highly skilled wood working", "horses hooves", "hushed murmurs",
+    "impatient teeth grinding", "impending doom", "intense boardgaming",
+    "interpretive dance", "mathematical formulae written on a blackboard",
+    "medieval knights charging into battle", "prom night", "rabble rousing",
+    "rain on a canvas tent", "rain on a canvas tent", "shoaling fish",
+    "sneaking footsteps", "someone falling down the stairs in slow motion",
+    "someone knitting a scarf", "someone typing an email", "synapses firing",
+    "the Internet connecting in the 90s", "vandalism",
+    "walking through autumn leaves", "windows smashing",
+    "zombies chewing on vital organs"
+  ],
+  "v": [
+    "recreate", "replicate", "simulate"
+  ]
+}
