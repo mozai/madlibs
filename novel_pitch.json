@@ -1,0 +1,61 @@
+{
+  "#": "Electric Lit pitch for your new novel, by Halimah Marcus and Benjamin Samuel",
+  "@": [
+    "A %{emphasis} %{genre} about a %{adjective} %{person}'s %{object} to %{verb} their %{goal}."
+  ],
+  "adjective": [
+    "agoraphobic", "alcoholic", "bored", "closeted", "depressed",
+    "desperate", "dissatisfied", "doomed", "drug-addled", "exuberant",
+    "hopelessly romantic", "jilted", "lovesick", "maladjusted",
+    "misanthropic", "morally compromised", "overbearing", "philosophical",
+    "precocious", "quixotic", "refugee", "unlucky", "vengeful", "wealthy",
+    "young"
+  ],
+  "emphasis": [
+    "compulsively readable", "courageous", "darkly comic", "dreamlike",
+    "dystopian", "edge-of-your-seat", "erotic", "fiercely honest",
+    "heartrending", "high-voltage", "hysterical", "inspiring",
+    "keenly observed", "lyrical", "meditative", "passionate", "profound",
+    "psycho-sexual", "razor-sharp", "richly drawn", "riotously funny",
+    "riveting", "surreal", "uncompromising", "unflinching", "unforgettable"
+  ],
+  "genre": [
+    "autobiografical novel", "comedy", "comming-of-age story",
+    "detective novel", "episotolary novel", "fairy tale", "family drama",
+    "fictional memoir", "graphic novel", "historical novel",
+    "instant classic", "meditation", "murder mystery", "noir",
+    "novel in stories", "page-turner", "romance", "romp", "saga", "story",
+    "thriller", "tour-de-force", "tragedy", "tragicomedy", "trilogy",
+    "war epic"
+  ],
+  "goal": [
+    "Oedipal complex", "addiction", "adoption", "biological clock", "cancer",
+    "critic reviews", "disinheritance", "eating disorder", "fear of spiders",
+    "feminism", "medical test results", "mother's death", "own birth",
+    "parent's murder", "political apathy", "privilege",
+    "religious upbringing", "secret second family", "sexless marriage",
+    "sexual awakening", "spiritual evolution", "toxic friendships",
+    "traumatic childhood", "ugly divorce", "untimely death", "writer's block"
+  ],
+  "object": [
+    "adventure", "battle", "commitment", "desire", "devotion", "dream",
+    "effort", "endeavour", "expedition", "failure", "inability", "journey",
+    "mission", "not-so-secret desire", "pains", "plan", "project", "promise",
+    "quest", "resolve", "scheme", "secret longing", "strategy", "struggle",
+    "vacation", "wish"
+  ],
+  "person": [
+    "adolescent", "adventurer", "child", "couple", "coven", "daughter",
+    "dictator", "divorcee", "doctor", "extended family", "ghost", "man",
+    "mistress", "mother", "murder detective", "octogenarian", "orphan",
+    "private investigator", "professor", "soldier", "starship captain",
+    "student", "vampire", "widow", "woman", "writer"
+  ],
+  "verb": [
+    "accept", "avenge", "avoid", "betray", "circumvent",
+    "come to grips with", "confront", "contemplate", "defend", "discover",
+    "embrace", "explore", "expose", "give up", "grapple with", "investigate",
+    "navigate", "overcome", "pursue", "re-awaken", "reconnect with",
+    "reconsile to", "transcend", "understand", "undertake", "withdraw from"
+  ]
+}
