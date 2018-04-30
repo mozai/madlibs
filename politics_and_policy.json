@@ -1,0 +1,72 @@
+{
+  "#": "Politics and Policy, a Lasers and Feelings hack by Nathan Rufo",
+  "@": [
+    "%character %administration %crisis"
+  ],
+  "admin_strength": [
+    "has a strong and impressive leader",
+    "has an exceptionally persuasive leader", "has great ideas for policy",
+    "is able to work non-partisan across the aisle",
+    "is practically immune to corruption", "is very popular, polling well,",
+    "operates like a well-oiled machine"
+  ],
+  "admin_weakness": [
+    "has a weak leader", "has an unhealthy leader", "has poor policy ideas",
+    "has trouble with internal strife", "is highly partisan",
+    "is mired with corruption", "is unpopular with voters"
+  ],
+  "administration": [
+    "The current government %admin_strength but %admin_weakness."
+  ],
+  "char_adj": [
+    "calculating", "charismatic", "earnest", "intelligent", "passionate",
+    "respected", "snarky"
+  ],
+  "char_flaw": [
+    "a weak grasp on policy", "arrogant", "brash", "can't take the heat",
+    "got skeletons in the closet", "lacks personality",
+    "often politically incorrect", "too quick to anger"
+  ],
+  "char_goal": [
+    "embarass the opposing party", "gain the president's trust",
+    "get a promotion", "get rich", "leak government secrets",
+    "pass key legislation", "set up their own political run"
+  ],
+  "char_past": [
+    "a Washington Outsider", "a career staffer", "a former politician",
+    "an ivy-leaguer", "ex-military", "from the private sector",
+    "the whiz-kid"
+  ],
+  "char_role": [
+    "Chief of Staff", "Communications Director", "Deputy Chief of Staff",
+    "Legal Counsel", "Political Strategist", "Press Secretary",
+    "Speechwriter"
+  ],
+  "character": [
+    "The %char_adj %char_role, who's %char_past but %char_flaw, and hopes to %char_goal. "
+  ],
+  "crisis": [
+    "%crisis_who hopes to %crisis_what in %crisis_where to %crisis_goal."
+  ],
+  "crisis_goal": [
+    "bring about economic collapse",
+    "cause a loss of majority in the Senate",
+    "cause a national security threat", "cause public backlash",
+    "force an impeachment", "make the president lose the next election",
+    "push their own policy to pass the legislature"
+  ],
+  "crisis_what": [
+    "create legislation", "embarass the president", "repeal a law",
+    "reveal secrets", "run for higer office", "switch parties"
+  ],
+  "crisis_where": [
+    "corruption", "education", "healthcare", "immigration",
+    "national security", "the economy"
+  ],
+  "crisis_who": [
+    "Amazon", "Anonymous", "Fox News", "Target Corporation", "The Democrats",
+    "The Freedom Caucus", "The New York Times", "The Republicans",
+    "The Speaker of the House", "The congressional Black Caucus",
+    "The president pro tempore", "Wal-Mart", "Wikileaks"
+  ]
+}
