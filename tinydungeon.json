@@ -1,0 +1,130 @@
+{
+  "#": "Tiny Dungeons adventure generator",
+  "@": [
+    "They must %verb the %subject %place, while dealing with %hindrance and opposed by %villain."
+  ],
+  "hind1": [
+    "a disappointed mentor", "a red herring", "an upset ally",
+    "pendulous laziness", "poor finances", "staggering greed"
+  ],
+  "hind2": [
+    "a betrayal", "an inconvenient theft", "family duty",
+    "inadequate transportation", "lustful distractions",
+    "not betraying a trust"
+  ],
+  "hind3": [
+    "a hostage situation", "a surprise attack", "an insidious spy",
+    "blinding hatred", "the magic of love", "the weight of gluttony"
+  ],
+  "hind4": [
+    "a broken promise", "a double-agent", "a kidnapping", "a surprise trap",
+    "shocking neglect", "venomous jealousy"
+  ],
+  "hind5": [
+    "a need for revenge", "a physical illness", "an assassination",
+    "awful deception", "just bad luck", "untimely forgetfulness"
+  ],
+  "hind6": [
+    "a mental illness", "a sworn rival", "damning pride",
+    "inclement weather", "staggering ignorance", "the city watch"
+  ],
+  "hindrance": [
+    "%hind1", "%hind2", "%hind3", "%hind4", "%hind5", "%hind6"
+  ],
+  "plac1": [
+    "in a castle", "in a dungeon", "in a mountain pass", "in the market",
+    "in the sunken city", "on a mountaintop"
+  ],
+  "plac2": [
+    "in a graveyard", "in a monastery", "in a temple", "in a tower",
+    "in the ruins", "in the under-city"
+  ],
+  "plac3": [
+    "a gambling den", "in a ice cave", "in the city jail",
+    "in the forbidden city", "on the ocean", "the old mine"
+  ],
+  "plac4": [
+    "in a volcano", "in enemy territory", "in the desert",
+    "in the faerie realm", "in the floating fortress", "on a bridge"
+  ],
+  "plac5": [
+    "in a dragon's den", "in a forest", "in the flying fort",
+    "in the land of dreams", "in the sewers", "on an island"
+  ],
+  "plac6": [
+    "in a canyon", "in a labyrinth", "in a whirlpool",
+    "in another dimension", "in the fortress", "on the docks"
+  ],
+  "place": [
+    "%plac1", "%plac2", "%plac3", "%plac4", "%plac5", "%plac6"
+  ],
+  "subj1": [
+    "human", "karhu", "merchant", "monster", "passenger", "traveller"
+  ],
+  "subj2": [
+    "animal", "fey", "innkeeper", "lizardfolk", "riddle", "theif"
+  ],
+  "subj3": [
+    "dwarf", "ghost", "merchandise", "pirate", "royal noble", "warrior"
+  ],
+  "subj4": [
+    "bandit", "city watch", "contraband", "goblin", "healer", "priest"
+  ],
+  "subj5": [
+    "magic item", "peasant", "performer", "salimar", "witness", "wizard"
+  ],
+  "subj6": [
+    "alchemist", "beggar", "caravan", "enemy", "scribe", "treefolk"
+  ],
+  "subject": [
+    "%subj1", "%subj2", "%subj3", "%subj4", "%subj5", "%subj6"
+  ],
+  "verb": [
+    "%verb1", "%verb2", "%verb3", "%verb4", "%verb5", "%verb6"
+  ],
+  "verb1": [
+    "attack", "capture", "hunt down", "negotiate with", "steal", "take"
+  ],
+  "verb2": [
+    "bargain with", "defend", "defend", "fight", "find", "free", "rescue"
+  ],
+  "verb3": [
+    "blackmail", "defend", "escort", "explore with", "retrieve", "secure"
+  ],
+  "verb4": [
+    "heal", "hide", "investigate", "overcome", "prevent", "sabotage"
+  ],
+  "verb5": [
+    "aid", "curse", "invade the home of", "kidnap", "shelter", "trade with"
+  ],
+  "verb6": [
+    "kill", "lead", "scare", "serve", "transport", "trick"
+  ],
+  "vill1": [
+    "a monster", "a robber", "a wizard", "an assassin", "bandits",
+    "the city watch"
+  ],
+  "vill2": [
+    "a distinct lack of time", "a necromancer", "an impostor", "pirates",
+    "the city's leader", "the local flora"
+  ],
+  "vill3": [
+    "a demon", "a secret society", "an enemy spy", "cultists", "the faeries",
+    "the local fauna"
+  ],
+  "vill4": [
+    "a dire curse", "a foreign invasion", "a syndicate of merchants",
+    "local politics", "the walking dead", "the wizard's guild"
+  ],
+  "vill5": [
+    "a malevolent alchemist", "a moneylender with a lien", "an evil genius",
+    "an insidious parasite", "the power of magic", "the thieves's guild"
+  ],
+  "vill6": [
+    "a breathtaking scandal", "a crippling disease", "a dragon",
+    "a murderer on the loose", "other adventurers", "the local army"
+  ],
+  "villain": [
+    "%vill1", "%vill2", "%vill3", "%vill4", "%vill5", "%vill6"
+  ]
+}
