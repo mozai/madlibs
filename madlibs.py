@@ -9,6 +9,9 @@ God this description is poor; look for a readme.txt with this.  Especially
 for how to make the vocabulary data-sets used to initialize this.
 """
 # I'm taking the slow road to writing context-free grammars, aren't I?
+# TODO: bad_loop detection is too simple, causing false positives
+# TODO: better reporting of WHAT causes the bad loop.  Need like a stack trace.
+# TODO: do I want to keep using ('%{', '}') as braces?
 
 import json
 import random
@@ -474,7 +477,7 @@ class Madlibs(object):
         (i, j) = _next_term_ij(text)
       if j > 0 and j <= old_j:
         bad_loop.append(term)
-        if len(bad_loop) > 5:
+        if len(bad_loop) > 100:
           raise VocabularyError('vocabulary loop detected ' + repr(bad_loop) + ' in \"' + template + '\"')
       else:
         bad_loop = []

@@ -1,0 +1,33 @@
+{
+  "#": "written by wwest4, based on Simon Wardley's A Quick Route To Building A Strategy (Creative Commons Attribution-Share Alike 3.0 License)",
+  "@": [
+    "Our strategy is %{adjective}. We will lead %{indef_adjective} effort of the market through our use of %{noun} and %{plural_noun} to build %{indef_noun}. By being both %{adjective} and %{adjective}, our %{adjective} approach will drive %{noun} throughout the organization. Synergies between our %{noun} and %{noun} will enable us to capture the upside by becoming %{adjective} in %{indef_adjective} world. These transformations combined with %{noun} due to our %{plural_noun} will create %{indef_noun} through %{noun} and %{plural_noun}."
+  ],
+  "adjective": [
+    "agile", "cloud based", "collaborative", "customer focused",
+    "digital first", "disruptive", "innovative", "networked", "open",
+    "secure", "sustainable"
+  ],
+  "indef_adjective": [
+    "a cloud based", "a collaborative", "a customer focused",
+    "a digital first", "a disruptive", "a networked", "a secure",
+    "a sustainable", "an agile", "an innovative", "an open"
+  ],
+  "indef_noun": [
+    "a big data", "a blockchain", "a competitive advantage", "a culture",
+    "a design thinking", "a digital business", "a digital transformation",
+    "a growth", "a learning organization", "a platform", "a revolution",
+    "a value", "a virtual reality", "an artificial intelligence",
+    "an ecosystem", "an insight from data", "an internet of things"
+  ],
+  "noun": [
+    "artificial intelligence", "big data", "blockchain",
+    "competitive advantage", "culture", "design thinking",
+    "digital business", "digital transformation", "ecosystem", "growth",
+    "insight from data", "internet of things", "learning organization",
+    "platform", "revolution", "value", "virtual reality"
+  ],
+  "plural_noun": [
+    "data leaders", "leaders", "social media"
+  ]
+}

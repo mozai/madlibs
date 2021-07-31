@@ -1,0 +1,153 @@
+{
+  "#": "From the twitter honeybot christianmom18",
+  "$": [
+    [ "", "%{wholephrase}" ],
+    [ "your", "%{yourcorrect}" ],
+    [ "youre", "%{yourecorrect}" ]
+  ],
+  "@": [
+    "%{neworigin}", "%{neworigin}", "%{neworigin}", "%{neworigin}",
+    "%{neworigin}", "%{prefix} %{neworigin}"
+  ],
+  "allnouns": [
+    "%{gerund}", "%{noun}"
+  ],
+  "bad": [
+    "Satan", "abominable", "atrocious", "awful", "bad", "demonic",
+    "deplorable", "dreadful", "evil", "frightful", "godless", "hell-sent",
+    "horrid", "lamentable", "pitiful", "rotten", "sad", "stinky", "terrible",
+    "the worst", "uncool"
+  ],
+  "dophrase": [
+    "introduces teenagers to rainbow parties",
+    "leads teens to read werewolf knotting fanfiction",
+    "leads to 'sex banking'",
+    "leads to hard drugs like cocaine and melatonin", "leads to lesbianism",
+    "leads to pegging", "leads to premarital rimming",
+    "leads to premarital sex",
+    "leads to sex outside the missionary position", "leads to sinning",
+    "leads to urethral sounding", "paves the devil's path",
+    "paves the path to 'rear end ballet'", "paves the path to hell",
+    "paves the path to sin", "will make your husband leave you for a man"
+  ],
+  "emoji": [
+    "\u2600\ufe0f", "\u2604\ufe0f", "\u2618", "\u270c\ufe0f", "\u271d\ufe0f",
+    "\u2728", "\u2753", "\u2757", "\u2764\ufe0f", "\u2b50\ufe0f",
+    "\ud83c\udf0d", "\ud83c\udf0e", "\ud83c\udf0f", "\ud83c\udf19",
+    "\ud83c\udf1b", "\ud83c\udf1c", "\ud83c\udf1e", "\ud83c\udf1f",
+    "\ud83c\udf2f", "\ud83c\udf37", "\ud83c\udf38", "\ud83c\udf39",
+    "\ud83c\udf3a", "\ud83c\udf3b", "\ud83c\udf3c", "\ud83c\udf3e",
+    "\ud83c\udf40", "\ud83d\udc30", "\ud83d\udc4f", "\ud83d\udc90",
+    "\ud83d\udc93", "\ud83d\udc95", "\ud83d\udc97", "\ud83d\udc99",
+    "\ud83d\udc9a", "\ud83d\udc9b", "\ud83d\udc9c", "\ud83d\udc9d",
+    "\ud83d\udc9e", "\ud83d\udc9f", "\ud83d\udcab", "\ud83d\udcaf",
+    "\ud83d\udd05", "\ud83d\udd06", "\ud83d\ude00", "\ud83d\ude04",
+    "\ud83d\ude0a", "\ud83d\ude42", "\ud83d\ude43", "\ud83d\ude4c",
+    "\ud83d\ude4f", "\ud83e\udd17"
+  ],
+  "gerund": [
+    "\"wrestling\"", "LARPing", "ballroom dancing", "curling",
+    "eating ice cream with more than two toppings",
+    "eating pizza with more than two toppings", "egg poaching",
+    "exotic scented candles", "go-karting", "hip-hop musical soundings",
+    "kite flying", "kitting", "knitting",
+    "more than a single glass of wine ;)", "playing overwatch",
+    "playing video games", "reading comic books", "roller skating",
+    "swing dancing", "taking pottery classes"
+  ],
+  "good": [
+    "beautiful", "dandy", "dandy", "excellent", "good", "good,", "gr8",
+    "great", "groovy", "keen", "lovely", "neat", "nifty", "peachy",
+    "smashing"
+  ],
+  "neworigin": [
+    "%{allnouns} %{willleadto}", "%{allnouns} %{willleadto}",
+    "%{gerund} %{dophrase}", "%{gerund} %{dophrase}", "%{noun} %{pred}",
+    "%{noun} %{pred}", "%{phrase} %{emoji}", "%{phrase}%{emoji}",
+    "%{phrase}%{punctuation}", "atheism %{dophrase}%{emoji}",
+    "atheism %{willleadto}%{emoji}"
+  ],
+  "noun": [
+    "Build-A-Bears", "Digimons", "Frozen", "Harry Poter",
+    "Jurassic Park Trading Cards", "Marvel's Avengings", "Monster Factory",
+    "Pepto-Bismol", "Taco Bell hot sauce", "anime sin pillows", "baseball",
+    "brightly painted bedrooms", "democratic socialism", "double dates",
+    "excessive blogging", "excessively graphical novels",
+    "excessively spicy foods", "exotic foods like \"hummus\" and \"quinoa\"",
+    "gender neutral bathrooms", "graphical t-shirts", "ice cream socials",
+    "peppered cheeses", "pet rocks", "pogs", "professional wrestling",
+    "revealing cardigans", "roller derby", "soccer games", "the X-Man movie"
+  ],
+  "phrase": [
+    "Christianity is the best", "Jesus saved me", "atheism is %{bad}",
+    "atheism is a tool of the devil", "atheism is wrong",
+    "atheism promotes godless hedonism", "atheists are %{bad}",
+    "atheists are wrong", "bill maher is %{bad}",
+    "bowling is a sin in the eyes of the lord",
+    "christopher hitchens was %{bad}", "comic books are %{bad}",
+    "comic books are sinful", "comic books promote sin",
+    "comic books will lead you down the path to damnation",
+    "dancing will lead you down the path to damnation",
+    "darn that Autocorrect", "darn that Autocorrect to heck",
+    "dinosaur bones were put in the ground to test our faith",
+    "evolution is %{bad}", "gaming is a sin",
+    "gaming promotes godless hedonism",
+    "god would want you to protect your flower",
+    "grand theft auto promotes godless hedonism", "i am so blessed",
+    "i hope that atheists find the right path", "i like catholocism",
+    "i like mormonism", "i love jesus", "i love my home",
+    "i saw a nice flower today", "i vote Republican",
+    "i wish gamers would realize that video games are a sin in the eyes of god",
+    "i wish people would realize that being an atheism is a sin in the eyes of god",
+    "i'm really happy with my job", "i'm so proud of my daughter",
+    "i'm so proud of my son", "jesus is %{good}", "jesus will save you",
+    "love going to Church", "mormons are good", "my faith was tested today",
+    "no rimming before marriage", "penn jillette is %{bad}",
+    "prayer fixed my whole life", "proud of my family",
+    "richard dawkins is %{bad}", "sam harris is %{bad}",
+    "sex outside of the missionary position is %{bad}",
+    "so glad i have my family",
+    "sometimes you just have to pray and hope it works out",
+    "south park is %{bad}", "the amazing atheist is %{bad}",
+    "the flying spaghetti monster is a tool of satan",
+    "thunderf00t is %{bad}", "video games are a path to Hell",
+    "video games promote godless hedonism", "video games promote violence",
+    "video games should be banned", "went to Church today",
+    "you can find God", "you can't be moral without religion"
+  ],
+  "pred": [
+    "corrupt the youth", "invite lascivious and unpure thoughts",
+    "made my daughter a lesbian", "made my son gay", "pave the path to hell",
+    "will introduce children to vampirism",
+    "will make your husband leave you for a man", "will over-heat the blood"
+  ],
+  "prefix": [
+    "atheists need to realize that", "dear atheists,"
+  ],
+  "prefix1": [
+    "actually", "bro", "haha", "lol", "um", "ummmmmmmm"
+  ],
+  "punctuation": [
+    " ", " ", "!", "!!", "!!!", "!!!!", "."
+  ],
+  "wholephrase": [
+    "%{phrase}", "Jesus really does care", "are you feeling okay?",
+    "check the Bible", "how can you think that?", "i am so sad for you",
+    "i think God sent you to me to learn the truth", "i will pray for you",
+    "i'm praying for your eternal soul", "it's in the Bible. look it up",
+    "no", "please reconsider", "that is incorrect", "that is wrong", "wow",
+    "you are wrong", "you're wrong", "your wrong"
+  ],
+  "willleadto": [
+    "will lead to alternative lifestyle choices",
+    "will lead to eternal damnation",
+    "will lead to forsaking god and participating in the homosexual lifestyle",
+    "will lead to hell", "will lead to sin"
+  ],
+  "yourcorrect": [
+    "%{wholephrase}", "%{wholephrase}", "%{wholephrase}", "*you're"
+  ],
+  "yourecorrect": [
+    "%{wholephrase}", "%{wholephrase}", "%{wholephrase}", "*your"
+  ]
+}

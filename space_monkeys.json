@@ -1,0 +1,94 @@
+{
+  "#": "from Space Monkeys On Danger Station, written by Graph Paper Robot[sic]",
+  "@": [
+    "You are a %{monkey} space monkey, who works in %{job}.  You have %{item} and %{item} and %{banana}.  You take orders from the station's AI, who is %{ai_type}.  There is a %{danger1} in the %{danger2}. There will be %{danger3} if you dont %{danger4} something. You need %{danger5} %{danger6}. The %{danger7} system is %{danger8}.  The cargo is %{cargo} and the robot is a %{robot}.  The person is a %{person1} %{person2}.  They feel %{feel1} and %{feel2}.  The alien looks like %{alien1} %{alien2}.  The omelet has %{omelet1} and %{omelet2}."
+  ],
+  "ai_type": [
+    "buggy and old", "old and buggy"
+  ],
+  "alien1": [
+    "a blob", "a geometric entity", "a humanoid", "a plant",
+    "a sea creature", "an insect"
+  ],
+  "alien2": [
+    "with extra limbs", "with lots of eyes", "with more than one form",
+    "with strange skin", "with tentacles", "with two heads"
+  ],
+  "banana": [
+    "an emergency spare banana"
+  ],
+  "cargo": [
+    "alien artifacts", "consumer goods", "hazardous waste", "raw materials",
+    "vital supplies", "worthess junk"
+  ],
+  "danger1": [
+    "anomaly", "creature", "emergency", "malfunction", "person", "robot"
+  ],
+  "danger2": [
+    "Common spaces", "Engineering area", "Hangar Deck", "Hotel and casino",
+    "Science Labs", "Sickbay"
+  ],
+  "danger3": [
+    "angry customers", "casualties", "legal complications",
+    "loss of revenue", "property damage", "public shame"
+  ],
+  "danger4": [
+    "contain", "destroy", "evaluate", "find", "help", "improve"
+  ],
+  "danger5": [
+    "a tool which is", "assistance which will", "cooperation which is",
+    "goods that are", "information which is", "materials which are"
+  ],
+  "danger6": [
+    "costly", "forbidden", "hidden", "not what it seems", "taxing", "unknown"
+  ],
+  "danger7": [
+    "communications", "computer", "defense", "gravity", "life-support",
+    "power"
+  ],
+  "danger8": [
+    "behaving erratically", "gaining sentience", "going to kill us all",
+    "offline", "overcharged", "underpowered"
+  ],
+  "feel1": [
+    "angry", "bored", "confused", "happy", "interested", "sad"
+  ],
+  "feel2": [
+    "disgusted", "friendly", "hostile", "quiet", "suspicious", "talkative"
+  ],
+  "item": [
+    "%item1", "%item2"
+  ],
+  "item1": [
+    "a datascanner", "a hard-hat", "a mace (medieval)", "an extinguisher",
+    "an spare banana", "some mace (spray)"
+  ],
+  "item2": [
+    "a net-launcher", "a pocket computer", "a respirator", "a taser",
+    "a toolkit", "safety goggles"
+  ],
+  "job": [
+    "Custodial", "Engineering", "Hospitality", "Medical", "Science",
+    "Security"
+  ],
+  "monkey": [
+    "Capuchin (smart)", "Howler (bossy)", "Mandrill (strong)",
+    "Patas (fast)", "Rhesus (alert)", "Spider (nimble)"
+  ],
+  "omelet1": [
+    "cheddar", "feta", "gouda", "havarti", "jack", "mozzarella"
+  ],
+  "omelet2": [
+    "bananas", "mushrooms", "onions", "peppers", "sausage", "spinach"
+  ],
+  "person1": [
+    "Alien", "Cyborg", "Ghost", "Hologram", "Human", "Monkey"
+  ],
+  "person2": [
+    "criminal", "diplomat", "merchant", "scientist", "soldier", "worker"
+  ],
+  "robot": [
+    "kill-bot", "party-bot", "renegade-ai-bot", "service-bot", "service-bot",
+    "spy-bot", "worker-bot"
+  ]
+}

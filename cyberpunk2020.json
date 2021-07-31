@@ -1,0 +1,105 @@
+{
+  "#": "From Mike Pondsmith's \"Cyberpunk2020\" published by R.Talsorian Games",
+  "@": [
+    "This is a %{role}, living in a %{tough, grim|grim, tough} world.  %{motto1}. They dress themselves in %{clothes}, with %{hair} and %{affects}.  %{personality1}. %{prizedperson1}.  %{prizedobject1}. %{goals1}."
+  ],
+  "role": [
+    "rocker%{boy|girl}", "combat solo", "netrunner", "%{gear|med}tech", "mediaface", "neocop", "corporate agent", "fixer", "roadnomad"
+  ],
+  "motto1": [
+    "They know %{motto2}"
+  ],
+  "motto2": [
+    "style is more effective than substance", 
+    "attitude is everything", 
+    "only life on the edge is worth living"
+  ],
+  "clothes": [
+    "biker leathers",
+    "blue jeans",
+    "corporate suits",
+    "jumpsuits" ,
+    "miniskirts",
+    "battle armour",
+    "cammos",
+    "normal-looking clothes",
+    "seemingly total nudity",
+    "'hippie' threads"
+  ],
+  "hair": [
+    "a mohawk",
+    "long & ratty hair",
+    "short and spiked hair",
+    "wild hair all over",
+    "a bald head",
+    "striped hair",
+    "tinted hair",
+    "neat & short hair",
+    "short curly hair",
+    "long straight hair"
+  ],
+  "affects": [
+    "tattoos",
+    "mirrorshades",
+    "ritual scarring",
+    "spiked wristbands",
+    "nose rings",
+    "earrings",
+    "long fingernails",
+    "spike-heeled footwear",
+    "weird contact-lenses",
+    "fingerless gloves"
+  ],
+  "personality1": [
+    "Anyone who meets them can see they are %{personality2}",
+    "It's quickly apparent how %{personality2} they are",
+    "They always seem %{personality2}"
+  ],
+  "personality2": [
+    "shy & secretive",
+    "rebellious, antisocial & violent",
+    "arrogant, proud & aloof",
+    "moody, rash & headstrong",
+    "friendly & outgoing",
+    "picky, fussy & nervous",
+    "stable & serious",
+    "silly & fluffheaded",
+    "sneaky & deceptive",
+    "intellectual & detatched"
+   ],
+  "prizedperson1": [
+    "They have %{prizedperson2} who is important to them",
+    "They have the most esteem for %{prizedperson2}"
+   ],
+  "prizedperson2": [
+    "a parent",
+    "a sibling",
+    "a lover",
+    "one friend",
+    "only themselves",
+    "a pet",
+    "a teacher/mentor",
+    "a public figure",
+    "a personal hero",
+    "utterly no-one"
+  ],
+  "prizedobject1": [ 
+    "Their most precious possession is a %{prizedobject2}",
+    "If anyone messes with their %{prizedobject2} there will be hell to pay",
+    "They will show off their %{prizedobject2} any chance they get"
+  ],
+  "prizedobject2": [
+    "weapon", "tool", "clothing outfit/piece", "photograph", "book/diary",
+    "recording of an event", "musical instrument", "jewelry piece", "toy",
+    "letter from someone"
+  ],
+  "goals1": [
+    "What do they want? %{goals2}",
+    "Only %{goals2} will move them",
+    "They value %{goals2} most in this world"
+  ],
+  "goals2": [
+    "Money", "Honour", "Your Solemn Vow", "Honesty", "Knowledge", "Vengence",
+    "Love", "Power", "A Good Time", "Friendship"
+  ]
+}

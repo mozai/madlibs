@@ -1,0 +1,51 @@
+{
+  "#": "From Mark Cleaveland Massengale's 'Runners In The Shadows'",
+  "@": [
+    "%a_mister_johnson"
+  ],
+  "a_mister_johnson": [
+    "The runners are hired for a run %(by|targeting) %{subject} to %{verb}.  The run is complicated by %{twist}, and connected to %{extra_person} and a %{hostile|neutral|allied} faction."
+  ],
+  "extra_person": [
+    "a %{critter|dragon}", "a corporate notable", "a crew contact",
+    "a free %{spirit|sprite}", "a friendly player character",
+    "a hostile player character", "a player's vice provider"
+  ],
+  "subject": [
+    "%(an Academic|a Wage) Mage", "%(an Activist|a Refugee)",
+    "%(an Artist|a Writer)", "%(an Infected|a Ghoul)", "a %(Banker|Pilot)",
+    "a %(Beat Cop|Detective)", "a %(Courier|Driver)",
+    "a %(Doctor|Scientist)", "a %(Drug Dealer|Supplier)",
+    "a %(Fence|Bookie)", "a %(Judge|Ward Boss)", "a %(Labourer|Tradesman)",
+    "a %(Liason|Cultist)", "a %(Mercenary|Thug)",
+    "a %(Merchant|Business Owner)", "a %(Smuggler|Thief)",
+    "a %(Spy|Informant)", "a %(Technomancer|Cultist)", "a Crime Boss",
+    "a Dragon", "a Talismonger", "a corrupted AI (disguised as %subject)",
+    "an %(Executive|Official)", "the Spirit of a %subject"
+  ],
+  "twist": [
+    "%(advances in the secret agenda of a third party|a dangerous gang using the location)",
+    "%(security being unexpectedly high|being a cover for cult practices)",
+    "%{lies about the nature of the target|a trap laid by your enemies}",
+    "%{requirng long distance travel|free spirits/sprites haunting the location}",
+    "%{the client double-crossing them|a powerful supernatural entity's involvement}",
+    "%{the target moving around to different sites|requiring expensive/rare gear}"
+  ],
+  "verb": [
+    "%(blackmail|discredit) someone", "%(compile|conjure) a spirit",
+    "%(decompile|banish) a spirit", "%(destroy|deface) a thing",
+    "%(disappear|ransom) a target",
+    "%(drain|infuse) an %(arcane|emergent) resource",
+    "%(escort|guard) a V.I.P.", "%(follow|surveil)",
+    "%(impersonate|misdirect) someone", "%(lift|plant) something",
+    "%(locate|hide) something", "%(negotate with|threaten) someone",
+    "%(perform|stop) a ritual", "%(place|remove) wards on a place",
+    "%(poison someone|arrange an accident)",
+    "%(pull off a con|espionage on a rival)", "%(raid|defend) a place",
+    "%(rob|smasn-n-grab) a place", "%(sabotage|commit arson)",
+    "%(smuggle|courier) a %(delicate|large) package",
+    "%(terrorize|extort) a %(person|group)", "assassinate a target",
+    "extract vital essence from the target",
+    "steal something in a %(burglary|heist)"
+  ]
+}
