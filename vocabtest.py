@@ -4,6 +4,9 @@
 import madlibs
 import sys
 
+# TODO: carp if no '#' comment term
+# TODO: '$' is the call-response special term, should test those too
+
 if (len(sys.argv) <= 1):
   print('Usage: %s vocabulary.json' % sys.argv[0])
   sys.exit(1)
@@ -30,6 +33,10 @@ print("testing story generation")
 for i in range(3 * len(ML)):
   ML.story()
 
-print("seems okay; here's five samples")
-for i in range(5):
+if (len(sys.argv) == 2):
+  howmany = 5
+else:
+  howmany = int(sys.argv[2])
+print("seems okay; here's some samples")
+for i in range(howmany):
   print("- " + ML.story())

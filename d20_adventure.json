@@ -1,0 +1,71 @@
+{
+  "#": "Based on a chart by Sam Smith",
+  "@": [
+    "The adventure starts with %opening and %opening. The next scenes are %rising, then %rising. In the mid-story twist is %midpoint combined with %midpoint.  In the climax, %climax and %climax. Upon victory, the heroes gain %reward and %reward."
+  ],
+  "climax": [
+    "a horrible monster is unleashed",
+    "a long-hidden plan comes to fruition",
+    "a place is demolished/destroyed", "a prophecy is fulfilled/denied",
+    "a sacred place is threatened", "an ancient artifact is re-forged",
+    "there is a desperate last-stand", "there is a grand assault",
+    "there is a great ritual", "there is a high-stakes negotiation",
+    "there is a large celebration", "there is a moral dilemma",
+    "there is a notable anniversary", "there is a raid/heist or siege",
+    "there is a terrible betrayal", "there is an invasion",
+    "there is an outbreak of disease or prisoners", "there is an uprising",
+    "there is widespread panic", "things are on the brink of war"
+  ],
+  "midpoint": [
+    "a curse/illness befalling the heroes",
+    "a difficult moral choice by the heroes",
+    "a dramatic gain in power for the enemy", "a natural disaster",
+    "a political crisis", "a sacrifice by the heroes",
+    "a spell/ritual going catastrophically awry",
+    "an ally getting slain or captured",
+    "an attack on the heroes's headquarters",
+    "an essential resource is threatened",
+    "exposure of the heroes weakness(es)", "falling into a trap",
+    "splitting the party", "the appearance of a greater evil",
+    "the appearance of the enemy's champion",
+    "the common people turn on the heroes", "the enemy declares all-out war",
+    "the heroes getting betrayed", "the loss of a valuable resource",
+    "the revelation of a dark secret"
+  ],
+  "opening": [
+    "a beneficial structure starts construction", "a crime report",
+    "a friendly NPC gets threatened",
+    "a friendly settlement gets threatened", "a large celebration/funeral",
+    "a monster attack", "a montage of events",
+    "a natural or supernatural disaster", "a new policy/law enforced",
+    "a past event comes back to haunt the heroes", "a scene from the past",
+    "a ship/caravan arrival", "a shipwreck",
+    "the gods make their will known", "the great battle is tomorrow",
+    "the heroes getting ambushed", "the heroes imprisoned",
+    "the heroes were robbed", "training is interrupted by the real thing"
+  ],
+  "reward": [
+    "a lost item returned", "a magic item/spell", "a magical/divine boon",
+    "a political boon", "a powerful new ally", "a priceless book",
+    "a ship/vehicle", "an awaited reunion", "friends in low places", "gold",
+    "land/estates", "local peace and prosperity", "mastercraft equipment",
+    "new knowledge/skills", "political/cultural influence", "redemption",
+    "the adoration of the people", "their deeds recorded in song/mural",
+    "upgrades to their gear", "vengeance"
+  ],
+  "rising": [
+    "a chase scene", "a new reward is offered/revealed",
+    "a public show of force", "a riddle to be solved",
+    "discovery of a powerful artifact", "enemy revealing a weakness",
+    "exploring a new landscape", "new allies joining at just the right time",
+    "seeing evil spread to someplace unexpected",
+    "seeing the heroes play to their strengths", "studying the lore",
+    "temptation by an evil power",
+    "the emergence of a villainous lieutenant",
+    "the enemy acting against a rival", "the enemy growing in strength",
+    "the enemy recruits a new ally", "the enemy suffering internal strife",
+    "the heroes under scrutiny",
+    "the involvement of local government/church",
+    "travel to a famous location"
+  ]
+}

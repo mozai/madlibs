@@ -1,0 +1,64 @@
+{
+  "#": "from whythefuckwasibreached, which Vice magazine went ga-ga over for some miniscule reason",
+  "@": [
+    "The %{bad} %{actor} used %{method} to %{target}, but we have since %{mitigation}, so %{promise}."
+  ],
+  "actor": [
+    "APTs", "Americans", "Anonymous collective", "Chinese", "Europeans",
+    "FBI", "Fancy Bears", "Iranians", "KGB", "NSA", "North Koreans",
+    "Russians", "advanced persistent threats", "competition",
+    "cyber terrorists", "foreign assets", "hacking activists",
+    "hacking people", "industrial spies", "internet crowd", "master hackers",
+    "rogue AIs", "script kiddies", "security community", "state actors",
+    "technology whiz kids", "teenage hacking prodigies"
+  ],
+  "bad": [
+    "fucking", "goddamned", "scumbag"
+  ],
+  "method": [
+    "0-day exploits", "30 - 50 feral hogs", "DDoS attacks", "Heartbleed",
+    "IoT malware", "a vulnerability in Windows XP SP1",
+    "advanced techniques", "an issue in Wordpress 1.0",
+    "an open window in the server room", "botnets", "cyborg bees",
+    "digital nukes", "hacking drones", "infiltrators",
+    "nefarious techniques", "overwhelming force",
+    "pen and paper based social engineering", "ransomware",
+    "something something vulnerability",
+    "that one vulnerability we were going to patch next Tuesday",
+    "that other vulnerability we were going to patch next tuesday",
+    "the open door in our basement", "unprecedented XSS vulnerabilities",
+    "vectors we really couldn't have prevented",
+    "vulnerabilities in a 3rd party solution", "weaknesses in our vendors"
+  ],
+  "mitigation": [
+    "been pretty good about security", "bought an IDS",
+    "copy-pasted a security policy we found on Google",
+    "gotten ISO certified", "gotten PCI certified", "hired a Russian dude",
+    "hired external consultants",
+    "hired some people with 'CISSP' after their names",
+    "made everyone promise to be super super careful",
+    "put a rotating lock GIF on our website", "said that we are very sorry",
+    "sent one of our guys to Defcon", "told them to not do it again",
+    "twiddled with our firewall", "upskilled our cafeteria staff",
+    "watched a YouTube video on cyber security",
+    "watched the movie Hackers 8 times back to back",
+    "worked with industry leading specialists", "worked with law enforcement"
+  ],
+  "promise": [
+    "accusations otherwise will be treated a libel",
+    "it will never happen again", "it will never happen again",
+    "it will never happen again",
+    "you can go back to whatever you were doing", "your data is safe with us"
+  ],
+  "target": [
+    "breach our high security servers", "cause a minor disturbance",
+    "cause an undetermined amount of damage",
+    "do something, but we aren't quite sure what it is",
+    "extract some private keys", "force us to release this report",
+    "gain access to some data", "glimpse into our database",
+    "hack the coffee maker", "install a C99", "make a mess",
+    "make us look bad", "partially disrupt our services",
+    "potentially access some customer data", "transfer 7 petabytes of data"
+  ]
+}
+

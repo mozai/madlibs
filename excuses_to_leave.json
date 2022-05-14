@@ -1,0 +1,35 @@
+{
+  "#": "From a tweet by MattSurelee",
+  "@": [
+    "%intro %scapegoat %{emergency}."
+  ],
+  "emergency": [
+    "isn't going to make it",
+    "just broke into my house",
+    "crashed my car",
+    "just came back to life",
+    "is splitting an atom in my backyard",
+    "got assaulted by the mailman",
+    "peed on a little girl's lemonade stand"
+  ],
+  "intro": [
+    "It's been great talking to you but",
+    "I gotta run,",
+    "Look over there!",
+    "Sorry to do this but",
+    "Sorry to interrupt you but",
+    "Give your family my best because",
+    "I wish I could talk but",
+    "I just got a text:"
+  ],
+  "scapegoat": [
+    "my dog",
+    "my mother",
+    "Joe Biden",
+    "my high school basketball team",
+    "Amber Heard",
+    "a mall Santa",
+    "my Harry Potter cardboard cutout",
+    "my imaginary girlfriend"
+  ]
+}

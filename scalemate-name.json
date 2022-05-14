@@ -1,0 +1,34 @@
+{
+  "#": "scalemate name generator by amateurTopologist",
+  "@": [
+    "%title %{colour}%{part}"
+  ],
+  "colour": [
+    "Amber", "Apple", "Ash", "Azalea", "Azure", "Banana", "Barley", "Bean",
+    "Bean", "Berry", "Birch", "Blossom", "Blush", "Bronze", "Candy",
+    "Carrot", "Cedar", "Cherry", "Cinnamon", "Citrus", "Cobalt", "Cocoa",
+    "Coconut", "Coffee", "Copper", "Corn", "Cotton", "Daisy", "Fern", "Gin",
+    "Ginger", "Glory", "Golden", "Grape", "Green", "Holly", "Honey", "Iron",
+    "Jade", "Kiwi", "Laurel", "Lavender", "Leaf", "Lemon", "Lilac", "Lilac",
+    "Lily", "Lime", "Mango", "Maple", "Melon", "Melon", "Milk", "Mint",
+    "Mist", "Mocha", "Moss", "Mustard", "Nut", "Olive", "Onion", "Orange",
+    "Orchid", "Parsley", "Peach", "Peach", "Pewter", "Pickle", "Pine",
+    "Pine", "Plum", "Puce", "Pumpkin", "Rose", "Ruby", "Rum", "Rust", "Teal",
+    "Tulip", "Vanilla", "Victory", "Wine", "Zaffre"
+  ],
+  "part": [
+    "back", "belch", "belly", "bite", "bottom", "breath", "brow", "claw",
+    "cough", "ears", "eye", "face", "fang", "finger", "fire", "flame",
+    "flank", "flare", "foot", "horn", "legs", "mouth", "neck", "nose",
+    "roar", "rump", "scale", "side", "smoke", "sneeze", "sniffle", "snort",
+    "snout", "sprite", "tail", "thorn", "toe", "tongue", "tooth", "wing"
+  ],
+  "title": [
+    "Archduke", "Baron", "Baroness", "Caesar", "Commander", "Congressman",
+    "Count", "Doctor", "Duke", "Emperor", "Esquire", "Executive", "General",
+    "King", "Liasion", "Lieutenant", "Madame", "Magister", "Marquise",
+    "Miss", "Mister", "Nurse", "Officer", "President", "Prince", "Princess",
+    "Private", "Professor", "Queen", "Senator", "Sir", "Sovereign",
+    "Vice President", "Viscount"
+  ]
+}

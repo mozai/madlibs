@@ -29,7 +29,7 @@ __version__ = '20161214'
 # thinking: Would it be better to subclass UserDict ?
 
 BRACEPAIRS = (('(', ')'), ('[', ']'), ('{', '}'), ('<', '>'))
-TERMCHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789:_'
+TERMCHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_'
 RESERVEDTERMS = '!@#$%^&*:'
 MUTATORS = { }  # append as they're defined, below
 
@@ -476,7 +476,7 @@ class Madlibs(object):
       else:
         (i, j) = _next_term_ij(text)
       if j > 0 and j <= old_j:
-        bad_loop.append(term)
+        bad_loop.append((text,))
         if len(bad_loop) > 100:
           raise VocabularyError('vocabulary loop detected ' + repr(bad_loop) + ' in \"' + template + '\"')
       else:

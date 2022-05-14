@@ -22,7 +22,7 @@
     "Wins Nobel Prize", "Wins the Fields Prize"
   ], 
   "authority": [
-    "%newspaper", "Academic Panel", "Anonymous Source", "CNN",
+    "%{newspaper}", "Academic Panel", "Anonymous Source", "CNN",
     "Computer Model", "Congressman", "Consensus",
     "Defense Department Official", "Expert", "Leading Scientist",
     "Leading scientist", "NSA Spokesman", "Nature Report", "Official",
@@ -222,8 +222,8 @@
     "Secretly Controls", "Sued By", "Takes Over"
   ], 
   "z_template_list": [
-    "%authority: %company Is Not Dead",
-    "%authority: %person %advances_science",
+    "%{authority}: %company Is Not Dead",
+    "%{authority}: %person %advances_science",
     "%company Patents Technique That %scary_act",
     "%company's New Cloud App %scary_act Says %authority",
     "%count Books You Must Own", "%count Common %company_task Mistakes",
@@ -232,7 +232,7 @@
     "%language Innards", "%language Is A Dead Language",
     "%method Team at %company reduces %badtech by %count%",
     "%person %dislikes %language", "%person %verbed_with %company",
-    "%person Goes Missing For %count Days", "Ask %tech_forum: %poll_question",
+    "%person Goes Missing For %count Days", "Ask %{tech_forum}: %poll_question",
     "Dead Again: %company", "Don't %verb_employer When You Can %verb_employer",
     "Effective %method In %language", "Hidden Secrets Of %language",
     "How I %learned %language In %count Days",
