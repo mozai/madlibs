@@ -1,0 +1,132 @@
+{
+  "#": "from twitter @bot_teleport",
+  "$": [
+    [ "[Gg]reat", "%{greatanswer}" ],
+    [ "[Hh]ow", "%{howanswer}" ],
+    [ "[Mm]aybe", "%{maybeanswer}" ],
+    [ "[Ss]omeone", "%{someoneanswer}" ],
+    [ "[Ss]orry", "%{sorryanswer}" ]
+  ],
+  "@": [
+    "%{you} %{place_adj} %{places}. %{thefloor} %{decayed} %{floorobject}s. %{openquestion}",
+    "%{you} %{place_adj} %{places}. %{thefloor} %{weird} %{floorobject}s. %{openquestion}",
+    "%{you} %{place_adj} %{places}. %{thenote} '%{notetext}'",
+    "%{you} %{place_adj} %{places}. %{theobject} %{magical_adj} %{theobjects}. %{openquestion}",
+    "%{you} %{place_adj} %{places}. %{thewall} %{weird} %{wallobjects}. %{openquestion}"
+  ],
+  "place_adj": [
+    "an ancient", "a beautiful", "a burning", "a cold", "a colourful", "a dark",
+    "a destroyed", "a foggy", "a forgotten", "a hidden", "a lost", "a magical", "a misty",
+    "a mystical", "an overgrown", "a small", "a tiny", "a wet"
+  ],
+  "decayed": [
+    "ancient", "broken", "damaged", "decaying", "destroyed", "lost", "mossy",
+    "old", "overgrown", "shattered"
+  ],
+  "floorobject": [
+    "book", "bottle", "cage", "chain", "clock", "coffin", "crystal", "doll",
+    "glass", "instrument", "lamp", "lightbulb", "machine", "mannequin",
+    "paint brush", "painting", "shoe", "skull", "statue", "telephone",
+    "television", "toy", "weapon"
+  ],
+  "greatanswer": [
+    "I couldn't agree more.", "It's lovely, isn't it?",
+    "Yup, it's pretty nice."
+  ],
+  "howanswer": [
+    "Don't worry about it. Sometimes it''s ok not to understand things.",
+    "Hm, maybe ask again later.", "I don't know, you are the traveler."
+  ],
+  "magical_adj": [
+    "a %{decayed}", "a %{weird}", "a floating", "a glowing", "a magical",
+    "a seemingly weightless"
+  ],
+  "maybeanswer": [
+    "Hm, yeah. Seems like it.", "Looks like it!", "Yeah, maybe."
+  ],
+  "notetext": [
+    "A life, that lasts", "Add value to peoples lifes", "Art is freedom",
+    "Beware of the monsters in your head", "Cherish my memory",
+    "Don't be afraid of silence", "Don't be afraid to ask for help.",
+    "Earth laughs in flowers", "Everything you can imagine is real",
+    "Found this note. You can keep it.", "From my ashes a tree will rise",
+    "Hope is a waking dream", "I believe in you!", "I love the forest",
+    "I was waiting for you.", "I'll remember your kindness and love",
+    "I'm watching the trees getting old", "If you dream it, you can do it.",
+    "Learn to laugh at yourself",
+    "Life does not have to be perfect to be beautiful", "Life is art",
+    "Listen to the rain.", "Make art with people you love", "Make it true.",
+    "Mirrors don't reflect minds.", "My mind is blank D:",
+    "Nature brings peace to my restless mind", "Nature is magical",
+    "Respect the art you make", "Spend time with people you love",
+    "Take a breath between every sentence.", "Thank you for listening.",
+    "The forest calls for you.", "The journey is my home",
+    "The silence awaits your song",
+    "There are secrets in the bark of every tree.",
+    "There's food under the door mat.", "Travel on foot.",
+    "Trust your instincts", "Truth. Patience. Empathy. Value them",
+    "What matters in your life?", "Words are no match for imagination.",
+    "You are always welcome here", "You are an animal.",
+    "You're here now. Rest.", "You're the sun of your life. Rise.",
+    "brb travelling the world"
+  ],
+  "openquestion": [
+    "How did this all get here?", "What is this place?", "Who lives here?",
+    "Who may have lived here?", "Why is this all here?",
+    "Why was this place lost?"
+  ],
+  "places": [
+    "abbey", "apartment", "attic", "battleship", "building", "cabin",
+    "castle", "cave", "cave system", "cavern", "cellar", "chapel", "church",
+    "cottage", "greenhouse", "house", "library", "lighthouse", "manor",
+    "mine", "monastery", "office", "room", "ruin", "ship", "temple", "tower",
+    "underground city", "underground garden", "underground tunnel"
+  ],
+  "someoneanswer": [
+    "I think it was you!", "Looks like it was you! ;)",
+    "That someone was you!", "Well, it wasn't me, so ..."
+  ],
+  "sorryanswer": [
+    "Aww man, I hate this job.", "HOW DARE YOU!", "move along"
+  ],
+  "thefloor": [
+    "The floor is covered in", "The floor is filled with",
+    "The ground is covered in"
+  ],
+  "thenote": [
+    "You find a %{writing} and decide to read it: ",
+    "You find a %{writing}, it reads: "
+  ],
+  "theobject": [
+    "Hm, this looks like", "In the distance you see",
+    "Oh look, this seems to be", "You see"
+  ],
+  "theobjects": [
+    "%{floorobject}", "acorn", "book", "clock", "crystal", "documents",
+    "drawing", "fairy", "firefly", "fish", "flower", "leaf", "light",
+    "mirror", "note", "painting", "plant", "skull", "tophat", "tree",
+    "writing"
+  ],
+  "thewall": [
+    "On the ceiling are", "On the walls are", "The ceiling is covered in",
+    "The walls are covered in", "The walls are filled with"
+  ],
+  "wallobjects": [
+    "crystals", "diagrams", "drawings", "frescoes", "mirrors", "mosaics",
+    "notes", "paints", "paintings", "patterns", "plants", "schematics",
+    "symbols", "wallpapers", "writings"
+  ],
+  "weird": [
+    "abnormal", "ancient", "crazy", "crude", "cryptic", "eerie", "glowing",
+    "miraculous", "mysterious", "occult", "odd", "overgrown", "strange",
+    "unnatural", "weird"
+  ],
+  "writing": [
+    "diary entry", "note", "piece of paper", "writing"
+  ],
+  "you": [
+    "You are teleported to", "You discover", "You explore", "You hide in",
+    "You live in", "You see", "You're in", "You're inside",
+    "You're trapped in", "Your home is"
+  ]
+}

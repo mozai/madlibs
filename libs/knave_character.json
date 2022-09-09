@@ -1,0 +1,132 @@
+{
+  "#": "from the condensed rules for Knave by Ben Milton. The knavedie is 'roll 3d6 keep lowest",
+  "@": [
+    "Stats: %stats\nEquipment:\n  %equipment\nAppearance:\n  %appearance\nBackground:\n  %backstory\n"
+  ],
+  "appearance": [
+    "%physique body with a %face face, %skin skin, and %hair hair.  They wear %clothes clothes and speak %speak."
+  ],
+  "armour1": [
+    "a brigandine", "a brigandine", "a brigandine", "a gambeson",
+    "a gambeson", "a gambeson", "a gambeson", "a gambeson", "chain mail",
+    "clothes", "clothes", "clothes", "padded armour", "padded armour",
+    "padded armour", "padded armour", "padded armour", "ring mail",
+    "ring mail"
+  ],
+  "armour2": [
+   "", "", "", "", "", "", "", "", "", "", "", "", "",
+   "a helmet", "a helmet","a helmet",
+   "a shield", "a shield", "a shield", "a shield", "a shield",
+   "a helmet and a shield" ],
+  "backstory": "They are %virtue but %vice. They were %background until they were %misfortune.",
+  "background": [
+    "a beggar", "a burglar", "a butcher", "a charlatan", "a cleric",
+    "a cook", "a cultist", "a gambler", "a magician", "a mariner",
+    "a mercenary", "a merchant", "a performer", "a pickpocket", "a smuggler",
+    "a student", "a tracker", "an alchemist", "an herbalist", "an outlaw"
+  ],
+  "clothes": [
+    "antique", "bloody", "ceremonial", "decorated", "eccentric", "elegant",
+    "fashionable", "filthy", "flamboyant", "foreign", "frayed", "frumpy",
+    "livery", "oversized", "patched", "perfumed", "rancid", "stained",
+    "torn", "undersized"
+  ],
+  "equipment": [
+    "2 days rations, one weapon, %armour1 %armour2, along with %gear_dungeon, %gear_dungeon, %gear_general1, and %gear_general2.  You have (10+Con) equipment slots and %hitdie max starting hitpoints."
+  ],
+  "face": [
+    "bloated", "blunt", "bony", "broken", "chiseled", "delicate",
+    "elongated", "hawkish", "impish", "narrow", "patrician", "pinched",
+    "ratlike", "round", "sharp", "soft", "square", "sunken", "wide",
+    "wolfish"
+  ],
+  "gear_dungeon": [
+    "10 pieces of chalk", "10ft of chain", "5 candles", "5 extra torches",
+    "50ft of rope", "a 10ft pole", "a crowbar", "a grapple hook", "a hammer",
+    "a hand-mirror", "a lantern", "a padlock", "a tent", "a tinderbox",
+    "an extra sack", "another waterskin", "extra lamp oil",
+    "five iron spikes", "manacles", "pulleys"
+  ],
+  "gear_general1": [
+    "a beartrap", "a bellows", "a chisel", "a drill", "a fishing rod",
+    "a jar of grease", "a metal file", "a net", "a pick", "a pot of glue",
+    "a pouch of nails", "a sack of glass marbles", "a set of lockpicks",
+    "a shovel", "a spare bucket", "a sturdy hourglass", "a woodsaw",
+    "an airbladder", "caltrops", "some tongs"
+  ],
+  "gear_general2": [
+    "a ball of twine", "a blank book", "a deck of cards", "a horn",
+    "a jar of facepaint", "a loud whistle", "a musical instrument",
+    "a polished lens", "a pot of perfume", "a set of dice", "a small bell",
+    "a spare bottle", "a sponge", "a spyglass", "a tarpot",
+    "quill with a pot of ink", "some cooking pots", "some fake jewels",
+    "some incense", "some soap"
+  ],
+  "hair": [
+    "braided", "bristly", "cropped", "curly", "disheveled", "dreadlocked",
+    "filthy", "frizzy", "greased", "limp", "long", "luxurious", "mohawk'd",
+    "no", "oily", "silky", "tied-back", "topknot'd", "wavy", "wispy"
+  ],
+  "hitdie": [
+    "2", "3", "4", "5", "6", "7", "8"
+  ],
+  "knavedie": [
+    "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1",
+    "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1",
+    "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1",
+    "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1",
+    "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1",
+    "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1",
+    "1", "1", "1", "1", "1", "1", "1", "2", "2", "2", "2", "2", "2", "2",
+    "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2",
+    "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2",
+    "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2",
+    "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "3", "3",
+    "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3",
+    "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3",
+    "3", "3", "3", "3", "3", "3", "3", "4", "4", "4", "4", "4", "4", "4",
+    "4", "4", "4", "4", "4", "4", "4", "4", "4", "4", "4", "4", "5", "5",
+    "5", "5", "5", "5", "5", "6"
+  ],
+  "misfortune": [
+    "abandoned", "an addict", "blackmailed", "condemned", "cursed",
+    "defrauded", "demoted", "discredited", "disowned", "exiled", "framed",
+    "haunted", "impoverished", "kidnapped", "mutilated", "persued",
+    "rejected", "replaced", "robbed", "suspected of a crime"
+  ],
+  "physique": [
+    "A brawny", "A brawny", "A corpulent", "A corpulent", "A delicate",
+    "A delicate", "A flabby", "A gaunt", "A scrawny", "A short", "A sinewy",
+    "A slender", "A statuesque", "A stout", "A tiny", "A towering",
+    "A willowy", "A wiry", "An athletic", "An athletic"
+  ],
+  "skin": [
+    "battle-scarred", "birthmark'd", "burn-scarred", "dark",
+    "makeup-covered", "oily", "pale", "perfect", "pierced", "pockmarked",
+    "reeking", "rosy", "rosy", "rough", "rough", "sallow", "sallow",
+    "sunburned", "tanned", "tattooed"
+  ],
+  "speak": [
+    "all flowery", "all formal", "bluntly", "by rambling", "cryptically",
+    "in a booming voice", "in a breathy voice", "in a drawling tone",
+    "in a droning tone", "in a gravely voice", "in a hoarse voice",
+    "in a quaint fashion", "in a squeaky voice", "in an odd dialect",
+    "in mumbles", "in rapid-fire sentences", "in whispers", "precisely",
+    "slowly", "with a stutter"
+  ],
+  "stats": [
+    "Str: +%knavedie Dex: +%knavedie Con: +%knavedie Int: +%knavedie Wis: +%knavedie Chr: +%knavedie"
+  ],
+  "vice": [
+    "aggressive", "arrogant", "bitter", "cowardly", "cruel", "decietful",
+    "flippant", "gluttonous", "greedy", "irascible", "lazy", "nervous",
+    "prejudiced", "reckless", "rude", "suspicious", "vain", "vengeful",
+    "wasteful", "whiny"
+  ],
+  "virtue": [
+    "ambitious", "cautious", "corteous", "courageous", "curious",
+    "disciplined", "focused", "generous", "gregarious", "honest",
+    "honourable", "humble", "idealistic", "just", "loyal", "merciful",
+    "righteous", "serene", "stoic", "tolerant"
+  ]
+}

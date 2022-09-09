@@ -1,0 +1,26 @@
+{
+  "#": "from source of twitter bot @thetinygallery",
+  "@": [
+    ".\u2003 ________________\n\u2571| ______________ \u2571|\n|\u2001|\u2b1c\u2b1c\u2b1c\u2b1c\u2b1c|\u2001 |\n|\u2001|\u2b1c%{a}\u2b1c%{a}\u2b1c|\u2001 |\n|\u2001|\u2b1c\u2b1c\u2b1c\u2b1c\u2b1c|\u2001 |\n|\u2571 \uffe3 %{v}%{v}%{v}%{v} \uffe3 |\u2571\n \uffe3%{v}%{v}%{v}%{v}%{v}\uffe3"
+  ],
+  "a": [
+    "\u26f0", "\u26f2\ufe0f", "\u26fa\ufe0f", "\ud83c\udf01", "\ud83c\udf03",
+    "\ud83c\udf04", "\ud83c\udf05", "\ud83c\udf06", "\ud83c\udf07",
+    "\ud83c\udf08", "\ud83c\udf09", "\ud83c\udf0b", "\ud83c\udf0c",
+    "\ud83c\udf20", "\ud83c\udf86", "\ud83c\udf87", "\ud83c\udf91",
+    "\ud83c\udfa0", "\ud83c\udfa1", "\ud83c\udfa2", "\ud83c\udfd4",
+    "\ud83c\udfd5", "\ud83c\udfd6", "\ud83c\udfd7", "\ud83c\udfd8",
+    "\ud83c\udfd9", "\ud83c\udfdc", "\ud83c\udfdd", "\ud83c\udfde",
+    "\ud83c\udfdf", "\ud83c\udfed", "\ud83c\udfef", "\ud83c\udff0",
+    "\ud83d\uddfb", "\ud83d\uddfc", "\ud83d\uddfd", "\ud83d\uddfe",
+    "\ud83d\udea2"
+  ],
+  "v": [
+    "\uffe3", "\uffe3", "\uffe3", "\uffe3", "\uffe3", "\uffe3", "\uffe3",
+    "\uffe3", "\uffe3", "\uffe3", "\uffe3", "\uffe3", "\uffe3", "\uffe3",
+    "\uffe3", "\uffe3", "\uffe3", "\uffe3", "\uffe3", "\uffe3", "\uffe3",
+    "\uffe3", "\uffe3", "\uffe3", "\uffe3", "\uffe3", "\uffe3",
+    "\ud83c\udfc3", "\ud83d\udc6b", "\ud83d\udc6c", "\ud83d\udc6d",
+    "\ud83d\udc83", "\ud83d\udd74", "\ud83d\udeb6"
+  ]
+}

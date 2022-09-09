@@ -1,0 +1,63 @@
+{
+  "#": "From Marga MacKenna",
+  "@": [
+    "This %{SIZE} city is %{DENSITY}.  It stands %{LOCATION} and is mainly constructed of %{SUBSTANCE}.  It is defended by %{DEFENSES}, and its most noteworthy feature is the %{FEATURES}.",
+    "This %{SIZE}, %{DENSITY} city %{LOCATION} is best known as %{REPUTE}.  The majority of its inhabitants are involved in %{INDUSTRY}, and it is considered notable for its %{FEATURES}.",
+    "This is a %{SIZE}, %{DENSITY} city built predominantly of %{SUBSTANCE} and defended by %{DEFENSES}.  It is well known for its %{FEATURES}.  Most of its revenue comes from %{INDUSTRY}."
+  ],
+  "DEFENSES": [
+    "a deep and treacherous moat", "a formidable army",
+    "a somewhat lackadaisical city guard", "a standing army",
+    "a well-trained city guard", "amazons", "an elite band of mercenaries",
+    "arcane spells", "complex machinery", "elaborate triple walls",
+    "elven archers", "local militia", "spiked walls", "thick walls"
+  ],
+  "DENSITY": [
+    "bustling", "crowded", "curiously empty", "not very populous",
+    "overcrowded", "prosperous", "sleepy", "sparsely populated", "sprawling",
+    "well-populated"
+  ],
+  "FEATURES": [
+    "beautiful central square", "colorful elven quarter",
+    "colorful tiled roofs", "detailed murals",
+    "eclectic architectural style", "exceptionally pure water",
+    "fancifully paved streets", "hot springs", "huge marble temple",
+    "immense central fort", "imposing aqueduct", "imposing bell tower",
+    "invariably mild weather", "large and busy market square",
+    "lavish mausoleum", "lush public gardens", "majestic castle",
+    "massive carved gates", "monument to a fallen hero",
+    "museum of ancient treasures", "preponderance of equestrian statues",
+    "red light district", "remarkably beautiful women", "ruinous tax rate",
+    "series of elaborate fountains", "underground labyrinth",
+    "unique architecture", "yearly harvest festival"
+  ],
+  "INDUSTRY": [
+    "agriculture", "fishing", "foreign trade", "horse trading",
+    "leather goods", "magic and wizardry", "metalwork", "mining", "pottery",
+    "smuggling", "spices", "textiles", "the black market", "tourism",
+    "warfare", "woodworking"
+  ],
+  "LOCATION": [
+    "astride a river", "at the edge of a desert", "beside a river",
+    "beside the sea", "deep in a forest", "in a deep valley",
+    "in the heart of the kingdom", "in the mountains", "near the coast",
+    "on a major trade route", "on the fringes of civilization"
+  ],
+  "REPUTE": [
+    "a backwater", "a bastion of neutrality",
+    "a center of science and learning", "a cultural mecca",
+    "a haven for the arts", "a hellhole", "a playground for the wealthy",
+    "a sink of iniquity", "the birthplace of a famous hero",
+    "the birthplace of a notorious tyrant", "the capital of a fallen empire",
+    "the site of an historic battle"
+  ],
+  "SIZE": [
+    "fairly large", "large", "midsized", "moderately sized", "modest",
+    "small", "smallish", "vast"
+  ],
+  "SUBSTANCE": [
+    "adobe", "black stone", "brick", "concrete", "granite", "gray brick",
+    "marble", "pale stone", "red brick", "red stone", "rock", "stone",
+    "timber", "timber", "yellow brick"
+  ]
+}

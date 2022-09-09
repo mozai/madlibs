@@ -1,0 +1,100 @@
+{
+  "#": "based on Takuma Okdaa's single-player journaling game \"Alone Among The Stars\"",
+  "@": [
+    "You are a solitary adventurer, hoping from planet to planet exploring.  Each world has unique features for you to discover and record in your journal. %a_world You can decide what to name this world or whether to tell anyone what you found."
+  ],
+  "a_world": [
+    "%b_something", "%b_something %b_something",
+    "%b_something %b_something %b_something",
+    "%b_something %b_something %b_something %b_something",
+    "%b_something %b_something %b_something %b_something %b_something",
+    "%b_something %b_something %b_something %b_something %b_something %b_something"
+  ],
+  "ace": [
+    "in a field taller than you"
+  ],
+  "b_something": [
+    "After an arduous journey %c_card.", "After some difficulty %c_card.",
+    "Casually %c_card.", "During a rest %c_card.", "Suddenly %c_card.",
+    "Unexpectedly %c_card."
+  ],
+  "c_card": [
+    "%ace you find %club", "%ace you find %diamond", "%ace you find %heart",
+    "%ace you find %spade", "%eight you find %club",
+    "%eight you find %diamond", "%eight you find %heart",
+    "%eight you find %spade", "%five you find %club",
+    "%five you find %diamond", "%five you find %heart",
+    "%five you find %spade", "%four you find %club",
+    "%four you find %diamond", "%four you find %heart",
+    "%four you find %spade", "%jack you find %club",
+    "%jack you find %diamond", "%jack you find %heart",
+    "%jack you find %spade", "%king you find %club",
+    "%king you find %diamond", "%king you find %heart",
+    "%king you find %spade", "%nine you find %club",
+    "%nine you find %diamond", "%nine you find %heart",
+    "%nine you find %spade", "%queen you find %club",
+    "%queen you find %diamond", "%queen you find %heart",
+    "%queen you find %spade", "%seven you find %club",
+    "%seven you find %diamond", "%seven you find %heart",
+    "%seven you find %spade", "%six you find %club",
+    "%six you find %diamond", "%six you find %heart", "%six you find %spade",
+    "%ten you find %club", "%ten you find %diamond", "%ten you find %heart",
+    "%ten you find %spade", "%three you find %club",
+    "%three you find %diamond", "%three you find %heart",
+    "%three you find %spade", "%two you find %club",
+    "%two you find %diamond", "%two you find %heart", "%two you find %spade"
+  ],
+  "club": [
+    "a unique plant", "carnivorous pitcher-plants", "floating flowers",
+    "giant ferns", "glowing weeds", "oozing mushrooms", "towering trees"
+  ],
+  "diamond": [
+    "a unique creature", "birds", "dinosaurs", "fish", "giant insects",
+    "people like you", "people not like you", "wolves"
+  ],
+  "eight": [
+    "on a glacier"
+  ],
+  "five": [
+    "in a treetop"
+  ],
+  "four": [
+    "in a steep canyon"
+  ],
+  "heart": [
+    "a unique construction", "a vine-covered temple", "a wrecked spaceship",
+    "abandoned dwellings for giants", "mysterious obelisks"
+  ],
+  "jack": [
+    "in the desert"
+  ],
+  "king": [
+    "floating in the air"
+  ],
+  "nine": [
+    "deep underground"
+  ],
+  "queen": [
+    "in deep water"
+  ],
+  "seven": [
+    "near a volcano"
+  ],
+  "six": [
+    "on the snowy peak of a mountain"
+  ],
+  "spade": [
+    "a unique natural feature", "huge crystal formations", "mirages",
+    "rocks eroded into strange shapes", "strange clouds",
+    "veins of precious ores", "vividly coloured lightning"
+  ],
+  "ten": [
+    "on a cliff face"
+  ],
+  "three": [
+    "by a gentle river"
+  ],
+  "two": [
+    "under the light of the moon(s)"
+  ]
+}

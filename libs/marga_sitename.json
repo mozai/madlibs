@@ -1,0 +1,87 @@
+{
+  "#": "From Marga MacKenna",
+  "@": [
+    "%{PLACEDESC} %{PLACE} of the %{SUBJECTDESC} %{SUBJECT}",
+    "%{PLACE} of %{TITLE} %{SYLLABLE}",
+    "%{PLACE} of the %{SUBJECTDESC} %{SUBJECT}",
+    "%{PLACE} of the %{SUBJECTDESC} %{SUBJECT} of %{SYLLABLE}",
+    "%{PLACE} of the %{SYLLABLE} %{SUBJECT}",
+    "%{SYLLABLE} %{PLACEDESC} %{PLACE}",
+    "%{SYLLABLE} %{SYLLABLE} %{PLACEDESC} %{PLACE}",
+    "%{TITLE} %{SYLLABLE}'s %{PLACE}"
+  ],
+  "PLACE": [
+    "Academy", "Aqueduct", "Arena", "Basin", "Birthplace", "Carvings",
+    "Castle", "Cathedral", "Cave", "Caverns", "Chapel", "Citadel", "Convent",
+    "District", "Dome", "Fortress", "Fountains", "Gardens", "Gate",
+    "Grottoes", "Grove", "Hill", "Island", "Labyrinth", "Lagoon",
+    "Landscape", "Mausoleum", "Minaret", "Monastery", "Monument", "Mosque",
+    "Mountains", "Museum", "Necropolis", "Obelisk", "Palace", "Park",
+    "Pavilion", "Pond", "Reservoir", "Rotunda", "Salt Mines", "Sanctuary",
+    "Shrine", "Spires", "Square", "Stadium", "Statues", "Swamp", "Temple",
+    "Terrace", "Tomb", "Tower", "Valley", "Walled City", "Waterworks",
+    "Wilderness"
+  ],
+  "PLACEDESC": [
+    "Abandoned", "Ancient", "Antique", "Baroque", "Black", "Botanical",
+    "Bronze", "Buried", "Classical", "Clinker-Built", "Colonial", "Copper",
+    "Crenellated", "Cursed", "Decorated", "Dynastic", "Echoing", "Forbidden",
+    "Fortified", "Gilded", "Glittering", "Golden", "Great", "Hallowed",
+    "Hanging", "Hidden", "High", "Historic", "Illustrated", "Living",
+    "Lofty", "Lost", "Marble", "Medieval", "Memorial", "Moss-Grown", "Old",
+    "Painted", "Pleasure", "Preserved", "Recursive", "Red", "Reinforced",
+    "Rock-Hewn", "Royal", "Ruined", "Sacred", "Shaded", "Shadowy", "Silent",
+    "Silver", "Spiral", "Subterranean", "Variegated", "Yellow"
+  ],
+  "SUBJECT": [
+    "Actualization", "Amazons", "Ancestors", "Angel", "Army", "Bear",
+    "Birds", "Brigands", "Children", "Concubines", "Confusion", "Darkness",
+    "Diaspora", "Dragon", "Forest", "God", "Gods", "Grandeur", "Harem",
+    "Herdsmen", "Horses", "Illumination", "Interregnum", "King", "Kings",
+    "Lady", "Light", "Maiden", "Maidens", "Massacre", "Meditation", "Mind",
+    "Miracle", "Mourning", "Mysteries", "Orphans", "Patriarchs", "Peace",
+    "Plague", "Plains", "Queen", "Resurrection", "Retreat", "Revelation",
+    "River", "Sage", "Saints", "Soldier", "Terror", "Tribes", "Unicorn",
+    "Vengeance", "Warriors", "Women"
+  ],
+  "SUBJECTDESC": [
+    "Abandoned", "Aged", "Ancient", "Antique", "Buried", "Chosen",
+    "Classical", "Cursed", "Demonic", "Destined", "Divine", "Dwarven",
+    "Elfin", "Eternal", "Ethereal", "Everlasting", "Exquisite", "Fallen",
+    "Forbidden", "Forgotten", "Ghostly", "Goblin", "Golden", "Great",
+    "Hereditary", "Hidden", "Holy", "Honored", "Ineffectual", "Infallible",
+    "Inspired", "Living", "Lost", "Medieval", "Millennial", "Mystical",
+    "Old", "Oppressed", "Prehistoric", "Presumptuous", "Radiant",
+    "Respected", "Revered", "Sacred", "Saintly", "Sinful", "Sybaritic",
+    "Tenfold", "Thousandfold", "Undead", "Unfortunate", "Unholy", "Unknown",
+    "Virtuous", "Youthful", "Zealous"
+  ],
+  "SYLLABLE": [
+    "Ael", "Ais", "Al", "Am", "Anar", "Ang", "Awn", "Bam", "Bang", "Baq",
+    "Bel", "Beu", "Bis", "Bynna", "Cahal", "Cair", "Cam", "Cang", "Csiz",
+    "Damos", "Danan", "Dar", "Dashi", "Dayil", "Del", "Dis", "Diu", "Dree",
+    "Elon", "Em", "Eng", "Eret", "Es", "Esh", "Fal", "Fan", "Fanan", "Fang",
+    "Fel", "Fis", "Forr", "Gair", "Gal", "Gam", "Ghu", "Gis", "Gol", "Gosp",
+    "Gru", "Gwen", "Heng", "Hil", "Hish", "Hon", "Hosk", "Huoi", "Iblin",
+    "Il", "Im", "Ing", "Ishra", "Iyil", "Jair", "Jal", "Janan", "Jang",
+    "Jel", "Jibb", "Jis", "Johel", "Jue", "Kain", "Kal", "Kam", "Kang",
+    "Karan", "Kel", "Keru", "Kier", "Kis", "Kor", "Koux", "Kyar", "Lais",
+    "Lal", "Lam", "Lanal", "Lang", "Lau", "Lel", "Lil", "Lior", "Luan",
+    "Lys", "Mael", "Mais", "Mal", "Manan", "Mang", "Mero", "Meux", "Minar",
+    "Nael", "Nai", "Nal", "Nan", "Nasri", "Nil", "Ning", "Niuq", "Nong",
+    "Nur", "Og", "Ong", "Ordis", "Os", "Oul", "Pael", "Pal", "Pana", "Pel",
+    "Peng", "Pil", "Pin", "Piya", "Porol", "Poy", "Qual", "Quang", "Quis",
+    "Rahar", "Ran", "Ras", "Rel", "Rhi", "Riv", "Riyou", "Sarr", "Schela",
+    "Sen", "Seng", "Senra", "Shuar", "Siax", "Syan", "Taha", "Tam", "Taure",
+    "Teng", "Thal", "Tri", "Tuol", "Twio", "Uan", "Uher", "Ulim", "Usa",
+    "Uun", "Vaex", "Vai", "Val", "Vao", "Vin", "Viya", "Vuhur", "Weng",
+    "Wingh", "Wo", "Wych", "Xaa", "Xin", "Yahao", "Yal", "Yao", "Yeng",
+    "Yin", "Zan", "Zer", "Zerel", "Zil", "Ziu", "Zu"
+  ],
+  "TITLE": [
+    "Brother", "Chancellor", "Councillor", "Dame", "Emperor", "Empress",
+    "Father", "General", "Governor", "King", "Lady", "Lord", "Madame",
+    "Master", "Mistress", "Mother", "Prince", "Princess", "Queen",
+    "Reverend", "Sir", "Sister"
+  ]
+}

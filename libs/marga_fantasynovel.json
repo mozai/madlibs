@@ -1,0 +1,57 @@
+{
+  "#": "From Marga Mackenna",
+  "@": [
+    "%{ADJECTIVE} %{ABSTRACT}", "%{ADJECTIVE} %{NOUN} of %{SYLL1}%{SYLL2}",
+    "%{NOUN} and %{ABSTRACT}", "%{NOUN} of %{ABSTRACT}",
+    "%{NOUN} of the %{ADJECTIVE} %{NOUN}", "%{NOUN}'s %{ABSTRACT}",
+    "%{NOUN}, %{NOUN}, and %{NOUN}", "%{SYLL1}%{SYLL2}'s %{NOUN}",
+    "The %{ABSTRACT} of %{SYLL1}%{SYLL2}", "The %{ADJECTIVE} %{NOUN}",
+    "The %{ADJNOUN} %{NOUN}", "The %{NOUN} and the %{NOUN}",
+    "The %{NOUN} of the %{NOUN}", "The %{SYLL1}%{SYLL2} %{NOUN}"
+  ],
+  "ABSTRACT": [
+    "Chaos", "Conquest", "Darkness", "Destiny", "Discord", "Doom", "Empire",
+    "Fate", "Glory", "Illusion", "Legend", "Light", "Madness", "Mists",
+    "Power", "Pride", "Prophecy", "Realm", "Sorcery", "Vengeance"
+  ],
+  "ADJECTIVE": [
+    "%{ADJNOUN}", "%{ADJNOUN}", "%{ADJNOUN}", "%{ADJNOUN}", "%{ADJNOUN}",
+    "%{ADJNOUN}", "Amber", "Ancient", "Bloody", "Bright", "Deathless",
+    "Eastern", "Ebony", "Elven", "Enchanted", "Eternal", "Golden", "Hidden",
+    "Iron", "Last", "Lonely", "Long", "Lost", "Northern", "Sacred",
+    "Seventh", "Shining", "Silver", "Southern", "Third", "Unholy", "Western",
+    "Wild"
+  ],
+  "ADJNOUN": [
+    "Autumn", "Crystal", "Dark", "Demon", "Desert", "Dream", "Earth",
+    "Emerald", "Evil", "Faerie", "Fire", "Forest", "Island", "Magic",
+    "Memory", "Night", "Rogue", "Ruby", "Rune", "Sea", "Secret", "Spell",
+    "Spirit", "Stone", "Storm", "Summer", "Sunset", "Twilight", "War",
+    "Winter"
+  ],
+  "NOUN": [
+    "%{ADJNOUN}", "%{ADJNOUN}", "%{ADJNOUN}", "%{ADJNOUN}", "%{ADJNOUN}",
+    "%{ADJNOUN}", "Apprentice", "Bane", "Castle", "Child", "Children",
+    "Circle", "Citadel", "City", "Crown", "Curse", "Dragon", "Fortress",
+    "Garden", "God", "Goddess", "Heart", "Herald", "Hero", "Hunter",
+    "Keeper", "King", "Lady", "Mage", "Maiden", "Master", "Mistress", "Moon",
+    "Queen", "Scourge", "Seed", "Sun", "Sword", "Wizard"
+  ],
+  "SYLL1": [
+    "A", "Ai", "Ama", "Ara", "As-A", "Asta", "Avi", "Celi", "Crys", "Dalis",
+    "Denu", "Dere", "Do", "Dwi", "E", "Egi", "El", "El-A", "Ela", "Eni",
+    "Findri", "Foo", "Fordu", "Hiro", "Ig", "Isi", "Ji", "La", "Lo", "Mar",
+    "Mel", "Melpo", "Meri", "Mi", "Mo", "My", "Ni", "Or", "Pil", "Pro",
+    "Quai", "Rava", "Redu", "Repeti", "Rhy", "Rhyi", "Si", "Spiri", "Sy",
+    "Trisi", "Valdi", "Vermo", "Vevri", "Wi", "Wra", "Xandi", "Zwi"
+  ],
+  "SYLL2": [
+    "bar", "bin", "dar", "deni", "dian", "diar", "diel", "don", "draz",
+    "gwas", "gwyn", "jil", "lana", "landir", "ldas", "lf", "lion", "lir",
+    "llian", "lyan", "mene", "napa", "narf", "nash", "nd", "ndaria",
+    "ndelle", "ndis", "ndon", "nian", "niara", "nill", "niof", "niri",
+    "nius", "nome", "nope", "polis", "rgir", "ri", "rid", "riel", "rte",
+    "rtick", "son", "spin", "ssan", "stforth", "strene", "tanor", "tios",
+    "tzi"
+  ]
+}

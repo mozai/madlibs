@@ -1,0 +1,101 @@
+{
+  "#": "Made by Marga MacKenna",
+  "@": [
+    "A %{ROAD} leads through the %{POPULATION} %{TOWNTYPE} %{TOWN} to a %{SIZE} castle of %{MATERIAL} %{LOCATION}. This holding, which belongs to a %{PERSONALITY} %{PERSON}, abounds in %{RESOURCE}.  The most notable feature is the %{FEATURE}.",
+    "A %{SIZE}, %{POPULATION} %{MATERIAL} castle %{LOCATION}, approached by a %{ROAD}.  The castle is owned by a %{PERSONALITY} %{PERSON} and features a %{FEATURE}.  The nearby %{TOWNTYPE} %{TOWN} contains a %{TOWNFEATURE}, and the place is noted for its %{RESOURCE}.",
+    "This %{SIZE} castle, built of %{MATERIAL} and set %{LOCATION}, belongs to a %{PERSONALITY} %{PERSON}.  It contains a %{FEATURE} and appears to be %{POPULATION}. It is approached by a %{ROAD}. Nearby is a %{POPULATION} %{TOWNTYPE} %{TOWN} in which there is a %{TOWNFEATURE}.  The holding is rich in %{RESOURCE}."
+  ],
+  "FEATURE": [
+    "bell tower", "captive unicorn", "central staircase of red marble",
+    "curious statue", "dozen spires of glittering crystal", "dragon's lair",
+    "forgotten altar", "fully furnished torture chamber",
+    "great many stained glass windows", "hall lined with mirrors",
+    "hidden treasure", "historic document", "horrible dungeon",
+    "large fountain", "large imposing gateway", "lavish garden",
+    "long-lost relic", "luxurious guest suite", "magic portal",
+    "massive treasure room", "maze built of red stone",
+    "mysterious artifact", "penniless adventurer",
+    "priceless collection of jewels", "private courtyard",
+    "quantity of ancient tapestries", "resident madman", "restless ghost",
+    "sacred shrine", "secret passageway", "strange prisoner", "vast library",
+    "wise old healer"
+  ],
+  "LOCATION": [
+    "beneath a cliff", "beside a lake", "beside a river", "beside a stream",
+    "deep in a forest", "in a deep valley", "in a lightly wooded grassland",
+    "in a small valley", "in a snowy pass", "in the middle of a lake",
+    "in the midst of an oasis", "near the coast", "near the sea",
+    "on a cliff overlooking the sea", "on a gentle rise",
+    "on a grassy plateau", "on a large green island",
+    "on a large rocky island", "on a rocky islet", "on a small sea island",
+    "on the crest of a hill", "on the side of a hill",
+    "on the side of a mountain"
+  ],
+  "MATERIAL": [
+    "adobe", "black stone", "blue-gray stone", "clear glass",
+    "cream-colored stone", "creamy marble", "dark grey stone",
+    "dull brown brick", "dull brown stone", "ebony", "grey brick",
+    "grey marble", "grey stone", "ice", "ivory", "ivory marble",
+    "ivory stone", "pale grey stone", "red brick", "red marble",
+    "reddish-brown stone", "translucent glass", "white marble",
+    "white stone", "wood", "yellow brick", "yellowish-brown stone"
+  ],
+  "PERSON": [
+    "baron", "baroness", "count", "countess", "duchess", "duke", "earl",
+    "enchanter", "enchantress", "governor", "king", "knight", "lady",
+    "marchioness", "paladin", "prince", "princess", "queen", "sorcerer",
+    "sorceress", "witch", "wizard"
+  ],
+  "PERSONALITY": [
+    "beloved", "benevolent", "bespelled", "brutal", "crafty", "cruel",
+    "cunning", "demented", "devious", "dimwitted", "flamboyant", "fretful",
+    "generous", "genial", "gentle", "grouchy", "just", "kindly", "learned",
+    "mild-mannered", "minor", "miserly", "notorious", "peaceable", "pious",
+    "poverty-stricken", "powerful", "sadistic", "scatterbrained",
+    "scholarly", "slightly eccentric", "timid", "tyrannical", "vain",
+    "warlike", "wealthy", "widowed", "young"
+  ],
+  "POPULATION": [
+    "bustling", "busy", "crowded", "nearly deserted", "neglected",
+    "overcrowded", "populous", "quiet", "sparsely inhabited", "thriving",
+    "well-populated"
+  ],
+  "RESOURCE": [
+    "art and culture", "cattle", "copper", "dangerous wildlife",
+    "game animals", "goats", "gold", "history and folklore", "horses",
+    "interesting flora", "iron", "magic", "medicinal herbs", "monsters",
+    "platinum", "precious stones", "sheep", "silver", "spices"
+  ],
+  "ROAD": [
+    "badly maintained road", "brick-paved walkway", "narrow dirt path",
+    "narrow dirt road", "narrow paved road", "narrow stone pathway",
+    "paved road overgrown with moss", "tree-lined avenue", "well-kept road",
+    "wide cobbled road", "wide cobbled walkway", "wide dirt road",
+    "wide paved road", "winding path", "winding road"
+  ],
+  "SIZE": [
+    "compact", "enormous", "large", "massive", "medium-sized",
+    "moderate-sized", "modest", "small", "spacious", "sprawling", "towering",
+    "very small"
+  ],
+  "TOWN": [
+    "hamlet", "outpost", "settlement", "town", "village"
+  ],
+  "TOWNFEATURE": [
+    "bell tower", "blacksmith", "captive unicorn", "colony of goblins",
+    "colony of griffins", "comfortable inn", "curio shop", "curious statue",
+    "flower-lined square", "forgotten altar", "fortuneteller",
+    "haunted house", "hidden treasure", "large fountain",
+    "large imposing gateway", "magician for hire", "monastery",
+    "mysterious artifact", "pawnshop", "penniless adventurer",
+    "pleasant tavern", "reliable well", "reputable moneychanger",
+    "resident madman", "restless ghost", "sacred shrine", "scribe for hire",
+    "seedy inn", "seedy tavern", "strange prisoner",
+    "temple to the local gods", "thief for hire", "trading post",
+    "traveling fair", "well-stocked apothecary", "wise old healer"
+  ],
+  "TOWNTYPE": [
+    "dwarven", "elven", "farming", "fishing", "gnomish", "halfling", "human",
+    "market", "mining"
+  ]
+}

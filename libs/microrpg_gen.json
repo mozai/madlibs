@@ -1,0 +1,37 @@
+{
+  "#": "Micro-RPG Generator by Samuel Mui",
+  "@": [
+    "Your next game will be a %ggenre %sgenres game about %chars which uses %gmech as its primary mechanic"
+  ],
+  "char": [
+    "angsty teenagers", "bears", "detectives", "game designers", "gods",
+    "mental health metaphors", "monsters", "robots gaining sapience",
+    "sapient weapons", "star-crossed lovers"
+  ],
+  "chars": [
+    "%char", "%char", "%char and %char"
+  ],
+  "dweird": [
+    "d3", "d36", "d4.25", "non-polyhedral dice"
+  ],
+  "ggenre": [
+    "%onepagerpg reskin", "OSR-compatible", "conversational",
+    "drinking game", "existential", "introspective", "japanese-inspired",
+    "self-referential"
+  ],
+  "gmech": [
+    "%dweird", "a single six-sided die", "a tarot deck", "a token economy",
+    "conversation", "drawing pictures", "singing",
+    "writing down your feelings"
+  ],
+  "onepagerpg": [
+    "Honey Heist", "Lasers & Feelings"
+  ],
+  "sgenres": [ 
+    "%sgenre", "%sgenre", "%sgenre %sgenre" 
+  ],
+  "sgenre": [
+    "adult", "christmas", "cyberpunk", "kid-friendly", "new-age",
+    "pulp-action", "queer", "road-trip", "romance", "urban-fantasy"
+  ]
+}
