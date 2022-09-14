@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Madlibs - examples</title>
+<style type="text/css">body{margin:2.5em auto;max-width:40em;line-height:1.5;font-size:18px;color:#444;padding:0 0.5em}h1,h2,h3{line-height:1.2}</style>
+<style type="text/css">header{text-align:center;}.ralign{width:100%;text-align:right;}form{margin:0;text-align:center;}#comment{font-style:italic;font-size:67%;}</style> 
+</head>
+<body>
+<header>
+<h1>Madlibs - examples</h1>
+<div class="ralign"><a href="https://github.com/mozai/madlibs/">github</a></div>
+</header>
+<form><select id="m_choice" onchange="update_mlist();"></select>&nbsp;<input type="button" name="refresh" value="refresh" onclick="update_mlist();"></form><ul id="m_list"></ul><p id="comment"></p>
+<script>
+/* yeah I did this the hard way. I like to learn. */
+Array.prototype.shuffle=function(){var a;for(a=this.length-1;a;a--){var d=Math.floor(Math.random()*(a+1));var g=this[a];this[a]=this[d];this[d]=g}return this}
+Array.prototype.rotate=function(a){if("undefined"==typeof a) a=1; if(0<a)for(;0!=a;)this.push(this.shift()),a--;else if(0>a)for(;0!=a;)this.unshift(this.pop()),a++;return this}
+Array.prototype.choice||(Array.prototype.choice=function(){return this[Math.floor(Math.random()*this.length)]})
+Array.isArray||(Array.isArray=function(a){return"[object Array]"===Object.prototype.toString.call(a)})
+function Madlibs(brain){this.brain=brain;for(var i in brain)if(brain.hasOwnProperty(i)){if(!Array.isArray(brain[i]))brain[i]=[brain[i]];brain[i].shuffle()}var _lookup=function(thing,brain,sanity){if(thing.indexOf("|")>0)thing=thing.split("|").choice();else if(typeof brain[thing]=="string")thing=brain[thing];else if(brain[thing].choice!==undefined)thing=_story(brain[thing].choice(),brain,sanity);return thing};this.story=function(frame){return _story(frame,this.brain,10)};var _story=function(frame,
+brain,sanity){var answer,i,j;sanity-=1;if(sanity<0)throw"sanity depleted; loop detected in brain file?";if(typeof frame==="undefined")frame=brain["@"].choice();answer="";i=0;j=-1;while(i<frame.length){if(frame[i]=="%")if(frame[i+1]=="%"){i=i+1;answer+="%"}else if(frame[i+1]=="("){j=frame.indexOf(")",i);if(i<j){answer+=_story(_lookup(frame.substr(i+2,j-i-2),brain,sanity),brain,sanity);i=j}else throw"unmatched %( : "+frame;}else if(frame[i+1]=="{"){j=frame.indexOf("}",i);if(i<j){answer+=_story(_lookup(frame.substr(i+
+2,j-i-2),brain,sanity),brain,sanity);i=j}else throw"unmatched %{ : "+frame;}else{var match=frame.substr(i+1).match(/^[a-zA-Z0-9_]+/);if(match){answer+=_story(_lookup(match[0],brain,sanity),brain,sanity);i+=match[0].length}else answer+="%"}else answer+=frame[i];i=i+1}return answer}}
+function gebi(a){return document.getElementById(a)}
+function keysof(a){var i,j=[];for(i in a) if(a.hasOwnProperty(i)) j.push(i); return j;}
+var json_cache={}
+function create_mselect(){for(var a,b,c=gebi("m_choice");0<c.length;)c.remove(0);mlist=keysof(json_cache);mlist.sort();for(a=0;a<mlist.length;a++)b=document.createElement("option"),b.value=mlist[a],b.text=mlist[a]["name"],c.add(b,null)}
+function random_mchoice(){var a=gebi("m_choice");a.selectedIndex=Math.floor(Math.random()*a.length);update_mlist()}
+async function cacheget(a){var b,c;if(!("data" in json_cache[a])){await fetch(json_cache[a]["url"]).then((r)=>json_cache["data"]=r.json()).catch((err)=>alert(err));}return json_cache[a]["data"];}
+function update_mlist(){var a,b,c,d;a=gebi("m_choice").value;b=cacheget[a];if(!b)return!1;for(a=gebi("m_list");a.firstChild;)a.removeChild(a.firstChild);c=new Madlibs(b);for(d=0;4>d;d++)j=document.createElement("li"),j.innerHTML=c.story(),a.appendChild(j);gebi("comment").innerHTML=(b["#"]||"");};
+</script>
+<script>
+var succ=false;
+fetch("madlibs_catalogue.json").then((r)=>json_cache=r.json(),succ=true).catch((err)=>alert(err));
+if(succ){create_mselect();random_mchoice();}
+</script>
+<footer></footer>
+</body>
