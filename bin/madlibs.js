@@ -43,7 +43,7 @@ function Madlibs(brain) {
     if(sanity < 0)
       throw "sanity depleted; loop detected in brain file?";
     if(typeof(frame)==='undefined')
-      frame = brain[brain['@'].choice()].choice();
+      frame = "%{@}"
     answer = "";
     i = 0;
     j = -1;
