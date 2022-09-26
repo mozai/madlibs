@@ -1,7 +1,9 @@
 {
+  "adventure-pitch": { "name": "roll d6s for adventure", "url": "adventure-pitch.json" },
   "against_humanity": { "name": "Cards Against Humanity", "url": "against_humanity.json" },
   "alex_jones": { "name": "Alex Jones News Flash", "url": "alex_jones.json" },
   "among_the_stars": { "name": "Among The Stars", "url": "among_the_stars.json" },
+  "apples-junior": { "name": "Compare apples to apples", "url": "apples-junior.json"},
   "autoflaneur": { "name": "Auto-Flaneur", "url": "autoflaneur.json" },
   "big-idea": { "name": "The Big Idea", "url": "big-idea.json" },
   "bot_teleport": { "name": "Teleport Bot", "url": "bot_teleport.json" },
@@ -21,8 +23,8 @@
   "filthy": { "name": "Filthy Shades of Grey", "url": "filthy.json" },
   "foley": { "name": "Foley sound howtos", "url": "foley.json" },
   "fursona": { "name": "Your new fursona", "url": "fursona.json" },
-  "game_jam": { "name": "Game Jam ideas", "url": "game_jam.json" },
   "gamegen": { "name": "gamegen", "url": "gamegen.json" },
+  "game_jam": { "name": "Game Jam ideas", "url": "game_jam.json" },
   "homestuck_act7": { "name": "How Homestuck could have ended", "url": "homestuck_act7.json" },
   "knave_character": { "name": "character for Knave RPG", "url": "knave_character.json" },
   "kungfu_villains": { "name": "Kung-fu villains", "url": "kungfu_villains.json" },
@@ -47,12 +49,13 @@
   "startup_thisforthat": { "name": "tech startup ideas", "url": "startup_thisforthat.json" },
   "steven-universe-theory": { "name": "theories for Steven Universe lore", "url": "steven-universe-theory.json" },
   "stiobhard": { "name": "stiobhard", "url": "stiobhard.json" },
-  "techheadlines": { "name": "Tech news headlines", "url": "techheadlines.json" },
   "tarot-reading": { "name": "Three card tarot spread", "url": "tarot-reading.json"},
+  "techheadlines": { "name": "Tech news headlines", "url": "techheadlines.json" },
   "thats-a-question": { "name": "Would-you-rather questions", "url": "thats-a-question.json" },
   "tinydungeon": { "name": "a tiny dungeon", "url": "tinydungeon.json" },
   "tinygallery": { "name": "a tiny gallery landscape", "url": "tinygallery.json" },
   "vidyaheadlines": { "name": "Video-game news", "url": "vidyaheadlines.json" },
   "web20": { "name": "the next web 2.0 idea", "url": "web20.json" },
   "wondermark_genres": { "name": "Genre for your next fiction novel", "url": "wondermark_genres.json" },
-  "yiffy": { "name": "Yiff", "url": "yiffy.json" } }
+  "yiffy": { "name": "Yiff", "url": "yiffy.json" }
+}

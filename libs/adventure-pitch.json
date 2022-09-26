@@ -1,0 +1,17 @@
+{ "#": "From a pre-release version of Freeform Universal 2",
+  "@": [
+    "We're playing a %tone %genre story about %theme.",
+    "This is a %genre set in %setting where you are all %characters.",
+    "You are all %characters in %setting looking for %thing.",
+    "This is a story of %theme, set in %tone %setting.",
+    "You are %tone %characters seeking %thing in %setting.",
+    "Our story is a %genre %setting story set in %setting."
+  ],
+  "tone": [ "campy", "dramatic", "gonzo", "gritty", "noir", "pulp" ],
+  "genre": [ "adventure", "crime", "horror", "spy", "war", "western" ],
+  "theme": [ "ambition", "alienation", "honour", "justice", "love", "vengence" ],
+  "setting": [ "ancient Greece", "apocalyptic wastes", "deep space", "medieval England", "the near future", "the wild west" ],
+  "characters": [ "criminals", "explorers", "heroes", "scoundrels", "time-travellers", "undead" ],
+  "thing": [ "a ruthless criminal", "a secret treasure", "a warrior's death", "peace", "the heir to the throne", "true love" ]
+}
+
