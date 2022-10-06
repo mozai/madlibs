@@ -28,6 +28,7 @@
   "homestuck_act7": { "name": "How Homestuck could have ended", "url": "homestuck_act7.json" },
   "knave_character": { "name": "character for Knave RPG", "url": "knave_character.json" },
   "kungfu_villains": { "name": "Kung-fu villains", "url": "kungfu_villains.json" },
+  "magic-peddler": { "name": "magic item for sale", "url": "magic-peddler.json" },
   "marga_city": { "name": "marga (city)", "url": "marga_city.json" },
   "marga_fantasynovel": { "name": "marga (fantasynovel)", "url": "marga_fantasynovel.json" },
   "marga_sitename": { "name": "marga (sitename)", "url": "marga_sitename.json" },

@@ -1,0 +1,61 @@
+{
+  "#": "From Lynn and Rene Legault, for their fantasy version of The Big Idea",
+  "@": [
+    "%(Buy now and get|This is|For Sale:) %item that %perk %(but it|even if it|although it|-- I should mention it) %{flaw}."
+  ],
+  "flaw": [
+    "%flaw and %flaw", "attracts bad weather", "attracts insects",
+    "burns when touched", "can't be cleaned", "can't be discarded",
+    "causes animals to hate you",
+    "changes what you hear into offensive words", "changes your eye colour",
+    "erases your sense of sight", "erases your sense of smell",
+    "erases your sense of taste", "follows you in a creepy way",
+    "forces you to speak only gibberish", "gets you lost",
+    "gives unbearable headaches", "gives you emotional outbursts",
+    "gives you nightmares", "has a trickster spirit", "has holes",
+    "has holes", "insults people", "is actually a demon",
+    "is actually a devil", "is afraid of the dark", "is afraid of the light",
+    "is always freezing cold", "is annoyingly invisible", "is unwieldy",
+    "is very unlucky", "looks suspicious", "makes you clumsy",
+    "makes you giggle inappropriately", "makes you hungry",
+    "makes you itchy", "makes you more aggressive", "makes you paranoid",
+    "makes you sneeze", "makes you so thirsty",
+    "prevents nearby people from sleeping", "prevents you from telling lies",
+    "reacts poorly when wet", "requires payment to use",
+    "saps your strength", "sinks rapidly in water",
+    "slowly petrifies you", "smells awful", "speeds up your aging",
+    "talks too much", "withers plants around you"
+  ],
+  "item": [
+    "a belt", "a book", "a candle", "a cauldron", "a charm", "a chest",
+    "a cloak", "a compass", "a dagger", "a doll", "a figurine",
+    "a fishing rod", "a glass eye", "a hat", "a key", "a map", "a mirror",
+    "a mug", "a necklace", "a net", "a painting", "a pet", "a pipe",
+    "a potion", "a quill", "a ring", "a rope", "a satchel", "a scroll",
+    "a shield", "a skull", "a spear", "a spyglass", "a staff", "a sword",
+    "a tent", "a trap", "a wand", "a whip", "a wig", "an arrow", "an automaton",
+    "an egg", "an instrument", "an umbrella", "some armour", "some eye-wear",
+    "some footwear", "some headgear", "some seeds"
+  ],
+  "perk": [
+    "%perk and %perk", "always fits just right", "always smells good",
+    "can fly", "causes plants around you to bloom", "comes with theme music",
+    "detects lies", "detects poison", "detects secret paths",
+    "floats on water", "follows you", "gives you an additional language",
+    "gives you unerring sense of direction", "glows in the dark",
+    "heals you", "helps you sleep soundly", "improves your hearing",
+    "improves your sight", "is blessed", "is invisible",
+    "is light as a feather", "is very lucky", "is waterproof",
+    "keeps you comfortably warm/cool", "lets you speak with animals",
+    "lets you speak with stones", "makes animals friendly to you",
+    "makes you a great singer", "makes you ambidextrous",
+    "makes you attractive", "makes you faster", "makes you persuasive",
+    "makes you smarter", "makes you stronger", "makes you tougher",
+    "never wears out", "points towards expensive things",
+    "protects you from all disease", "protects you from fear",
+    "repels insects", "repels the undead", "replaces your need to eat",
+    "slows your aging", "stays camouflaged", "stores items for you", "talks",
+    "teleports to you at-will", "transforms", "translates for you",
+    "warns you of danger"
+  ]
+}
