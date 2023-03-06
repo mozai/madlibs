@@ -1,0 +1,36 @@
+{
+  "#": "from Dragonshield's Pocket RPG Guide",
+  "@": [
+    "Location: this %lore %landmark in the %biome",
+    "Person: %(a|this) %personality %archetype who is %quirk wants %desire"
+  ],
+  "archetype": [
+    "administrator", "diplomat", "priest", "rogue", "sage", "soldier"
+  ],
+  "biome": [
+    "desert", "dungeon", "forest", "grassland", "jungle", "tundra"
+  ],
+  "desire": [
+    "a magical item", "a secret", "another person", "gold", "information",
+    "to go adventuring"
+  ],
+  "landmark": [
+    "bridge", "burial mound", "dragon obelisk", "temple", "village",
+    "wizard tower"
+  ],
+  "lore": [
+    "abandoned", "burned", "consecrated", "holy", "occupied", "popular"
+  ],
+  "personality": [
+    "brutish", "charismatic", "confrontational", "dull", "friendly",
+    "underhanded"
+  ],
+  "population": [
+    "a settlement", "a small camp", "a warband", "an army", "nobody",
+    "some scouts"
+  ],
+  "quirk": [
+    "akward", "greedy", "knowledgable", "paranoid", "senile",
+    "way too honest"
+  ]
+}
